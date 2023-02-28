@@ -60,16 +60,35 @@ namespace My_Assistant
         }
         private void SMSComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DateTime today = DateTime.Today;
-            DateTime futureDate = today.AddDays(5);
+            // Define a counter for the working days
+            int workingDays = 0;
+
+            // Define the current date
+            DateTime currentDate = DateTime.Today;
+
+            // Loop through each date until 5 working days have been counted
+            while (workingDays < 5)
+            {
+                // Move to the next day
+                currentDate = currentDate.AddDays(1);
+
+                // If the date is a weekend or holiday, skip it
+                if (currentDate.DayOfWeek == DayOfWeek.Saturday || currentDate.DayOfWeek == DayOfWeek.Sunday)
+                {
+                    continue;
+                }
+
+                // Otherwise, increment the working day counter
+                workingDays++;
+            }
             Clipboard.Clear();
             if (SMSComboBox.Text == "Pickup Reminder")
             {
-                NotesRichTextBox.Text = "WE REMIND YOU THAT YOU CAN PICKUP YOUR ORDER UNTIL " + futureDate.ToString("dd/MM/yy") + " OR IT WILL BE CANCELLED."; ;
+                NotesRichTextBox.Text = "WE REMIND YOU THAT YOU CAN PICKUP YOUR ORDER UNTIL " + currentDate.ToString("dd/MM/yy") + " OR IT WILL BE CANCELLED."; ;
             }
             else if (SMSComboBox.Text == "Õðåíèýìéóç ðáñáëáâÞò")
             {
-                NotesRichTextBox.Text = "ÓÁÓ ÕÐÅÍÈÕÌÉÆÏÕÌÅ ÔÇÍ ÅÊÊÑÅÌÏÔÇÔÁ ÐÁÑÁËÁÂÇÓ ÔÇÓ ÐÁÑÁÃÃÅËÉÁÓ ÓÁÓ Ç ÏÐÏÉÁ ÈÁ ÁÊÕÑÙÈÅÉ ÅÁÍ ÄÅÍ ÐÁÑÁËÇÖÈÅÉ ÌÅ×ÑÉ " + futureDate.ToString("dd/MM/yy");
+                NotesRichTextBox.Text = "ÓÁÓ ÕÐÅÍÈÕÌÉÆÏÕÌÅ ÔÇÍ ÅÊÊÑÅÌÏÔÇÔÁ ÐÁÑÁËÁÂÇÓ ÔÇÓ ÐÁÑÁÃÃÅËÉÁÓ ÓÁÓ Ç ÏÐÏÉÁ ÈÁ ÁÊÕÑÙÈÅÉ ÅÁÍ ÄÅÍ ÐÁÑÁËÇÖÈÅÉ ÌÅ×ÑÉ " + currentDate.ToString("dd/MM/yy");
             }
             DataObject data = new DataObject();
             data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);

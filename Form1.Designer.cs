@@ -116,7 +116,7 @@
             // 
             OnHoldComboBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             OnHoldComboBox.FormattingEnabled = true;
-            OnHoldComboBox.Items.AddRange(new object[] { "επικοινωνίας και προκαταβολής από πελάτη", "προκαταβολής από πελάτη", "επικοινωνίας από πελάτη", "απάντησης από προμηθευτή για διαθεσιμότητα", "απάντησης από τοπικό προμηθευτή για διαθεσιμότητα" });
+            OnHoldComboBox.Items.AddRange(new object[] { "επικοινωνίας και προκαταβολής από πελάτη", "προκαταβολής από πελάτη", "επικοινωνίας από πελάτη", "από προμηθευτή", "απάντησης από προμηθευτή για διαθεσιμότητα", "από τοπικό", "απάντησης από τοπικό προμηθευτή για διαθεσιμότητα" });
             OnHoldComboBox.Location = new Point(115, 72);
             OnHoldComboBox.Name = "OnHoldComboBox";
             OnHoldComboBox.Size = new Size(268, 23);
@@ -173,11 +173,11 @@
             // 
             SMSLabel.AutoSize = true;
             SMSLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            SMSLabel.Location = new Point(8, 76);
+            SMSLabel.Location = new Point(27, 76);
             SMSLabel.Name = "SMSLabel";
-            SMSLabel.Size = new Size(95, 15);
+            SMSLabel.Size = new Size(76, 15);
             SMSLabel.TabIndex = 14;
-            SMSLabel.Text = "Ενημέρωσε για :";
+            SMSLabel.Text = "Υπενθύμιση :";
             // 
             // SendSMSCustomerLlabel
             // 
