@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             NotesRichTextBox = new RichTextBox();
             AdressofOrderLabel = new Label();
             AdressofOrderComboBox = new ComboBox();
@@ -95,7 +96,7 @@
             // 
             SendMsgComboBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             SendMsgComboBox.FormattingEnabled = true;
-            SendMsgComboBox.Items.AddRange(new object[] { "παραλαβή σε 10-15 εργάσιμες μέρες", "διπλή παραγγελία", "Δευτέρα - Τρίτη", "προκαταβολή", "διαθεσιμότητα", "διαθεσιμότητα και προκαταβολή", "πρόβλημα διαθεσιμότητας. Πρότεινε κάτι άλλο", "καθυστέρηση παραγγελίας και παραλαβή", "παλιό service. Να περάσει να παραλάβει" });
+            SendMsgComboBox.Items.AddRange(new object[] { "παραλαβή σε 10-15 εργάσιμες μέρες", "διπλή παραγγελία", "Δευτέρα - Τρίτη", "προκαταβολή", "διαθεσιμότητα", "διαθεσιμότητα και προκαταβολή", "πρόβλημα διαθεσιμότητας. Πρότεινε κάτι άλλο", "καθυστέρηση παραγγελίας και παραλαβή", "παλιό service. Να περάσει να παραλάβει", "ενημέρωσε για καθυστέρηση από προμηθευτή και πιθανή παραλαβή" });
             SendMsgComboBox.Location = new Point(109, 18);
             SendMsgComboBox.Name = "SendMsgComboBox";
             SendMsgComboBox.Size = new Size(274, 23);
@@ -117,9 +118,9 @@
             OnHoldComboBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             OnHoldComboBox.FormattingEnabled = true;
             OnHoldComboBox.Items.AddRange(new object[] { "επικοινωνίας και προκαταβολής από πελάτη", "προκαταβολής από πελάτη", "επικοινωνίας από πελάτη", "από προμηθευτή", "απάντησης από προμηθευτή για διαθεσιμότητα", "από τοπικό", "απάντησης από τοπικό προμηθευτή για διαθεσιμότητα" });
-            OnHoldComboBox.Location = new Point(115, 72);
+            OnHoldComboBox.Location = new Point(91, 72);
             OnHoldComboBox.Name = "OnHoldComboBox";
-            OnHoldComboBox.Size = new Size(268, 23);
+            OnHoldComboBox.Size = new Size(292, 23);
             OnHoldComboBox.TabIndex = 9;
             OnHoldComboBox.SelectedIndexChanged += OnHoldComboBox_SelectedIndexChanged;
             // 
@@ -127,7 +128,7 @@
             // 
             OnHoldLabel.AutoSize = true;
             OnHoldLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            OnHoldLabel.Location = new Point(51, 75);
+            OnHoldLabel.Location = new Point(27, 75);
             OnHoldLabel.Name = "OnHoldLabel";
             OnHoldLabel.Size = new Size(58, 15);
             OnHoldLabel.TabIndex = 8;
@@ -243,6 +244,7 @@
             Controls.Add(CopyButton);
             Controls.Add(DeleteButton);
             Controls.Add(NotesRichTextBox);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Product Assistant";
             Load += Form1_Load;

@@ -40,8 +40,29 @@ namespace My_Assistant
         }
         private void SendMsgComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Get the current date and time
+            DateTime currentDate = DateTime.Now;
             Clipboard.Clear();
-            NotesRichTextBox.Text = "Ενημέρωσε για " + SendMsgComboBox.Text; ;
+            if (SendMsgComboBox.Text == "ενημέρωσε για καθυστέρηση από προμηθευτή και πιθανή παραλαβή")
+                if (currentDate.DayOfWeek < DayOfWeek.Friday || (currentDate.DayOfWeek == DayOfWeek.Friday && currentDate.TimeOfDay < TimeSpan.FromHours(11)))
+                {
+                    // Calculate the next Tuesday and Thursday
+                    DateTime nextTuesday = currentDate.AddDays((DayOfWeek.Tuesday + 7 - currentDate.DayOfWeek) % 7);
+                    DateTime nextThursday = currentDate.AddDays((DayOfWeek.Thursday + 7 - currentDate.DayOfWeek) % 7);
+                    // Display the next Tuesday and Thursday in the NotesRichTextBox
+                    NotesRichTextBox.Text = "ενημέρωσε για καθυστέρηση από προμηθευτή και πιθανή παραλαβή εντός " + nextTuesday.ToString("dd/MM") + " και " + nextThursday.ToString("dd/MM");
+                }
+                else
+                {
+                    // Calculate the second Wednesday following the current date
+                    DateTime secondWednesday = currentDate.AddDays(5).AddDays((DayOfWeek.Wednesday + 7 - currentDate.AddDays(5).DayOfWeek) % 7);
+                    // Display the second Wednesday in the NotesRichTextBox
+                    NotesRichTextBox.Text = "ενημέρωσε για καθυστέρηση από προμηθευτή και πιθανή παραλαβή εντός " + secondWednesday.ToString("dd/MM") + " με Καράβι";
+                }
+            else
+            {
+                NotesRichTextBox.Text = "Ενημέρωσε για " + SendMsgComboBox.Text; ;
+            }
             DataObject data = new DataObject();
             data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
@@ -62,22 +83,18 @@ namespace My_Assistant
         {
             // Define a counter for the working days
             int workingDays = 0;
-
             // Define the current date
             DateTime currentDate = DateTime.Today;
-
             // Loop through each date until 5 working days have been counted
-            while (workingDays < 5)
+            while (workingDays < 3)
             {
                 // Move to the next day
                 currentDate = currentDate.AddDays(1);
-
                 // If the date is a weekend or holiday, skip it
                 if (currentDate.DayOfWeek == DayOfWeek.Saturday || currentDate.DayOfWeek == DayOfWeek.Sunday)
                 {
                     continue;
                 }
-
                 // Otherwise, increment the working day counter
                 workingDays++;
             }
