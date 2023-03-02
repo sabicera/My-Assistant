@@ -29,100 +29,94 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            NotesRichTextBox = new RichTextBox();
-            AdressofOrderLabel = new Label();
             AdressofOrderComboBox = new ComboBox();
-            DeleteButton = new Button();
-            SendMsgComboBox = new ComboBox();
-            SendMsgLabel = new Label();
+            AdressofOrderLabel = new Label();
+            Battery0TextBox = new TextBox();
+            Battery14TextBox = new TextBox();
+            BatteryCopyButton = new Button();
+            BatteryDateTimePicker = new DateTimePicker();
+            BatteryDateTimePicker2 = new DateTimePicker();
+            BatteryResetButton = new Button();
+            BatteryRichTextBox = new RichTextBox();
+            CancelPreorderButton = new Button();
+            CleanersClearButton = new Button();
+            CleanersCopyButton = new Button();
+            CleanersDateTimePicker = new DateTimePicker();
+            CleanersDateTimePicker2 = new DateTimePicker();
+            CleanersLabel = new Label();
+            CleanersPasteButton = new Button();
+            CleanersResetButton = new Button();
+            CleanersRichTextBox = new RichTextBox();
+            CleanersTextBox = new TextBox();
+            ClearBattery0Button = new Button();
+            ClearBattery14Button = new Button();
+            ClearCPU0Button = new Button();
+            ClearCPU14Button = new Button();
+            ClearShip0Button = new Button();
+            ClearShip14Button = new Button();
+            CopyHomeButton = new Button();
+            CopyOKButton = new Button();
+            CourrierButton = new Button();
+            CourrierLabel = new Label();
+            CPU0Label = new Label();
+            CPU0TextBox = new TextBox();
+            CPU14TextBox = new TextBox();
+            CPUCopyButton = new Button();
+            CPUDateTimePicker = new DateTimePicker();
+            CPUDateTimePicker2 = new DateTimePicker();
+            CPULabel = new Label();
+            CPUResetButton = new Button();
+            CPURichTextBox = new RichTextBox();
+            DeleteHomeButton = new Button();
+            HomeRichTextBox = new RichTextBox();
+            HomeTabPage = new TabPage();
+            panel1 = new Panel();
+            NotesLlabel = new Label();
             OnHoldComboBox = new ComboBox();
             OnHoldLabel = new Label();
-            CopyButton = new Button();
             NotesPanel = new Panel();
             SMSComboBox = new ComboBox();
             SMSLabel = new Label();
             SendSMSCustomerLlabel = new Label();
-            SendMsgsLabel = new Label();
-            CurrentDateLabel = new Label();
-            panel1 = new Panel();
-            NotesLlabel = new Label();
-            TabControl = new TabControl();
-            HomeTabPage = new TabPage();
-            SupplierTabPage = new TabPage();
-            CancelPreorderButton = new Button();
-            CopyOKButton = new Button();
-            ShipButton = new Button();
-            CourrierButton = new Button();
+            SendMsgComboBox = new ComboBox();
+            SendMsgLabel = new Label();
+            CPU14Label = new Label();
+            CleanersorLabel = new Label();
+            Battery14Label = new Label();
+            CPUorLabel = new Label();
+            BatteryorLabel = new Label();
+            Battery0Label = new Label();
+            Ship14Label = new Label();
+            ShiporLabel = new Label();
+            Ship0Label = new Label();
             OrdersTabPage = new TabPage();
-            CleanersDateTimePicker2 = new DateTimePicker();
-            label12 = new Label();
-            ClearCleanersButton = new Button();
-            CleanersPasteButton = new Button();
-            CleanersTextBox = new TextBox();
-            CleanersDateTimePicker = new DateTimePicker();
-            CleanersLabel = new Label();
-            label7 = new Label();
-            ClearShip0Button = new Button();
-            PasteShip0Button = new Button();
-            Ship0TextBox = new TextBox();
-            Ship14DateTimePicker2 = new DateTimePicker();
-            label8 = new Label();
-            ClearShip14Button = new Button();
-            PasteShip14Button = new Button();
-            Ship14TextBox = new TextBox();
-            label9 = new Label();
-            Ship14DateTimePicker = new DateTimePicker();
-            ShipLabel = new Label();
-            label2 = new Label();
-            ClearBattery0Button = new Button();
             PasteBattery0Button = new Button();
-            Battery0TextBox = new TextBox();
-            Battery14DateTimePicker2 = new DateTimePicker();
-            label4 = new Label();
-            ClearBattery14Button = new Button();
             PasteBattery14Button = new Button();
-            Battery14TextBox = new TextBox();
-            label5 = new Label();
-            Battery14DateTimePicker = new DateTimePicker();
-            CourrierLabel = new Label();
-            label1 = new Label();
-            ClearCPU0Button = new Button();
             PasteCPU0Button = new Button();
-            CPU0TextBox = new TextBox();
-            CPU14DateTimePicker2 = new DateTimePicker();
-            label3 = new Label();
-            ClearCPU14Button = new Button();
             PasteCPU14Button = new Button();
-            CPU14TextBox = new TextBox();
-            CPU0Label = new Label();
-            CPU14DateTimePicker = new DateTimePicker();
-            CPULabel = new Label();
-            NotesPanel.SuspendLayout();
-            panel1.SuspendLayout();
-            TabControl.SuspendLayout();
+            PasteShip0Button = new Button();
+            PasteShip14Button = new Button();
+            Ship0TextBox = new TextBox();
+            Ship14TextBox = new TextBox();
+            ShipCopyButton = new Button();
+            ShipDateTimePicker = new DateTimePicker();
+            ShipDateTimePicker2 = new DateTimePicker();
+            ShipLabel = new Label();
+            ShipResetButton = new Button();
+            ShipRichTextBox = new RichTextBox();
+            ShipButton = new Button();
+            SuppliersCopyButton = new Button();
+            SuppliersDeleteButton = new Button();
+            SuppliersRichTextBox = new RichTextBox();
+            SupplierTabPage = new TabPage();
+            TabControl = new TabControl();
             HomeTabPage.SuspendLayout();
-            SupplierTabPage.SuspendLayout();
+            panel1.SuspendLayout();
+            NotesPanel.SuspendLayout();
             OrdersTabPage.SuspendLayout();
+            SupplierTabPage.SuspendLayout();
+            TabControl.SuspendLayout();
             SuspendLayout();
-            // 
-            // NotesRichTextBox
-            // 
-            NotesRichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            NotesRichTextBox.Location = new Point(10, 375);
-            NotesRichTextBox.Name = "NotesRichTextBox";
-            NotesRichTextBox.Size = new Size(404, 63);
-            NotesRichTextBox.TabIndex = 0;
-            NotesRichTextBox.Text = "";
-            // 
-            // AdressofOrderLabel
-            // 
-            AdressofOrderLabel.AutoSize = true;
-            AdressofOrderLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            AdressofOrderLabel.Location = new Point(14, 35);
-            AdressofOrderLabel.Name = "AdressofOrderLabel";
-            AdressofOrderLabel.Size = new Size(165, 15);
-            AdressofOrderLabel.TabIndex = 1;
-            AdressofOrderLabel.Text = "Έστειλα για διευθέτηση στην:";
             // 
             // AdressofOrderComboBox
             // 
@@ -135,38 +129,438 @@
             AdressofOrderComboBox.TabIndex = 2;
             AdressofOrderComboBox.SelectedIndexChanged += AdressofOrderComboBox_SelectedIndexChanged;
             // 
-            // DeleteButton
+            // AdressofOrderLabel
             // 
-            DeleteButton.BackColor = Color.DarkSalmon;
-            DeleteButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            DeleteButton.Location = new Point(276, 326);
-            DeleteButton.Name = "DeleteButton";
-            DeleteButton.Size = new Size(138, 43);
-            DeleteButton.TabIndex = 3;
-            DeleteButton.Text = "Διαγραφή";
-            DeleteButton.UseVisualStyleBackColor = false;
-            DeleteButton.Click += DeleteButton_Click;
+            AdressofOrderLabel.AutoSize = true;
+            AdressofOrderLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            AdressofOrderLabel.Location = new Point(14, 35);
+            AdressofOrderLabel.Name = "AdressofOrderLabel";
+            AdressofOrderLabel.Size = new Size(165, 15);
+            AdressofOrderLabel.TabIndex = 1;
+            AdressofOrderLabel.Text = "Έστειλα για διευθέτηση στην:";
             // 
-            // SendMsgComboBox
+            // Battery0TextBox
             // 
-            SendMsgComboBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            SendMsgComboBox.FormattingEnabled = true;
-            SendMsgComboBox.Items.AddRange(new object[] { "παραλαβή σε 10-15 εργάσιμες μέρες", "διπλή παραγγελία", "Δευτέρα - Τρίτη", "προκαταβολή", "διαθεσιμότητα", "διαθεσιμότητα και προκαταβολή", "πρόβλημα διαθεσιμότητας. Πρότεινε κάτι άλλο", "καθυστέρηση παραγγελίας και παραλαβή", "παλιό service. Να περάσει να παραλάβει", "ενημέρωσε για καθυστέρηση από προμηθευτή και πιθανή παραλαβή" });
-            SendMsgComboBox.Location = new Point(109, 18);
-            SendMsgComboBox.Name = "SendMsgComboBox";
-            SendMsgComboBox.Size = new Size(274, 23);
-            SendMsgComboBox.TabIndex = 5;
-            SendMsgComboBox.SelectedIndexChanged += SendMsgComboBox_SelectedIndexChanged;
+            Battery0TextBox.Location = new Point(23, 170);
+            Battery0TextBox.Name = "Battery0TextBox";
+            Battery0TextBox.Size = new Size(206, 23);
+            Battery0TextBox.TabIndex = 22;
             // 
-            // SendMsgLabel
+            // Battery14TextBox
             // 
-            SendMsgLabel.AutoSize = true;
-            SendMsgLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            SendMsgLabel.Location = new Point(8, 21);
-            SendMsgLabel.Name = "SendMsgLabel";
-            SendMsgLabel.Size = new Size(95, 15);
-            SendMsgLabel.TabIndex = 4;
-            SendMsgLabel.Text = "Ενημέρωσε για :";
+            Battery14TextBox.Location = new Point(23, 143);
+            Battery14TextBox.Name = "Battery14TextBox";
+            Battery14TextBox.Size = new Size(206, 23);
+            Battery14TextBox.TabIndex = 17;
+            // 
+            // BatteryCopyButton
+            // 
+            BatteryCopyButton.BackColor = Color.Chartreuse;
+            BatteryCopyButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            BatteryCopyButton.Location = new Point(333, 198);
+            BatteryCopyButton.Name = "BatteryCopyButton";
+            BatteryCopyButton.Size = new Size(49, 41);
+            BatteryCopyButton.TabIndex = 47;
+            BatteryCopyButton.Text = "Copy";
+            BatteryCopyButton.UseVisualStyleBackColor = false;
+            BatteryCopyButton.Click += BatteryCopyButton_Click;
+            // 
+            // BatteryDateTimePicker
+            // 
+            BatteryDateTimePicker.CustomFormat = "dd/MM/yy";
+            BatteryDateTimePicker.Format = DateTimePickerFormat.Custom;
+            BatteryDateTimePicker.Location = new Point(278, 143);
+            BatteryDateTimePicker.Name = "BatteryDateTimePicker";
+            BatteryDateTimePicker.Size = new Size(68, 23);
+            BatteryDateTimePicker.TabIndex = 15;
+            BatteryDateTimePicker.ValueChanged += BatteryDateTimePicker_ValueChanged;
+            // 
+            // BatteryDateTimePicker2
+            // 
+            BatteryDateTimePicker2.CustomFormat = "dd/MM/yy";
+            BatteryDateTimePicker2.Format = DateTimePickerFormat.Custom;
+            BatteryDateTimePicker2.Location = new Point(364, 143);
+            BatteryDateTimePicker2.Name = "BatteryDateTimePicker2";
+            BatteryDateTimePicker2.Size = new Size(68, 23);
+            BatteryDateTimePicker2.TabIndex = 21;
+            BatteryDateTimePicker2.ValueChanged += BatteryDateTimePicker2_ValueChanged;
+            // 
+            // BatteryResetButton
+            // 
+            BatteryResetButton.BackColor = Color.DarkSalmon;
+            BatteryResetButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            BatteryResetButton.Location = new Point(383, 198);
+            BatteryResetButton.Name = "BatteryResetButton";
+            BatteryResetButton.Size = new Size(49, 41);
+            BatteryResetButton.TabIndex = 46;
+            BatteryResetButton.Text = "Reset";
+            BatteryResetButton.UseVisualStyleBackColor = false;
+            BatteryResetButton.Click += BatteryResetButton_Click;
+            // 
+            // BatteryRichTextBox
+            // 
+            BatteryRichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            BatteryRichTextBox.Location = new Point(23, 198);
+            BatteryRichTextBox.Name = "BatteryRichTextBox";
+            BatteryRichTextBox.Size = new Size(304, 41);
+            BatteryRichTextBox.TabIndex = 45;
+            BatteryRichTextBox.Text = "";
+            // 
+            // CancelPreorderButton
+            // 
+            CancelPreorderButton.Location = new Point(8, 93);
+            CancelPreorderButton.Name = "CancelPreorderButton";
+            CancelPreorderButton.Size = new Size(168, 23);
+            CancelPreorderButton.TabIndex = 3;
+            CancelPreorderButton.Text = "Ακύρωση προέγκρισης";
+            CancelPreorderButton.UseVisualStyleBackColor = true;
+            CancelPreorderButton.Click += CancelPreorderButton_Click;
+            // 
+            // CleanersClearButton
+            // 
+            CleanersClearButton.BackColor = Color.DarkSalmon;
+            CleanersClearButton.Location = new Point(253, 379);
+            CleanersClearButton.Name = "CleanersClearButton";
+            CleanersClearButton.Size = new Size(23, 23);
+            CleanersClearButton.TabIndex = 42;
+            CleanersClearButton.Text = "✖";
+            CleanersClearButton.UseVisualStyleBackColor = false;
+            CleanersClearButton.Click += ClearCleanersButton_Click;
+            // 
+            // CleanersCopyButton
+            // 
+            CleanersCopyButton.BackColor = Color.Chartreuse;
+            CleanersCopyButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            CleanersCopyButton.Location = new Point(333, 408);
+            CleanersCopyButton.Name = "CleanersCopyButton";
+            CleanersCopyButton.Size = new Size(49, 28);
+            CleanersCopyButton.TabIndex = 53;
+            CleanersCopyButton.Text = "Copy";
+            CleanersCopyButton.UseVisualStyleBackColor = false;
+            CleanersCopyButton.Click += CleanersCopyButton_Click;
+            // 
+            // CleanersDateTimePicker
+            // 
+            CleanersDateTimePicker.CustomFormat = "dd/MM/yy";
+            CleanersDateTimePicker.Format = DateTimePickerFormat.Custom;
+            CleanersDateTimePicker.Location = new Point(278, 379);
+            CleanersDateTimePicker.Name = "CleanersDateTimePicker";
+            CleanersDateTimePicker.Size = new Size(68, 23);
+            CleanersDateTimePicker.TabIndex = 39;
+            CleanersDateTimePicker.ValueChanged += CleanersDateTimePicker_ValueChanged;
+            // 
+            // CleanersDateTimePicker2
+            // 
+            CleanersDateTimePicker2.CustomFormat = "dd/MM/yy";
+            CleanersDateTimePicker2.Format = DateTimePickerFormat.Custom;
+            CleanersDateTimePicker2.Location = new Point(364, 379);
+            CleanersDateTimePicker2.Name = "CleanersDateTimePicker2";
+            CleanersDateTimePicker2.Size = new Size(68, 23);
+            CleanersDateTimePicker2.TabIndex = 44;
+            CleanersDateTimePicker2.ValueChanged += CleanersDateTimePicker2_ValueChanged;
+            // 
+            // CleanersLabel
+            // 
+            CleanersLabel.AutoSize = true;
+            CleanersLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            CleanersLabel.Location = new Point(62, 361);
+            CleanersLabel.Name = "CleanersLabel";
+            CleanersLabel.Size = new Size(141, 15);
+            CleanersLabel.TabIndex = 38;
+            CleanersLabel.Text = "Πάνες - Μωρομάντηλα";
+            // 
+            // CleanersPasteButton
+            // 
+            CleanersPasteButton.BackColor = Color.Chartreuse;
+            CleanersPasteButton.Location = new Point(230, 379);
+            CleanersPasteButton.Name = "CleanersPasteButton";
+            CleanersPasteButton.Size = new Size(23, 23);
+            CleanersPasteButton.TabIndex = 41;
+            CleanersPasteButton.Text = "✔";
+            CleanersPasteButton.UseVisualStyleBackColor = false;
+            CleanersPasteButton.Click += CleanersPasteButton_Click;
+            // 
+            // CleanersResetButton
+            // 
+            CleanersResetButton.BackColor = Color.DarkSalmon;
+            CleanersResetButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            CleanersResetButton.Location = new Point(383, 408);
+            CleanersResetButton.Name = "CleanersResetButton";
+            CleanersResetButton.Size = new Size(49, 28);
+            CleanersResetButton.TabIndex = 52;
+            CleanersResetButton.Text = "Reset";
+            CleanersResetButton.UseVisualStyleBackColor = false;
+            CleanersResetButton.Click += CleanersResetButton_Click;
+            // 
+            // CleanersRichTextBox
+            // 
+            CleanersRichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            CleanersRichTextBox.Location = new Point(23, 408);
+            CleanersRichTextBox.Name = "CleanersRichTextBox";
+            CleanersRichTextBox.Size = new Size(304, 28);
+            CleanersRichTextBox.TabIndex = 51;
+            CleanersRichTextBox.Text = "";
+            // 
+            // CleanersTextBox
+            // 
+            CleanersTextBox.Location = new Point(23, 379);
+            CleanersTextBox.Name = "CleanersTextBox";
+            CleanersTextBox.Size = new Size(206, 23);
+            CleanersTextBox.TabIndex = 40;
+            // 
+            // ClearBattery0Button
+            // 
+            ClearBattery0Button.BackColor = Color.DarkSalmon;
+            ClearBattery0Button.Location = new Point(253, 170);
+            ClearBattery0Button.Name = "ClearBattery0Button";
+            ClearBattery0Button.Size = new Size(23, 23);
+            ClearBattery0Button.TabIndex = 24;
+            ClearBattery0Button.Text = "✖";
+            ClearBattery0Button.UseVisualStyleBackColor = false;
+            ClearBattery0Button.Click += ClearBattery0Button_Click;
+            // 
+            // ClearBattery14Button
+            // 
+            ClearBattery14Button.BackColor = Color.DarkSalmon;
+            ClearBattery14Button.Location = new Point(253, 143);
+            ClearBattery14Button.Name = "ClearBattery14Button";
+            ClearBattery14Button.Size = new Size(23, 23);
+            ClearBattery14Button.TabIndex = 19;
+            ClearBattery14Button.Text = "✖";
+            ClearBattery14Button.UseVisualStyleBackColor = false;
+            ClearBattery14Button.Click += ClearBattery14Button_Click;
+            // 
+            // ClearCPU0Button
+            // 
+            ClearCPU0Button.BackColor = Color.DarkSalmon;
+            ClearCPU0Button.Location = new Point(253, 53);
+            ClearCPU0Button.Name = "ClearCPU0Button";
+            ClearCPU0Button.Size = new Size(23, 23);
+            ClearCPU0Button.TabIndex = 12;
+            ClearCPU0Button.Text = "✖";
+            ClearCPU0Button.UseVisualStyleBackColor = false;
+            ClearCPU0Button.Click += ClearCPU0Button_Click;
+            // 
+            // ClearCPU14Button
+            // 
+            ClearCPU14Button.BackColor = Color.DarkSalmon;
+            ClearCPU14Button.Location = new Point(253, 25);
+            ClearCPU14Button.Name = "ClearCPU14Button";
+            ClearCPU14Button.Size = new Size(23, 23);
+            ClearCPU14Button.TabIndex = 7;
+            ClearCPU14Button.Text = "✖";
+            ClearCPU14Button.UseVisualStyleBackColor = false;
+            ClearCPU14Button.Click += ClearCPU14Button_Click;
+            // 
+            // ClearShip0Button
+            // 
+            ClearShip0Button.BackColor = Color.DarkSalmon;
+            ClearShip0Button.Location = new Point(253, 288);
+            ClearShip0Button.Name = "ClearShip0Button";
+            ClearShip0Button.Size = new Size(23, 23);
+            ClearShip0Button.TabIndex = 36;
+            ClearShip0Button.Text = "✖";
+            ClearShip0Button.UseVisualStyleBackColor = false;
+            ClearShip0Button.Click += ClearShip0Button_Click;
+            // 
+            // ClearShip14Button
+            // 
+            ClearShip14Button.BackColor = Color.DarkSalmon;
+            ClearShip14Button.Location = new Point(253, 261);
+            ClearShip14Button.Name = "ClearShip14Button";
+            ClearShip14Button.Size = new Size(23, 23);
+            ClearShip14Button.TabIndex = 31;
+            ClearShip14Button.Text = "✖";
+            ClearShip14Button.UseVisualStyleBackColor = false;
+            ClearShip14Button.Click += ClearShip14Button_Click;
+            // 
+            // CopyHomeButton
+            // 
+            CopyHomeButton.BackColor = Color.Chartreuse;
+            CopyHomeButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            CopyHomeButton.Location = new Point(6, 253);
+            CopyHomeButton.Name = "CopyHomeButton";
+            CopyHomeButton.Size = new Size(138, 43);
+            CopyHomeButton.TabIndex = 20;
+            CopyHomeButton.Text = "Αντιγραφή";
+            CopyHomeButton.UseVisualStyleBackColor = false;
+            CopyHomeButton.Click += CopyHomeButton_Click;
+            // 
+            // CopyOKButton
+            // 
+            CopyOKButton.Location = new Point(8, 64);
+            CopyOKButton.Name = "CopyOKButton";
+            CopyOKButton.Size = new Size(168, 23);
+            CopyOKButton.TabIndex = 2;
+            CopyOKButton.Text = "Αντιγραφή ΟΚ";
+            CopyOKButton.UseVisualStyleBackColor = true;
+            CopyOKButton.Click += CopyOKButton_Click;
+            // 
+            // CourrierButton
+            // 
+            CourrierButton.Location = new Point(8, 6);
+            CourrierButton.Name = "CourrierButton";
+            CourrierButton.Size = new Size(168, 23);
+            CourrierButton.TabIndex = 0;
+            CourrierButton.Text = "Courier + Λειτουργικά";
+            CourrierButton.UseVisualStyleBackColor = true;
+            CourrierButton.Click += CourrierButton_Click;
+            // 
+            // CourrierLabel
+            // 
+            CourrierLabel.AutoSize = true;
+            CourrierLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            CourrierLabel.Location = new Point(68, 125);
+            CourrierLabel.Name = "CourrierLabel";
+            CourrierLabel.Size = new Size(130, 15);
+            CourrierLabel.TabIndex = 14;
+            CourrierLabel.Text = "Courier με μπαταρίες";
+            // 
+            // CPU0Label
+            // 
+            CPU0Label.AutoSize = true;
+            CPU0Label.ForeColor = Color.IndianRed;
+            CPU0Label.Location = new Point(7, 57);
+            CPU0Label.Name = "CPU0Label";
+            CPU0Label.Size = new Size(13, 15);
+            CPU0Label.TabIndex = 2;
+            CPU0Label.Text = "0";
+            // 
+            // CPU0TextBox
+            // 
+            CPU0TextBox.Location = new Point(23, 53);
+            CPU0TextBox.Name = "CPU0TextBox";
+            CPU0TextBox.Size = new Size(206, 23);
+            CPU0TextBox.TabIndex = 10;
+            // 
+            // CPU14TextBox
+            // 
+            CPU14TextBox.Location = new Point(23, 25);
+            CPU14TextBox.Name = "CPU14TextBox";
+            CPU14TextBox.Size = new Size(206, 23);
+            CPU14TextBox.TabIndex = 5;
+            // 
+            // CPUCopyButton
+            // 
+            CPUCopyButton.BackColor = Color.Chartreuse;
+            CPUCopyButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            CPUCopyButton.Location = new Point(333, 80);
+            CPUCopyButton.Name = "CPUCopyButton";
+            CPUCopyButton.Size = new Size(49, 41);
+            CPUCopyButton.TabIndex = 20;
+            CPUCopyButton.Text = "Copy";
+            CPUCopyButton.UseVisualStyleBackColor = false;
+            CPUCopyButton.Click += CPUCopyButton_Click;
+            // 
+            // CPUDateTimePicker
+            // 
+            CPUDateTimePicker.CustomFormat = "dd/MM/yy";
+            CPUDateTimePicker.Format = DateTimePickerFormat.Custom;
+            CPUDateTimePicker.Location = new Point(278, 25);
+            CPUDateTimePicker.Name = "CPUDateTimePicker";
+            CPUDateTimePicker.Size = new Size(68, 23);
+            CPUDateTimePicker.TabIndex = 1;
+            CPUDateTimePicker.ValueChanged += CPUDateTimePicker_ValueChanged;
+            // 
+            // CPUDateTimePicker2
+            // 
+            CPUDateTimePicker2.CustomFormat = "dd/MM/yy";
+            CPUDateTimePicker2.Format = DateTimePickerFormat.Custom;
+            CPUDateTimePicker2.Location = new Point(364, 25);
+            CPUDateTimePicker2.Name = "CPUDateTimePicker2";
+            CPUDateTimePicker2.Size = new Size(68, 23);
+            CPUDateTimePicker2.TabIndex = 9;
+            CPUDateTimePicker2.ValueChanged += CPUDateTimePicker2_ValueChanged;
+            // 
+            // CPULabel
+            // 
+            CPULabel.AutoSize = true;
+            CPULabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            CPULabel.Location = new Point(27, 7);
+            CPULabel.Name = "CPULabel";
+            CPULabel.Size = new Size(206, 15);
+            CPULabel.TabIndex = 0;
+            CPULabel.Text = "Laptop/Tablet/mobile/Consoles/Cpu";
+            // 
+            // CPUResetButton
+            // 
+            CPUResetButton.BackColor = Color.DarkSalmon;
+            CPUResetButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            CPUResetButton.Location = new Point(383, 80);
+            CPUResetButton.Name = "CPUResetButton";
+            CPUResetButton.Size = new Size(49, 41);
+            CPUResetButton.TabIndex = 19;
+            CPUResetButton.Text = "Reset";
+            CPUResetButton.UseVisualStyleBackColor = false;
+            CPUResetButton.Click += CPUResetButton_Click;
+            // 
+            // CPURichTextBox
+            // 
+            CPURichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            CPURichTextBox.Location = new Point(23, 80);
+            CPURichTextBox.Name = "CPURichTextBox";
+            CPURichTextBox.Size = new Size(304, 41);
+            CPURichTextBox.TabIndex = 18;
+            CPURichTextBox.Text = "";
+            // 
+            // DeleteHomeButton
+            // 
+            DeleteHomeButton.BackColor = Color.DarkSalmon;
+            DeleteHomeButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            DeleteHomeButton.Location = new Point(272, 253);
+            DeleteHomeButton.Name = "DeleteHomeButton";
+            DeleteHomeButton.Size = new Size(138, 43);
+            DeleteHomeButton.TabIndex = 19;
+            DeleteHomeButton.Text = "Διαγραφή";
+            DeleteHomeButton.UseVisualStyleBackColor = false;
+            DeleteHomeButton.Click += DeleteHomeButton_Click;
+            // 
+            // HomeRichTextBox
+            // 
+            HomeRichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            HomeRichTextBox.Location = new Point(6, 302);
+            HomeRichTextBox.Name = "HomeRichTextBox";
+            HomeRichTextBox.Size = new Size(404, 63);
+            HomeRichTextBox.TabIndex = 18;
+            HomeRichTextBox.Text = "";
+            // 
+            // HomeTabPage
+            // 
+            HomeTabPage.Controls.Add(panel1);
+            HomeTabPage.Controls.Add(CopyHomeButton);
+            HomeTabPage.Controls.Add(NotesPanel);
+            HomeTabPage.Controls.Add(DeleteHomeButton);
+            HomeTabPage.Controls.Add(HomeRichTextBox);
+            HomeTabPage.Location = new Point(4, 24);
+            HomeTabPage.Name = "HomeTabPage";
+            HomeTabPage.Padding = new Padding(3);
+            HomeTabPage.Size = new Size(438, 443);
+            HomeTabPage.TabIndex = 0;
+            HomeTabPage.Text = "Αρχική";
+            HomeTabPage.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(NotesLlabel);
+            panel1.Controls.Add(OnHoldComboBox);
+            panel1.Controls.Add(AdressofOrderLabel);
+            panel1.Controls.Add(AdressofOrderComboBox);
+            panel1.Controls.Add(OnHoldLabel);
+            panel1.Location = new Point(6, 6);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(404, 113);
+            panel1.TabIndex = 16;
+            // 
+            // NotesLlabel
+            // 
+            NotesLlabel.AutoSize = true;
+            NotesLlabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            NotesLlabel.Location = new Point(157, 9);
+            NotesLlabel.Name = "NotesLlabel";
+            NotesLlabel.Size = new Size(68, 15);
+            NotesLlabel.TabIndex = 16;
+            NotesLlabel.Text = "Σημειώσεις";
             // 
             // OnHoldComboBox
             // 
@@ -189,24 +583,12 @@
             OnHoldLabel.TabIndex = 8;
             OnHoldLabel.Text = "Αναμονή :";
             // 
-            // CopyButton
-            // 
-            CopyButton.BackColor = Color.Chartreuse;
-            CopyButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            CopyButton.Location = new Point(8, 326);
-            CopyButton.Name = "CopyButton";
-            CopyButton.Size = new Size(138, 43);
-            CopyButton.TabIndex = 10;
-            CopyButton.Text = "Αντιγραφή";
-            CopyButton.UseVisualStyleBackColor = false;
-            // 
             // NotesPanel
             // 
             NotesPanel.BorderStyle = BorderStyle.FixedSingle;
             NotesPanel.Controls.Add(SMSComboBox);
             NotesPanel.Controls.Add(SMSLabel);
             NotesPanel.Controls.Add(SendSMSCustomerLlabel);
-            NotesPanel.Controls.Add(SendMsgsLabel);
             NotesPanel.Controls.Add(SendMsgComboBox);
             NotesPanel.Controls.Add(SendMsgLabel);
             NotesPanel.Location = new Point(6, 122);
@@ -245,105 +627,323 @@
             SendSMSCustomerLlabel.TabIndex = 13;
             SendSMSCustomerLlabel.Text = "Αποστολή SMS";
             // 
-            // SendMsgsLabel
+            // SendMsgComboBox
             // 
-            SendMsgsLabel.AutoSize = true;
-            SendMsgsLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            SendMsgsLabel.Location = new Point(142, 1);
-            SendMsgsLabel.Name = "SendMsgsLabel";
-            SendMsgsLabel.Size = new Size(121, 15);
-            SendMsgsLabel.TabIndex = 12;
-            SendMsgsLabel.Text = "Αποστολή μηνύματος";
+            SendMsgComboBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            SendMsgComboBox.FormattingEnabled = true;
+            SendMsgComboBox.Items.AddRange(new object[] { "παραλαβή σε 10-15 εργάσιμες μέρες", "διπλή παραγγελία", "Δευτέρα - Τρίτη", "προκαταβολή", "διαθεσιμότητα", "διαθεσιμότητα και προκαταβολή", "πρόβλημα διαθεσιμότητας. Πρότεινε κάτι άλλο", "καθυστέρηση παραγγελίας και παραλαβή", "παλιό service. Να περάσει να παραλάβει", "ενημέρωσε για καθυστέρηση από προμηθευτή και πιθανή παραλαβή" });
+            SendMsgComboBox.Location = new Point(109, 18);
+            SendMsgComboBox.Name = "SendMsgComboBox";
+            SendMsgComboBox.Size = new Size(274, 23);
+            SendMsgComboBox.TabIndex = 5;
+            SendMsgComboBox.SelectedIndexChanged += SendMsgComboBox_SelectedIndexChanged;
             // 
-            // CurrentDateLabel
+            // SendMsgLabel
             // 
-            CurrentDateLabel.AutoSize = true;
-            CurrentDateLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            CurrentDateLabel.Location = new Point(146, 441);
-            CurrentDateLabel.Name = "CurrentDateLabel";
-            CurrentDateLabel.Size = new Size(124, 15);
-            CurrentDateLabel.TabIndex = 12;
-            CurrentDateLabel.Text = "Σημερινή Ημερομηνία";
+            SendMsgLabel.AutoSize = true;
+            SendMsgLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            SendMsgLabel.Location = new Point(8, 21);
+            SendMsgLabel.Name = "SendMsgLabel";
+            SendMsgLabel.Size = new Size(95, 15);
+            SendMsgLabel.TabIndex = 4;
+            SendMsgLabel.Text = "Ενημέρωσε για :";
             // 
-            // panel1
+            // CPU14Label
             // 
-            panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(NotesLlabel);
-            panel1.Controls.Add(OnHoldComboBox);
-            panel1.Controls.Add(AdressofOrderLabel);
-            panel1.Controls.Add(AdressofOrderComboBox);
-            panel1.Controls.Add(OnHoldLabel);
-            panel1.Location = new Point(6, 6);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(404, 113);
-            panel1.TabIndex = 16;
+            CPU14Label.AutoSize = true;
+            CPU14Label.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            CPU14Label.ForeColor = Color.Black;
+            CPU14Label.Location = new Point(1, 29);
+            CPU14Label.Name = "CPU14Label";
+            CPU14Label.Size = new Size(21, 15);
+            CPU14Label.TabIndex = 13;
+            CPU14Label.Text = "14";
             // 
-            // NotesLlabel
+            // CleanersorLabel
             // 
-            NotesLlabel.AutoSize = true;
-            NotesLlabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            NotesLlabel.Location = new Point(157, 9);
-            NotesLlabel.Name = "NotesLlabel";
-            NotesLlabel.Size = new Size(68, 15);
-            NotesLlabel.TabIndex = 16;
-            NotesLlabel.Text = "Σημειώσεις";
+            CleanersorLabel.AutoSize = true;
+            CleanersorLabel.Location = new Point(347, 383);
+            CleanersorLabel.Name = "CleanersorLabel";
+            CleanersorLabel.Size = new Size(14, 15);
+            CleanersorLabel.TabIndex = 43;
+            CleanersorLabel.Text = "ή";
             // 
-            // TabControl
+            // Battery14Label
             // 
-            TabControl.Controls.Add(HomeTabPage);
-            TabControl.Controls.Add(SupplierTabPage);
-            TabControl.Controls.Add(OrdersTabPage);
-            TabControl.Location = new Point(0, 0);
-            TabControl.Name = "TabControl";
-            TabControl.SelectedIndex = 0;
-            TabControl.Size = new Size(447, 324);
-            TabControl.TabIndex = 17;
+            Battery14Label.AutoSize = true;
+            Battery14Label.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            Battery14Label.ForeColor = Color.Black;
+            Battery14Label.Location = new Point(1, 147);
+            Battery14Label.Name = "Battery14Label";
+            Battery14Label.Size = new Size(21, 15);
+            Battery14Label.TabIndex = 25;
+            Battery14Label.Text = "14";
             // 
-            // HomeTabPage
+            // CPUorLabel
             // 
-            HomeTabPage.Controls.Add(panel1);
-            HomeTabPage.Controls.Add(NotesPanel);
-            HomeTabPage.Location = new Point(4, 24);
-            HomeTabPage.Name = "HomeTabPage";
-            HomeTabPage.Padding = new Padding(3);
-            HomeTabPage.Size = new Size(439, 296);
-            HomeTabPage.TabIndex = 0;
-            HomeTabPage.Text = "Αρχική";
-            HomeTabPage.UseVisualStyleBackColor = true;
+            CPUorLabel.AutoSize = true;
+            CPUorLabel.Location = new Point(347, 29);
+            CPUorLabel.Name = "CPUorLabel";
+            CPUorLabel.Size = new Size(14, 15);
+            CPUorLabel.TabIndex = 8;
+            CPUorLabel.Text = "ή";
             // 
-            // SupplierTabPage
+            // BatteryorLabel
             // 
-            SupplierTabPage.Controls.Add(CancelPreorderButton);
-            SupplierTabPage.Controls.Add(CopyOKButton);
-            SupplierTabPage.Controls.Add(ShipButton);
-            SupplierTabPage.Controls.Add(CourrierButton);
-            SupplierTabPage.Location = new Point(4, 24);
-            SupplierTabPage.Name = "SupplierTabPage";
-            SupplierTabPage.Padding = new Padding(3);
-            SupplierTabPage.Size = new Size(439, 296);
-            SupplierTabPage.TabIndex = 1;
-            SupplierTabPage.Text = "Προμηθευτές";
-            SupplierTabPage.UseVisualStyleBackColor = true;
+            BatteryorLabel.AutoSize = true;
+            BatteryorLabel.Location = new Point(347, 147);
+            BatteryorLabel.Name = "BatteryorLabel";
+            BatteryorLabel.Size = new Size(14, 15);
+            BatteryorLabel.TabIndex = 20;
+            BatteryorLabel.Text = "ή";
             // 
-            // CancelPreorderButton
+            // Battery0Label
             // 
-            CancelPreorderButton.Location = new Point(8, 93);
-            CancelPreorderButton.Name = "CancelPreorderButton";
-            CancelPreorderButton.Size = new Size(168, 23);
-            CancelPreorderButton.TabIndex = 3;
-            CancelPreorderButton.Text = "Ακύρωση προέγκρισης";
-            CancelPreorderButton.UseVisualStyleBackColor = true;
-            CancelPreorderButton.Click += CancelPreorderButton_Click;
+            Battery0Label.AutoSize = true;
+            Battery0Label.ForeColor = Color.IndianRed;
+            Battery0Label.Location = new Point(7, 174);
+            Battery0Label.Name = "Battery0Label";
+            Battery0Label.Size = new Size(13, 15);
+            Battery0Label.TabIndex = 16;
+            Battery0Label.Text = "0";
             // 
-            // CopyOKButton
+            // Ship14Label
             // 
-            CopyOKButton.Location = new Point(8, 64);
-            CopyOKButton.Name = "CopyOKButton";
-            CopyOKButton.Size = new Size(168, 23);
-            CopyOKButton.TabIndex = 2;
-            CopyOKButton.Text = "Αντιγραφή ΟΚ";
-            CopyOKButton.UseVisualStyleBackColor = true;
-            CopyOKButton.Click += CopyOKButton_Click;
+            Ship14Label.AutoSize = true;
+            Ship14Label.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            Ship14Label.ForeColor = Color.Black;
+            Ship14Label.Location = new Point(1, 265);
+            Ship14Label.Name = "Ship14Label";
+            Ship14Label.Size = new Size(21, 15);
+            Ship14Label.TabIndex = 37;
+            Ship14Label.Text = "14";
+            // 
+            // ShiporLabel
+            // 
+            ShiporLabel.AutoSize = true;
+            ShiporLabel.Location = new Point(347, 265);
+            ShiporLabel.Name = "ShiporLabel";
+            ShiporLabel.Size = new Size(14, 15);
+            ShiporLabel.TabIndex = 32;
+            ShiporLabel.Text = "ή";
+            // 
+            // Ship0Label
+            // 
+            Ship0Label.AutoSize = true;
+            Ship0Label.ForeColor = Color.IndianRed;
+            Ship0Label.Location = new Point(7, 292);
+            Ship0Label.Name = "Ship0Label";
+            Ship0Label.Size = new Size(13, 15);
+            Ship0Label.TabIndex = 28;
+            Ship0Label.Text = "0";
+            // 
+            // OrdersTabPage
+            // 
+            OrdersTabPage.Controls.Add(Battery0TextBox);
+            OrdersTabPage.Controls.Add(Battery14TextBox);
+            OrdersTabPage.Controls.Add(BatteryCopyButton);
+            OrdersTabPage.Controls.Add(BatteryDateTimePicker);
+            OrdersTabPage.Controls.Add(BatteryDateTimePicker2);
+            OrdersTabPage.Controls.Add(BatteryResetButton);
+            OrdersTabPage.Controls.Add(BatteryRichTextBox);
+            OrdersTabPage.Controls.Add(CleanersClearButton);
+            OrdersTabPage.Controls.Add(CleanersCopyButton);
+            OrdersTabPage.Controls.Add(CleanersDateTimePicker);
+            OrdersTabPage.Controls.Add(CleanersDateTimePicker2);
+            OrdersTabPage.Controls.Add(CleanersLabel);
+            OrdersTabPage.Controls.Add(CleanersPasteButton);
+            OrdersTabPage.Controls.Add(CleanersResetButton);
+            OrdersTabPage.Controls.Add(CleanersRichTextBox);
+            OrdersTabPage.Controls.Add(CleanersTextBox);
+            OrdersTabPage.Controls.Add(ClearBattery0Button);
+            OrdersTabPage.Controls.Add(ClearBattery14Button);
+            OrdersTabPage.Controls.Add(ClearCPU0Button);
+            OrdersTabPage.Controls.Add(ClearCPU14Button);
+            OrdersTabPage.Controls.Add(ClearShip0Button);
+            OrdersTabPage.Controls.Add(ClearShip14Button);
+            OrdersTabPage.Controls.Add(CourrierLabel);
+            OrdersTabPage.Controls.Add(CPU0Label);
+            OrdersTabPage.Controls.Add(CPU0TextBox);
+            OrdersTabPage.Controls.Add(CPU14TextBox);
+            OrdersTabPage.Controls.Add(CPUCopyButton);
+            OrdersTabPage.Controls.Add(CPUDateTimePicker);
+            OrdersTabPage.Controls.Add(CPUDateTimePicker2);
+            OrdersTabPage.Controls.Add(CPULabel);
+            OrdersTabPage.Controls.Add(CPUResetButton);
+            OrdersTabPage.Controls.Add(CPURichTextBox);
+            OrdersTabPage.Controls.Add(CPU14Label);
+            OrdersTabPage.Controls.Add(CleanersorLabel);
+            OrdersTabPage.Controls.Add(Battery14Label);
+            OrdersTabPage.Controls.Add(CPUorLabel);
+            OrdersTabPage.Controls.Add(BatteryorLabel);
+            OrdersTabPage.Controls.Add(Battery0Label);
+            OrdersTabPage.Controls.Add(Ship14Label);
+            OrdersTabPage.Controls.Add(ShiporLabel);
+            OrdersTabPage.Controls.Add(Ship0Label);
+            OrdersTabPage.Controls.Add(PasteBattery0Button);
+            OrdersTabPage.Controls.Add(PasteBattery14Button);
+            OrdersTabPage.Controls.Add(PasteCPU0Button);
+            OrdersTabPage.Controls.Add(PasteCPU14Button);
+            OrdersTabPage.Controls.Add(PasteShip0Button);
+            OrdersTabPage.Controls.Add(PasteShip14Button);
+            OrdersTabPage.Controls.Add(Ship0TextBox);
+            OrdersTabPage.Controls.Add(Ship14TextBox);
+            OrdersTabPage.Controls.Add(ShipCopyButton);
+            OrdersTabPage.Controls.Add(ShipDateTimePicker);
+            OrdersTabPage.Controls.Add(ShipDateTimePicker2);
+            OrdersTabPage.Controls.Add(ShipLabel);
+            OrdersTabPage.Controls.Add(ShipResetButton);
+            OrdersTabPage.Controls.Add(ShipRichTextBox);
+            OrdersTabPage.Location = new Point(4, 24);
+            OrdersTabPage.Name = "OrdersTabPage";
+            OrdersTabPage.Padding = new Padding(3);
+            OrdersTabPage.Size = new Size(438, 443);
+            OrdersTabPage.TabIndex = 2;
+            OrdersTabPage.Text = "Παραγγελίες";
+            OrdersTabPage.UseVisualStyleBackColor = true;
+            // 
+            // PasteBattery0Button
+            // 
+            PasteBattery0Button.BackColor = Color.Chartreuse;
+            PasteBattery0Button.Location = new Point(230, 170);
+            PasteBattery0Button.Name = "PasteBattery0Button";
+            PasteBattery0Button.Size = new Size(23, 23);
+            PasteBattery0Button.TabIndex = 23;
+            PasteBattery0Button.Text = "✔";
+            PasteBattery0Button.UseVisualStyleBackColor = false;
+            PasteBattery0Button.Click += PasteBattery0Button_Click;
+            // 
+            // PasteBattery14Button
+            // 
+            PasteBattery14Button.BackColor = Color.Chartreuse;
+            PasteBattery14Button.Location = new Point(230, 143);
+            PasteBattery14Button.Name = "PasteBattery14Button";
+            PasteBattery14Button.Size = new Size(23, 23);
+            PasteBattery14Button.TabIndex = 18;
+            PasteBattery14Button.Text = "✔";
+            PasteBattery14Button.UseVisualStyleBackColor = false;
+            PasteBattery14Button.Click += PasteBattery14Button_Click;
+            // 
+            // PasteCPU0Button
+            // 
+            PasteCPU0Button.BackColor = Color.Chartreuse;
+            PasteCPU0Button.Location = new Point(230, 53);
+            PasteCPU0Button.Name = "PasteCPU0Button";
+            PasteCPU0Button.Size = new Size(23, 23);
+            PasteCPU0Button.TabIndex = 11;
+            PasteCPU0Button.Text = "✔";
+            PasteCPU0Button.UseVisualStyleBackColor = false;
+            PasteCPU0Button.Click += PasteCPU0Button_Click;
+            // 
+            // PasteCPU14Button
+            // 
+            PasteCPU14Button.BackColor = Color.Chartreuse;
+            PasteCPU14Button.Location = new Point(230, 25);
+            PasteCPU14Button.Name = "PasteCPU14Button";
+            PasteCPU14Button.Size = new Size(23, 23);
+            PasteCPU14Button.TabIndex = 6;
+            PasteCPU14Button.Text = "✔";
+            PasteCPU14Button.UseVisualStyleBackColor = false;
+            PasteCPU14Button.Click += PasteCPU14Button_Click;
+            // 
+            // PasteShip0Button
+            // 
+            PasteShip0Button.BackColor = Color.Chartreuse;
+            PasteShip0Button.Location = new Point(230, 288);
+            PasteShip0Button.Name = "PasteShip0Button";
+            PasteShip0Button.Size = new Size(23, 23);
+            PasteShip0Button.TabIndex = 35;
+            PasteShip0Button.Text = "✔";
+            PasteShip0Button.UseVisualStyleBackColor = false;
+            PasteShip0Button.Click += PasteShip0Button_Click;
+            // 
+            // PasteShip14Button
+            // 
+            PasteShip14Button.BackColor = Color.Chartreuse;
+            PasteShip14Button.Location = new Point(230, 261);
+            PasteShip14Button.Name = "PasteShip14Button";
+            PasteShip14Button.Size = new Size(23, 23);
+            PasteShip14Button.TabIndex = 30;
+            PasteShip14Button.Text = "✔";
+            PasteShip14Button.UseVisualStyleBackColor = false;
+            PasteShip14Button.Click += PasteShip14Button_Click;
+            // 
+            // Ship0TextBox
+            // 
+            Ship0TextBox.Location = new Point(23, 288);
+            Ship0TextBox.Name = "Ship0TextBox";
+            Ship0TextBox.Size = new Size(206, 23);
+            Ship0TextBox.TabIndex = 34;
+            // 
+            // Ship14TextBox
+            // 
+            Ship14TextBox.Location = new Point(23, 261);
+            Ship14TextBox.Name = "Ship14TextBox";
+            Ship14TextBox.Size = new Size(206, 23);
+            Ship14TextBox.TabIndex = 29;
+            // 
+            // ShipCopyButton
+            // 
+            ShipCopyButton.BackColor = Color.Chartreuse;
+            ShipCopyButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            ShipCopyButton.Location = new Point(333, 316);
+            ShipCopyButton.Name = "ShipCopyButton";
+            ShipCopyButton.Size = new Size(49, 41);
+            ShipCopyButton.TabIndex = 50;
+            ShipCopyButton.Text = "Copy";
+            ShipCopyButton.UseVisualStyleBackColor = false;
+            ShipCopyButton.Click += ShipCopyButton_Click;
+            // 
+            // ShipDateTimePicker
+            // 
+            ShipDateTimePicker.CustomFormat = "dd/MM/yy";
+            ShipDateTimePicker.Format = DateTimePickerFormat.Custom;
+            ShipDateTimePicker.Location = new Point(278, 261);
+            ShipDateTimePicker.Name = "ShipDateTimePicker";
+            ShipDateTimePicker.Size = new Size(68, 23);
+            ShipDateTimePicker.TabIndex = 27;
+            ShipDateTimePicker.ValueChanged += ShipDateTimePicker_ValueChanged;
+            // 
+            // ShipDateTimePicker2
+            // 
+            ShipDateTimePicker2.CustomFormat = "dd/MM/yy";
+            ShipDateTimePicker2.Format = DateTimePickerFormat.Custom;
+            ShipDateTimePicker2.Location = new Point(364, 261);
+            ShipDateTimePicker2.Name = "ShipDateTimePicker2";
+            ShipDateTimePicker2.Size = new Size(68, 23);
+            ShipDateTimePicker2.TabIndex = 33;
+            ShipDateTimePicker2.ValueChanged += ShipDateTimePicker2_ValueChanged;
+            // 
+            // ShipLabel
+            // 
+            ShipLabel.AutoSize = true;
+            ShipLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            ShipLabel.Location = new Point(106, 243);
+            ShipLabel.Name = "ShipLabel";
+            ShipLabel.Size = new Size(49, 15);
+            ShipLabel.TabIndex = 26;
+            ShipLabel.Text = "Καράβι";
+            // 
+            // ShipResetButton
+            // 
+            ShipResetButton.BackColor = Color.DarkSalmon;
+            ShipResetButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            ShipResetButton.Location = new Point(383, 316);
+            ShipResetButton.Name = "ShipResetButton";
+            ShipResetButton.Size = new Size(49, 41);
+            ShipResetButton.TabIndex = 49;
+            ShipResetButton.Text = "Reset";
+            ShipResetButton.UseVisualStyleBackColor = false;
+            ShipResetButton.Click += ShipResetButton_Click;
+            // 
+            // ShipRichTextBox
+            // 
+            ShipRichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            ShipRichTextBox.Location = new Point(23, 316);
+            ShipRichTextBox.Name = "ShipRichTextBox";
+            ShipRichTextBox.Size = new Size(304, 41);
+            ShipRichTextBox.TabIndex = 48;
+            ShipRichTextBox.Text = "";
             // 
             // ShipButton
             // 
@@ -355,583 +955,170 @@
             ShipButton.UseVisualStyleBackColor = true;
             ShipButton.Click += ShipButton_Click;
             // 
-            // CourrierButton
-            // 
-            CourrierButton.Location = new Point(8, 6);
-            CourrierButton.Name = "CourrierButton";
-            CourrierButton.Size = new Size(168, 23);
-            CourrierButton.TabIndex = 0;
-            CourrierButton.Text = "Courier + Λειτουργικά";
-            CourrierButton.UseVisualStyleBackColor = true;
-            CourrierButton.Click += CourrierButton_Click;
-            // 
-            // OrdersTabPage
-            // 
-            OrdersTabPage.Controls.Add(CleanersDateTimePicker2);
-            OrdersTabPage.Controls.Add(label12);
-            OrdersTabPage.Controls.Add(ClearCleanersButton);
-            OrdersTabPage.Controls.Add(CleanersPasteButton);
-            OrdersTabPage.Controls.Add(CleanersTextBox);
-            OrdersTabPage.Controls.Add(CleanersDateTimePicker);
-            OrdersTabPage.Controls.Add(CleanersLabel);
-            OrdersTabPage.Controls.Add(label7);
-            OrdersTabPage.Controls.Add(ClearShip0Button);
-            OrdersTabPage.Controls.Add(PasteShip0Button);
-            OrdersTabPage.Controls.Add(Ship0TextBox);
-            OrdersTabPage.Controls.Add(Ship14DateTimePicker2);
-            OrdersTabPage.Controls.Add(label8);
-            OrdersTabPage.Controls.Add(ClearShip14Button);
-            OrdersTabPage.Controls.Add(PasteShip14Button);
-            OrdersTabPage.Controls.Add(Ship14TextBox);
-            OrdersTabPage.Controls.Add(label9);
-            OrdersTabPage.Controls.Add(Ship14DateTimePicker);
-            OrdersTabPage.Controls.Add(ShipLabel);
-            OrdersTabPage.Controls.Add(label2);
-            OrdersTabPage.Controls.Add(ClearBattery0Button);
-            OrdersTabPage.Controls.Add(PasteBattery0Button);
-            OrdersTabPage.Controls.Add(Battery0TextBox);
-            OrdersTabPage.Controls.Add(Battery14DateTimePicker2);
-            OrdersTabPage.Controls.Add(label4);
-            OrdersTabPage.Controls.Add(ClearBattery14Button);
-            OrdersTabPage.Controls.Add(PasteBattery14Button);
-            OrdersTabPage.Controls.Add(Battery14TextBox);
-            OrdersTabPage.Controls.Add(label5);
-            OrdersTabPage.Controls.Add(Battery14DateTimePicker);
-            OrdersTabPage.Controls.Add(CourrierLabel);
-            OrdersTabPage.Controls.Add(label1);
-            OrdersTabPage.Controls.Add(ClearCPU0Button);
-            OrdersTabPage.Controls.Add(PasteCPU0Button);
-            OrdersTabPage.Controls.Add(CPU0TextBox);
-            OrdersTabPage.Controls.Add(CPU14DateTimePicker2);
-            OrdersTabPage.Controls.Add(label3);
-            OrdersTabPage.Controls.Add(ClearCPU14Button);
-            OrdersTabPage.Controls.Add(PasteCPU14Button);
-            OrdersTabPage.Controls.Add(CPU14TextBox);
-            OrdersTabPage.Controls.Add(CPU0Label);
-            OrdersTabPage.Controls.Add(CPU14DateTimePicker);
-            OrdersTabPage.Controls.Add(CPULabel);
-            OrdersTabPage.Location = new Point(4, 24);
-            OrdersTabPage.Name = "OrdersTabPage";
-            OrdersTabPage.Padding = new Padding(3);
-            OrdersTabPage.Size = new Size(439, 296);
-            OrdersTabPage.TabIndex = 2;
-            OrdersTabPage.Text = "Παραγγελίες";
-            OrdersTabPage.UseVisualStyleBackColor = true;
-            // 
-            // CleanersDateTimePicker2
-            // 
-            CleanersDateTimePicker2.CustomFormat = "dd/MM/yy";
-            CleanersDateTimePicker2.Format = DateTimePickerFormat.Custom;
-            CleanersDateTimePicker2.Location = new Point(364, 267);
-            CleanersDateTimePicker2.Name = "CleanersDateTimePicker2";
-            CleanersDateTimePicker2.Size = new Size(68, 23);
-            CleanersDateTimePicker2.TabIndex = 44;
-            CleanersDateTimePicker2.ValueChanged += CleanersDateTimePicker2_ValueChanged;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(347, 271);
-            label12.Name = "label12";
-            label12.Size = new Size(14, 15);
-            label12.TabIndex = 43;
-            label12.Text = "ή";
-            // 
-            // ClearCleanersButton
-            // 
-            ClearCleanersButton.BackColor = Color.DarkSalmon;
-            ClearCleanersButton.Location = new Point(253, 267);
-            ClearCleanersButton.Name = "ClearCleanersButton";
-            ClearCleanersButton.Size = new Size(23, 23);
-            ClearCleanersButton.TabIndex = 42;
-            ClearCleanersButton.Text = "✖";
-            ClearCleanersButton.UseVisualStyleBackColor = false;
-            ClearCleanersButton.Click += ClearCleanersButton_Click;
-            // 
-            // CleanersPasteButton
-            // 
-            CleanersPasteButton.BackColor = Color.Chartreuse;
-            CleanersPasteButton.Location = new Point(230, 267);
-            CleanersPasteButton.Name = "CleanersPasteButton";
-            CleanersPasteButton.Size = new Size(23, 23);
-            CleanersPasteButton.TabIndex = 41;
-            CleanersPasteButton.Text = "✔";
-            CleanersPasteButton.UseVisualStyleBackColor = false;
-            CleanersPasteButton.Click += CleanersPasteButton_Click;
-            // 
-            // CleanersTextBox
-            // 
-            CleanersTextBox.Location = new Point(23, 267);
-            CleanersTextBox.Name = "CleanersTextBox";
-            CleanersTextBox.Size = new Size(206, 23);
-            CleanersTextBox.TabIndex = 40;
-            // 
-            // CleanersDateTimePicker
-            // 
-            CleanersDateTimePicker.CustomFormat = "dd/MM/yy";
-            CleanersDateTimePicker.Format = DateTimePickerFormat.Custom;
-            CleanersDateTimePicker.Location = new Point(278, 267);
-            CleanersDateTimePicker.Name = "CleanersDateTimePicker";
-            CleanersDateTimePicker.Size = new Size(68, 23);
-            CleanersDateTimePicker.TabIndex = 39;
-            CleanersDateTimePicker.ValueChanged += CleanersDateTimePicker_ValueChanged;
-            // 
-            // CleanersLabel
-            // 
-            CleanersLabel.AutoSize = true;
-            CleanersLabel.Location = new Point(62, 249);
-            CleanersLabel.Name = "CleanersLabel";
-            CleanersLabel.Size = new Size(133, 15);
-            CleanersLabel.TabIndex = 38;
-            CleanersLabel.Text = "Πάνες - Μωρομάντηλα";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.ForeColor = Color.Black;
-            label7.Location = new Point(1, 193);
-            label7.Name = "label7";
-            label7.Size = new Size(21, 15);
-            label7.TabIndex = 37;
-            label7.Text = "14";
-            // 
-            // ClearShip0Button
-            // 
-            ClearShip0Button.BackColor = Color.DarkSalmon;
-            ClearShip0Button.Location = new Point(253, 219);
-            ClearShip0Button.Name = "ClearShip0Button";
-            ClearShip0Button.Size = new Size(23, 23);
-            ClearShip0Button.TabIndex = 36;
-            ClearShip0Button.Text = "✖";
-            ClearShip0Button.UseVisualStyleBackColor = false;
-            ClearShip0Button.Click += ClearShip0Button_Click;
-            // 
-            // PasteShip0Button
-            // 
-            PasteShip0Button.BackColor = Color.Chartreuse;
-            PasteShip0Button.Location = new Point(230, 219);
-            PasteShip0Button.Name = "PasteShip0Button";
-            PasteShip0Button.Size = new Size(23, 23);
-            PasteShip0Button.TabIndex = 35;
-            PasteShip0Button.Text = "✔";
-            PasteShip0Button.UseVisualStyleBackColor = false;
-            PasteShip0Button.Click += PasteShip0Button_Click;
-            // 
-            // Ship0TextBox
-            // 
-            Ship0TextBox.Location = new Point(23, 219);
-            Ship0TextBox.Name = "Ship0TextBox";
-            Ship0TextBox.Size = new Size(206, 23);
-            Ship0TextBox.TabIndex = 34;
-            // 
-            // Ship14DateTimePicker2
-            // 
-            Ship14DateTimePicker2.CustomFormat = "dd/MM/yy";
-            Ship14DateTimePicker2.Format = DateTimePickerFormat.Custom;
-            Ship14DateTimePicker2.Location = new Point(364, 189);
-            Ship14DateTimePicker2.Name = "Ship14DateTimePicker2";
-            Ship14DateTimePicker2.Size = new Size(68, 23);
-            Ship14DateTimePicker2.TabIndex = 33;
-            Ship14DateTimePicker2.ValueChanged += Ship14DateTimePicker2_ValueChanged;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(347, 193);
-            label8.Name = "label8";
-            label8.Size = new Size(14, 15);
-            label8.TabIndex = 32;
-            label8.Text = "ή";
-            // 
-            // ClearShip14Button
-            // 
-            ClearShip14Button.BackColor = Color.DarkSalmon;
-            ClearShip14Button.Location = new Point(253, 189);
-            ClearShip14Button.Name = "ClearShip14Button";
-            ClearShip14Button.Size = new Size(23, 23);
-            ClearShip14Button.TabIndex = 31;
-            ClearShip14Button.Text = "✖";
-            ClearShip14Button.UseVisualStyleBackColor = false;
-            ClearShip14Button.Click += ClearShip14Button_Click;
-            // 
-            // PasteShip14Button
-            // 
-            PasteShip14Button.BackColor = Color.Chartreuse;
-            PasteShip14Button.Location = new Point(230, 189);
-            PasteShip14Button.Name = "PasteShip14Button";
-            PasteShip14Button.Size = new Size(23, 23);
-            PasteShip14Button.TabIndex = 30;
-            PasteShip14Button.Text = "✔";
-            PasteShip14Button.UseVisualStyleBackColor = false;
-            PasteShip14Button.Click += PasteShip14Button_Click;
-            // 
-            // Ship14TextBox
-            // 
-            Ship14TextBox.Location = new Point(23, 189);
-            Ship14TextBox.Name = "Ship14TextBox";
-            Ship14TextBox.Size = new Size(206, 23);
-            Ship14TextBox.TabIndex = 29;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.ForeColor = Color.IndianRed;
-            label9.Location = new Point(7, 223);
-            label9.Name = "label9";
-            label9.Size = new Size(13, 15);
-            label9.TabIndex = 28;
-            label9.Text = "0";
-            // 
-            // Ship14DateTimePicker
-            // 
-            Ship14DateTimePicker.CustomFormat = "dd/MM/yy";
-            Ship14DateTimePicker.Format = DateTimePickerFormat.Custom;
-            Ship14DateTimePicker.Location = new Point(278, 189);
-            Ship14DateTimePicker.Name = "Ship14DateTimePicker";
-            Ship14DateTimePicker.Size = new Size(68, 23);
-            Ship14DateTimePicker.TabIndex = 27;
-            Ship14DateTimePicker.ValueChanged += Ship14DateTimePicker_ValueChanged;
-            // 
-            // ShipLabel
-            // 
-            ShipLabel.AutoSize = true;
-            ShipLabel.Location = new Point(106, 171);
-            ShipLabel.Name = "ShipLabel";
-            ShipLabel.Size = new Size(45, 15);
-            ShipLabel.TabIndex = 26;
-            ShipLabel.Text = "Καράβι";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.Black;
-            label2.Location = new Point(1, 115);
-            label2.Name = "label2";
-            label2.Size = new Size(21, 15);
-            label2.TabIndex = 25;
-            label2.Text = "14";
-            // 
-            // ClearBattery0Button
-            // 
-            ClearBattery0Button.BackColor = Color.DarkSalmon;
-            ClearBattery0Button.Location = new Point(253, 141);
-            ClearBattery0Button.Name = "ClearBattery0Button";
-            ClearBattery0Button.Size = new Size(23, 23);
-            ClearBattery0Button.TabIndex = 24;
-            ClearBattery0Button.Text = "✖";
-            ClearBattery0Button.UseVisualStyleBackColor = false;
-            ClearBattery0Button.Click += ClearBattery0Button_Click;
-            // 
-            // PasteBattery0Button
-            // 
-            PasteBattery0Button.BackColor = Color.Chartreuse;
-            PasteBattery0Button.Location = new Point(230, 141);
-            PasteBattery0Button.Name = "PasteBattery0Button";
-            PasteBattery0Button.Size = new Size(23, 23);
-            PasteBattery0Button.TabIndex = 23;
-            PasteBattery0Button.Text = "✔";
-            PasteBattery0Button.UseVisualStyleBackColor = false;
-            PasteBattery0Button.Click += PasteBattery0Button_Click;
-            // 
-            // Battery0TextBox
-            // 
-            Battery0TextBox.Location = new Point(23, 141);
-            Battery0TextBox.Name = "Battery0TextBox";
-            Battery0TextBox.Size = new Size(206, 23);
-            Battery0TextBox.TabIndex = 22;
-            // 
-            // Battery14DateTimePicker2
-            // 
-            Battery14DateTimePicker2.CustomFormat = "dd/MM/yy";
-            Battery14DateTimePicker2.Format = DateTimePickerFormat.Custom;
-            Battery14DateTimePicker2.Location = new Point(364, 111);
-            Battery14DateTimePicker2.Name = "Battery14DateTimePicker2";
-            Battery14DateTimePicker2.Size = new Size(68, 23);
-            Battery14DateTimePicker2.TabIndex = 21;
-            Battery14DateTimePicker2.ValueChanged += Battery14DateTimePicker2_ValueChanged;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(347, 115);
-            label4.Name = "label4";
-            label4.Size = new Size(14, 15);
-            label4.TabIndex = 20;
-            label4.Text = "ή";
-            // 
-            // ClearBattery14Button
-            // 
-            ClearBattery14Button.BackColor = Color.DarkSalmon;
-            ClearBattery14Button.Location = new Point(253, 111);
-            ClearBattery14Button.Name = "ClearBattery14Button";
-            ClearBattery14Button.Size = new Size(23, 23);
-            ClearBattery14Button.TabIndex = 19;
-            ClearBattery14Button.Text = "✖";
-            ClearBattery14Button.UseVisualStyleBackColor = false;
-            ClearBattery14Button.Click += ClearBattery14Button_Click;
-            // 
-            // PasteBattery14Button
-            // 
-            PasteBattery14Button.BackColor = Color.Chartreuse;
-            PasteBattery14Button.Location = new Point(230, 111);
-            PasteBattery14Button.Name = "PasteBattery14Button";
-            PasteBattery14Button.Size = new Size(23, 23);
-            PasteBattery14Button.TabIndex = 18;
-            PasteBattery14Button.Text = "✔";
-            PasteBattery14Button.UseVisualStyleBackColor = false;
-            PasteBattery14Button.Click += PasteBattery14Button_Click;
-            // 
-            // Battery14TextBox
-            // 
-            Battery14TextBox.Location = new Point(23, 111);
-            Battery14TextBox.Name = "Battery14TextBox";
-            Battery14TextBox.Size = new Size(206, 23);
-            Battery14TextBox.TabIndex = 17;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.ForeColor = Color.IndianRed;
-            label5.Location = new Point(7, 145);
-            label5.Name = "label5";
-            label5.Size = new Size(13, 15);
-            label5.TabIndex = 16;
-            label5.Text = "0";
-            // 
-            // Battery14DateTimePicker
-            // 
-            Battery14DateTimePicker.CustomFormat = "dd/MM/yy";
-            Battery14DateTimePicker.Format = DateTimePickerFormat.Custom;
-            Battery14DateTimePicker.Location = new Point(278, 111);
-            Battery14DateTimePicker.Name = "Battery14DateTimePicker";
-            Battery14DateTimePicker.Size = new Size(68, 23);
-            Battery14DateTimePicker.TabIndex = 15;
-            Battery14DateTimePicker.ValueChanged += Battery14DateTimePicker_ValueChanged;
-            // 
-            // CourrierLabel
-            // 
-            CourrierLabel.AutoSize = true;
-            CourrierLabel.Location = new Point(68, 93);
-            CourrierLabel.Name = "CourrierLabel";
-            CourrierLabel.Size = new Size(120, 15);
-            CourrierLabel.TabIndex = 14;
-            CourrierLabel.Text = "Courier με μπαταρίες";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(1, 32);
-            label1.Name = "label1";
-            label1.Size = new Size(21, 15);
-            label1.TabIndex = 13;
-            label1.Text = "14";
-            // 
-            // ClearCPU0Button
-            // 
-            ClearCPU0Button.BackColor = Color.DarkSalmon;
-            ClearCPU0Button.Location = new Point(253, 58);
-            ClearCPU0Button.Name = "ClearCPU0Button";
-            ClearCPU0Button.Size = new Size(23, 23);
-            ClearCPU0Button.TabIndex = 12;
-            ClearCPU0Button.Text = "✖";
-            ClearCPU0Button.UseVisualStyleBackColor = false;
-            ClearCPU0Button.Click += ClearCPU0Button_Click;
-            // 
-            // PasteCPU0Button
-            // 
-            PasteCPU0Button.BackColor = Color.Chartreuse;
-            PasteCPU0Button.Location = new Point(230, 58);
-            PasteCPU0Button.Name = "PasteCPU0Button";
-            PasteCPU0Button.Size = new Size(23, 23);
-            PasteCPU0Button.TabIndex = 11;
-            PasteCPU0Button.Text = "✔";
-            PasteCPU0Button.UseVisualStyleBackColor = false;
-            PasteCPU0Button.Click += PasteCPU0Button_Click;
-            // 
-            // CPU0TextBox
-            // 
-            CPU0TextBox.Location = new Point(23, 58);
-            CPU0TextBox.Name = "CPU0TextBox";
-            CPU0TextBox.Size = new Size(206, 23);
-            CPU0TextBox.TabIndex = 10;
-            // 
-            // CPU14DateTimePicker2
-            // 
-            CPU14DateTimePicker2.CustomFormat = "dd/MM/yy";
-            CPU14DateTimePicker2.Format = DateTimePickerFormat.Custom;
-            CPU14DateTimePicker2.Location = new Point(364, 28);
-            CPU14DateTimePicker2.Name = "CPU14DateTimePicker2";
-            CPU14DateTimePicker2.Size = new Size(68, 23);
-            CPU14DateTimePicker2.TabIndex = 9;
-            CPU14DateTimePicker2.ValueChanged += OrderCPUDateTimePicker2_ValueChanged;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(347, 32);
-            label3.Name = "label3";
-            label3.Size = new Size(14, 15);
-            label3.TabIndex = 8;
-            label3.Text = "ή";
-            // 
-            // ClearCPU14Button
-            // 
-            ClearCPU14Button.BackColor = Color.DarkSalmon;
-            ClearCPU14Button.Location = new Point(253, 28);
-            ClearCPU14Button.Name = "ClearCPU14Button";
-            ClearCPU14Button.Size = new Size(23, 23);
-            ClearCPU14Button.TabIndex = 7;
-            ClearCPU14Button.Text = "✖";
-            ClearCPU14Button.UseVisualStyleBackColor = false;
-            ClearCPU14Button.Click += ClearCPU14Button_Click;
-            // 
-            // PasteCPU14Button
-            // 
-            PasteCPU14Button.BackColor = Color.Chartreuse;
-            PasteCPU14Button.Location = new Point(230, 28);
-            PasteCPU14Button.Name = "PasteCPU14Button";
-            PasteCPU14Button.Size = new Size(23, 23);
-            PasteCPU14Button.TabIndex = 6;
-            PasteCPU14Button.Text = "✔";
-            PasteCPU14Button.UseVisualStyleBackColor = false;
-            PasteCPU14Button.Click += PasteCPU14Button_Click;
-            // 
-            // CPU14TextBox
-            // 
-            CPU14TextBox.Location = new Point(23, 28);
-            CPU14TextBox.Name = "CPU14TextBox";
-            CPU14TextBox.Size = new Size(206, 23);
-            CPU14TextBox.TabIndex = 5;
-            // 
-            // CPU0Label
-            // 
-            CPU0Label.AutoSize = true;
-            CPU0Label.ForeColor = Color.IndianRed;
-            CPU0Label.Location = new Point(7, 62);
-            CPU0Label.Name = "CPU0Label";
-            CPU0Label.Size = new Size(13, 15);
-            CPU0Label.TabIndex = 2;
-            CPU0Label.Text = "0";
-            // 
-            // CPU14DateTimePicker
-            // 
-            CPU14DateTimePicker.CustomFormat = "dd/MM/yy";
-            CPU14DateTimePicker.Format = DateTimePickerFormat.Custom;
-            CPU14DateTimePicker.Location = new Point(278, 28);
-            CPU14DateTimePicker.Name = "CPU14DateTimePicker";
-            CPU14DateTimePicker.Size = new Size(68, 23);
-            CPU14DateTimePicker.TabIndex = 1;
-            CPU14DateTimePicker.ValueChanged += OrderCPUDateTimePicker_ValueChanged;
-            // 
-            // CPULabel
-            // 
-            CPULabel.AutoSize = true;
-            CPULabel.Location = new Point(27, 10);
-            CPULabel.Name = "CPULabel";
-            CPULabel.Size = new Size(202, 15);
-            CPULabel.TabIndex = 0;
-            CPULabel.Text = "Laptop/Tablet/mobile/Consoles/Cpu";
+            // SuppliersCopyButton
+            // 
+            SuppliersCopyButton.BackColor = Color.Chartreuse;
+            SuppliersCopyButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            SuppliersCopyButton.Location = new Point(8, 132);
+            SuppliersCopyButton.Name = "SuppliersCopyButton";
+            SuppliersCopyButton.Size = new Size(138, 43);
+            SuppliersCopyButton.TabIndex = 19;
+            SuppliersCopyButton.Text = "Αντιγραφή";
+            SuppliersCopyButton.UseVisualStyleBackColor = false;
+            SuppliersCopyButton.Click += CopySuppliersButton_Click;
+            // 
+            // SuppliersDeleteButton
+            // 
+            SuppliersDeleteButton.BackColor = Color.DarkSalmon;
+            SuppliersDeleteButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            SuppliersDeleteButton.Location = new Point(276, 132);
+            SuppliersDeleteButton.Name = "SuppliersDeleteButton";
+            SuppliersDeleteButton.Size = new Size(138, 43);
+            SuppliersDeleteButton.TabIndex = 18;
+            SuppliersDeleteButton.Text = "Διαγραφή";
+            SuppliersDeleteButton.UseVisualStyleBackColor = false;
+            SuppliersDeleteButton.Click += DeleteSuppliersButton_Click;
+            // 
+            // SuppliersRichTextBox
+            // 
+            SuppliersRichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            SuppliersRichTextBox.Location = new Point(8, 181);
+            SuppliersRichTextBox.Name = "SuppliersRichTextBox";
+            SuppliersRichTextBox.Size = new Size(425, 63);
+            SuppliersRichTextBox.TabIndex = 4;
+            SuppliersRichTextBox.Text = "";
+            // 
+            // SupplierTabPage
+            // 
+            SupplierTabPage.Controls.Add(SuppliersCopyButton);
+            SupplierTabPage.Controls.Add(SuppliersRichTextBox);
+            SupplierTabPage.Controls.Add(SuppliersDeleteButton);
+            SupplierTabPage.Controls.Add(CancelPreorderButton);
+            SupplierTabPage.Controls.Add(CopyOKButton);
+            SupplierTabPage.Controls.Add(ShipButton);
+            SupplierTabPage.Controls.Add(CourrierButton);
+            SupplierTabPage.Location = new Point(4, 24);
+            SupplierTabPage.Name = "SupplierTabPage";
+            SupplierTabPage.Padding = new Padding(3);
+            SupplierTabPage.Size = new Size(438, 443);
+            SupplierTabPage.TabIndex = 1;
+            SupplierTabPage.Text = "Προμηθευτές";
+            SupplierTabPage.UseVisualStyleBackColor = true;
+            // 
+            // TabControl
+            // 
+            TabControl.Controls.Add(HomeTabPage);
+            TabControl.Controls.Add(SupplierTabPage);
+            TabControl.Controls.Add(OrdersTabPage);
+            TabControl.Location = new Point(0, 0);
+            TabControl.Name = "TabControl";
+            TabControl.SelectedIndex = 0;
+            TabControl.Size = new Size(446, 471);
+            TabControl.TabIndex = 17;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(444, 468);
+            ClientSize = new Size(445, 468);
             Controls.Add(TabControl);
-            Controls.Add(CurrentDateLabel);
-            Controls.Add(CopyButton);
-            Controls.Add(DeleteButton);
-            Controls.Add(NotesRichTextBox);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Product Assistant";
             Load += Form1_Load;
-            NotesPanel.ResumeLayout(false);
-            NotesPanel.PerformLayout();
+            HomeTabPage.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            TabControl.ResumeLayout(false);
-            HomeTabPage.ResumeLayout(false);
-            SupplierTabPage.ResumeLayout(false);
+            NotesPanel.ResumeLayout(false);
+            NotesPanel.PerformLayout();
             OrdersTabPage.ResumeLayout(false);
             OrdersTabPage.PerformLayout();
+            SupplierTabPage.ResumeLayout(false);
+            TabControl.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private RichTextBox NotesRichTextBox;
-        private Label AdressofOrderLabel;
+        private Button BatteryCopyButton;
+        private Button BatteryResetButton;
+        private Button CancelPreorderButton;
+        private Button CleanersClearButton;
+        private Button CleanersCopyButton;
+        private Button CleanersPasteButton;
+        private Button CleanersResetButton;
+        private Button ClearBattery0Button;
+        private Button ClearBattery14Button;
+        private Button ClearCPU0Button;
+        private Button ClearCPU14Button;
+        private Button ClearShip0Button;
+        private Button ClearShip14Button;
+        private Button CopyHomeButton;
+        private Button CopyOKButton;
+        private Button CourrierButton;
+        private Button CPUCopyButton;
+        private Button CPUResetButton;
+        private Button DeleteHomeButton;
+        private Button PasteBattery0Button;
+        private Button PasteBattery14Button;
+        private Button PasteCPU0Button;
+        private Button PasteCPU14Button;
+        private Button PasteShip0Button;
+        private Button PasteShip14Button;
+        private Button ShipButton;
+        private Button ShipCopyButton;
+        private Button ShipResetButton;
+        private Button SuppliersCopyButton;
+        private Button SuppliersDeleteButton;
         private ComboBox AdressofOrderComboBox;
-        private Button DeleteButton;
-        private ComboBox SendMsgComboBox;
-        private Label SendMsgLabel;
         private ComboBox OnHoldComboBox;
-        private Label OnHoldLabel;
-        private Button CopyButton;
-        private Panel NotesPanel;
-        private Label SendMsgsLabel;
-        private Label SendSMSCustomerLlabel;
+        private ComboBox SendMsgComboBox;
         private ComboBox SMSComboBox;
-        private Label SMSLabel;
-        private Label CurrentDateLabel;
-        private Panel panel1;
+        private DateTimePicker BatteryDateTimePicker;
+        private DateTimePicker BatteryDateTimePicker2;
+        private DateTimePicker CleanersDateTimePicker;
+        private DateTimePicker CleanersDateTimePicker2;
+        private DateTimePicker CPUDateTimePicker;
+        private DateTimePicker CPUDateTimePicker2;
+        private DateTimePicker ShipDateTimePicker;
+        private DateTimePicker ShipDateTimePicker2;
+        private Label AdressofOrderLabel;
+        private Label CleanersLabel;
+        private Label CourrierLabel;
+        private Label CPU0Label;
+        private Label CPULabel;
+        private Label CPU14Label;
+        private Label CleanersorLabel;
+        private Label Battery14Label;
+        private Label CPUorLabel;
+        private Label BatteryorLabel;
+        private Label Battery0Label;
+        private Label Ship14Label;
+        private Label ShiporLabel;
+        private Label Ship0Label;
         private Label NotesLlabel;
+        private Label OnHoldLabel;
+        private Label SendMsgLabel;
+        private Label SendSMSCustomerLlabel;
+        private Label ShipLabel;
+        private Label SMSLabel;
+        private Panel NotesPanel;
+        private Panel panel1;
+        private RichTextBox BatteryRichTextBox;
+        private RichTextBox CleanersRichTextBox;
+        private RichTextBox CPURichTextBox;
+        private RichTextBox HomeRichTextBox;
+        private RichTextBox ShipRichTextBox;
+        private RichTextBox SuppliersRichTextBox;
         private TabControl TabControl;
         private TabPage HomeTabPage;
-        private TabPage SupplierTabPage;
-        private Button ShipButton;
-        private Button CourrierButton;
-        private Button CopyOKButton;
-        private Button CancelPreorderButton;
         private TabPage OrdersTabPage;
-        private Label CPU0Label;
-        private DateTimePicker CPU14DateTimePicker;
-        private Label CPULabel;
-        private TextBox CPU14TextBox;
-        private Button PasteCPU14Button;
-        private Button ClearCPU14Button;
-        private DateTimePicker CPU14DateTimePicker2;
-        private Label label3;
-        private Button ClearCPU0Button;
-        private Button PasteCPU0Button;
-        private TextBox CPU0TextBox;
-        private Label label1;
-        private Label label2;
-        private Button ClearBattery0Button;
-        private Button PasteBattery0Button;
+        private TabPage SupplierTabPage;
         private TextBox Battery0TextBox;
-        private DateTimePicker Battery14DateTimePicker2;
-        private Label label4;
-        private Button ClearBattery14Button;
-        private Button PasteBattery14Button;
         private TextBox Battery14TextBox;
-        private Label label5;
-        private DateTimePicker Battery14DateTimePicker;
-        private Label CourrierLabel;
-        private Label label7;
-        private Button ClearShip0Button;
-        private Button PasteShip0Button;
-        private TextBox Ship0TextBox;
-        private DateTimePicker Ship14DateTimePicker2;
-        private Label label8;
-        private Button ClearShip14Button;
-        private Button PasteShip14Button;
-        private TextBox Ship14TextBox;
-        private Label label9;
-        private DateTimePicker Ship14DateTimePicker;
-        private Label ShipLabel;
-        private DateTimePicker CleanersDateTimePicker2;
-        private Label label12;
-        private Button ClearCleanersButton;
-        private Button CleanersPasteButton;
         private TextBox CleanersTextBox;
-        private DateTimePicker CleanersDateTimePicker;
-        private Label CleanersLabel;
+        private TextBox CPU0TextBox;
+        private TextBox CPU14TextBox;
+        private TextBox Ship0TextBox;
+        private TextBox Ship14TextBox;
     }
 }

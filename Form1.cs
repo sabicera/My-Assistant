@@ -31,14 +31,20 @@ namespace My_Assistant
         private void AdressofOrderComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             Clipboard.Clear();
-            NotesRichTextBox.Text = "Έστειλα στην " + AdressofOrderComboBox.Text + " να διευθετήσει την παραγγελια ΠΚ=" + DateTime.Now.ToString("dd/MM/yy"); ;
+            HomeRichTextBox.Text = "Έστειλα στην " + AdressofOrderComboBox.Text + " να διευθετήσει την παραγγελια ΠΚ=" + DateTime.Now.ToString("dd/MM/yy"); ;
             DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);
+            data.SetData(DataFormats.UnicodeText, HomeRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
-        private void DeleteButton_Click(object sender, EventArgs e)
+        private void CopyHomeButton_Click(object sender, EventArgs e)
         {
-            NotesRichTextBox.Text = string.Empty;
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, HomeRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void DeleteHomeButton_Click(object sender, EventArgs e)
+        {
+            HomeRichTextBox.Text = string.Empty;
         }
         private void SendMsgComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -52,33 +58,33 @@ namespace My_Assistant
                     DateTime nextTuesday = currentDate.AddDays((DayOfWeek.Tuesday + 7 - currentDate.DayOfWeek) % 7);
                     DateTime nextThursday = currentDate.AddDays((DayOfWeek.Thursday + 7 - currentDate.DayOfWeek) % 7);
                     // Display the next Tuesday and Thursday in the NotesRichTextBox
-                    NotesRichTextBox.Text = "ενημέρωσε για καθυστέρηση από προμηθευτή και πιθανή παραλαβή εντός " + nextTuesday.ToString("dd/MM") + " και " + nextThursday.ToString("dd/MM");
+                    HomeRichTextBox.Text = "ενημέρωσε για καθυστέρηση από προμηθευτή και πιθανή παραλαβή εντός " + nextTuesday.ToString("dd/MM") + " και " + nextThursday.ToString("dd/MM");
                 }
                 else
                 {
                     // Calculate the second Wednesday following the current date
                     DateTime secondWednesday = currentDate.AddDays(5).AddDays((DayOfWeek.Wednesday + 7 - currentDate.AddDays(5).DayOfWeek) % 7);
                     // Display the second Wednesday in the NotesRichTextBox
-                    NotesRichTextBox.Text = "ενημέρωσε για καθυστέρηση από προμηθευτή και πιθανή παραλαβή εντός " + secondWednesday.ToString("dd/MM") + " με Καράβι";
+                    HomeRichTextBox.Text = "ενημέρωσε για καθυστέρηση από προμηθευτή και πιθανή παραλαβή εντός " + secondWednesday.ToString("dd/MM") + " με Καράβι";
                 }
             else
             {
-                NotesRichTextBox.Text = "Ενημέρωσε για " + SendMsgComboBox.Text; ;
+                HomeRichTextBox.Text = "Ενημέρωσε για " + SendMsgComboBox.Text; ;
             }
             DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);
+            data.SetData(DataFormats.UnicodeText, HomeRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            CurrentDateLabel.Text = DateTime.Now.ToLongDateString();
+
         }
         private void OnHoldComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             Clipboard.Clear();
-            NotesRichTextBox.Text = "Αναμονή " + OnHoldComboBox.Text + " ΠΚ=" + DateTime.Now.ToString("dd/MM/yy"); ;
+            HomeRichTextBox.Text = "Αναμονή " + OnHoldComboBox.Text + " ΠΚ=" + DateTime.Now.ToString("dd/MM/yy"); ;
             DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);
+            data.SetData(DataFormats.UnicodeText, HomeRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
         private void SMSComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -97,116 +103,138 @@ namespace My_Assistant
             Clipboard.Clear();
             if (SMSComboBox.Text == "Pickup Reminder")
             {
-                NotesRichTextBox.Text = "WE REMIND YOU THAT YOU CAN PICKUP YOUR ORDER UNTIL " + currentDate.ToString("dd/MM/yy") + " OR IT WILL BE CANCELLED."; ;
+                HomeRichTextBox.Text = "WE REMIND YOU THAT YOU CAN PICKUP YOUR ORDER UNTIL " + currentDate.ToString("dd/MM/yy") + " OR IT WILL BE CANCELLED."; ;
             }
             else if (SMSComboBox.Text == "Υπενθύμιση παραλαβής")
             {
-                NotesRichTextBox.Text = "ΣΑΣ ΥΠΕΝΘΥΜΙΖΟΥΜΕ ΤΗΝ ΕΚΚΡΕΜΟΤΗΤΑ ΠΑΡΑΛΑΒΗΣ ΤΗΣ ΠΑΡΑΓΓΕΛΙΑΣ ΣΑΣ Η ΟΠΟΙΑ ΘΑ ΑΚΥΡΩΘΕΙ ΕΑΝ ΔΕΝ ΠΑΡΑΛΗΦΘΕΙ ΜΕΧΡΙ " + currentDate.ToString("dd/MM/yy");
+                HomeRichTextBox.Text = "ΣΑΣ ΥΠΕΝΘΥΜΙΖΟΥΜΕ ΤΗΝ ΕΚΚΡΕΜΟΤΗΤΑ ΠΑΡΑΛΑΒΗΣ ΤΗΣ ΠΑΡΑΓΓΕΛΙΑΣ ΣΑΣ Η ΟΠΟΙΑ ΘΑ ΑΚΥΡΩΘΕΙ ΕΑΝ ΔΕΝ ΠΑΡΑΛΗΦΘΕΙ ΜΕΧΡΙ " + currentDate.ToString("dd/MM/yy");
             }
             DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);
+            data.SetData(DataFormats.UnicodeText, HomeRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
-
         private void CourrierButton_Click(object sender, EventArgs e)
         {
             Clipboard.Clear();
-            NotesRichTextBox.Text = "Courier // παραγγελία με λειτουργικά"; ;
+            SuppliersRichTextBox.Text = "Courier // παραγγελία με λειτουργικά"; ;
             DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);
+            data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
         private void ShipButton_Click(object sender, EventArgs e)
         {
             Clipboard.Clear();
-            NotesRichTextBox.Text = "Καράβι // αν γίνετε να φύγει με το σημερινό"; ;
+            SuppliersRichTextBox.Text = "Καράβι // αν γίνετε να φύγει με το σημερινό"; ;
             DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);
+            data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
         private void CopyOKButton_Click(object sender, EventArgs e)
         {
             Clipboard.Clear();
-            NotesRichTextBox.Text = "Αντιγραφή οκ, παραγγελία στην Κύπρο : Όταν παραλάβετε, στείλτε τα με το καράβι. Ευχαριστώ."; ;
+            SuppliersRichTextBox.Text = "Αντιγραφή οκ, παραγγελία στην Κύπρο : Όταν παραλάβετε, στείλτε τα με το καράβι. Ευχαριστώ."; ;
             DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);
+            data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
         private void CancelPreorderButton_Click(object sender, EventArgs e)
         {
             Clipboard.Clear();
-            NotesRichTextBox.Text = "Να ακυρωθεί η προέγκριση, θα πληρώσει σε εμάς ο πελάτης."; ;
+            SuppliersRichTextBox.Text = "Να ακυρωθεί η προέγκριση, θα πληρώσει σε εμάς ο πελάτης."; ;
             DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);
+            data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
-        private void OrderCPUDateTimePicker_ValueChanged(object sender, EventArgs e)
+        private void CPUDateTimePicker_ValueChanged(object sender, EventArgs e)
         {
             Clipboard.Clear();
-            NotesRichTextBox.Text = string.Empty;
+            CPURichTextBox.Text = string.Empty;
             string orderNumber = CPU14TextBox.Text;
-            string selectedDate = CPU14DateTimePicker.Value.ToString("dddd d/M");
-            NotesRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
+            string selectedDate = CPUDateTimePicker.Value.ToString("dddd d/M");
+            CPURichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
             DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);
+            data.SetData(DataFormats.UnicodeText, CPURichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
-        private void OrderCPUDateTimePicker2_ValueChanged(object sender, EventArgs e)
+        private void CPUDateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
             Clipboard.Clear();
-            NotesRichTextBox.Text = string.Empty;
+            CPURichTextBox.Text = string.Empty;
             string orderNumber = CPU14TextBox.Text;
-            string selectedDate = CPU14DateTimePicker.Value.ToString("dddd d/M");
-            string selectedDate2 = CPU14DateTimePicker2.Value.ToString("dddd d/M");
-            NotesRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με Courier " + selectedDate + " ή " + selectedDate2 + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
+            string selectedDate = CPUDateTimePicker.Value.ToString("dddd d/M");
+            string selectedDate2 = CPUDateTimePicker2.Value.ToString("dddd d/M");
+            CPURichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με Courier " + selectedDate + " ή " + selectedDate2 + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
             DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);
+            data.SetData(DataFormats.UnicodeText, CPURichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
-        private void Battery14DateTimePicker_ValueChanged(object sender, EventArgs e)
+        private void BatteryDateTimePicker_ValueChanged(object sender, EventArgs e)
         {
             Clipboard.Clear();
-            NotesRichTextBox.Text = string.Empty;
+            BatteryRichTextBox.Text = string.Empty;
             string orderNumber = Battery14TextBox.Text;
-            string selectedDate = Battery14DateTimePicker.Value.ToString("dddd d/M");
-            NotesRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
+            string selectedDate = BatteryDateTimePicker.Value.ToString("dddd d/M");
+            BatteryRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
             DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);
+            data.SetData(DataFormats.UnicodeText, BatteryRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
-        private void Battery14DateTimePicker2_ValueChanged(object sender, EventArgs e)
+        private void BatteryDateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
             Clipboard.Clear();
-            NotesRichTextBox.Text = string.Empty;
+            BatteryRichTextBox.Text = string.Empty;
             string orderNumber = Battery14TextBox.Text;
-            string selectedDate = Battery14DateTimePicker.Value.ToString("dddd d/M");
-            string selectedDate2 = Battery14DateTimePicker2.Value.ToString("dddd d/M");
-            NotesRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
+            string selectedDate = BatteryDateTimePicker.Value.ToString("dddd d/M");
+            string selectedDate2 = BatteryDateTimePicker2.Value.ToString("dddd d/M");
+            BatteryRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + " ή " + selectedDate2 + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
             DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);
+            data.SetData(DataFormats.UnicodeText, BatteryRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
-        private void Ship14DateTimePicker_ValueChanged(object sender, EventArgs e)
+        private void ShipDateTimePicker_ValueChanged(object sender, EventArgs e)
         {
             Clipboard.Clear();
-            NotesRichTextBox.Text = string.Empty;
+            ShipRichTextBox.Text = string.Empty;
             string orderNumber = Ship14TextBox.Text;
-            string selectedDate = Ship14DateTimePicker.Value.ToString("dddd d/M");
-            NotesRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
+            string selectedDate = ShipDateTimePicker.Value.ToString("dddd d/M");
+            ShipRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
             DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);
+            data.SetData(DataFormats.UnicodeText, ShipRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
-        private void Ship14DateTimePicker2_ValueChanged(object sender, EventArgs e)
+        private void ShipDateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
             Clipboard.Clear();
-            NotesRichTextBox.Text = string.Empty;
+            ShipRichTextBox.Text = string.Empty;
             string orderNumber = Ship14TextBox.Text;
-            string selectedDate = Ship14DateTimePicker.Value.ToString("dddd d/M");
-            string selectedDate2 = Ship14DateTimePicker2.Value.ToString("dddd d/M");
-            NotesRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
+            string selectedDate = ShipDateTimePicker.Value.ToString("dddd d/M");
+            string selectedDate2 = ShipDateTimePicker2.Value.ToString("dddd d/M");
+            ShipRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + " ή " + selectedDate2 + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
             DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);
+            data.SetData(DataFormats.UnicodeText, ShipRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void CleanersDateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            CleanersRichTextBox.Text = string.Empty;
+            string orderNumber = CleanersTextBox.Text;
+            string selectedDate = CleanersDateTimePicker.Value.ToString("dddd d/M");
+            CleanersRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, CleanersRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void CleanersDateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            CleanersRichTextBox.Text = string.Empty;
+            string orderNumber = CleanersTextBox.Text;
+            string selectedDate = CleanersDateTimePicker.Value.ToString("dddd d/M");
+            string selectedDate2 = CleanersDateTimePicker2.Value.ToString("dddd d/M");
+            CleanersRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + " ή " + selectedDate2 + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, CleanersRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
         private void PasteCPU14Button_Click(object sender, EventArgs e)
@@ -275,29 +303,6 @@ namespace My_Assistant
         {
             Ship0TextBox.Text = string.Empty;
         }
-        private void CleanersDateTimePicker_ValueChanged(object sender, EventArgs e)
-        {
-            Clipboard.Clear();
-            NotesRichTextBox.Text = string.Empty;
-            string orderNumber = CleanersTextBox.Text;
-            string selectedDate = CleanersDateTimePicker.Value.ToString("dddd d/M");
-            NotesRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
-            DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);
-            Clipboard.SetDataObject(data, true);
-        }
-        private void CleanersDateTimePicker2_ValueChanged(object sender, EventArgs e)
-        {
-            Clipboard.Clear();
-            NotesRichTextBox.Text = string.Empty;
-            string orderNumber = CleanersTextBox.Text;
-            string selectedDate = CleanersDateTimePicker.Value.ToString("dddd d/M");
-            string selectedDate2 = CleanersDateTimePicker2.Value.ToString("dddd d/M");
-            NotesRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
-            DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, NotesRichTextBox.Text);
-            Clipboard.SetDataObject(data, true);
-        }
         private void CleanersPasteButton_Click(object sender, EventArgs e)
         {
             if (Clipboard.ContainsText())
@@ -308,6 +313,57 @@ namespace My_Assistant
         private void ClearCleanersButton_Click(object sender, EventArgs e)
         {
             CleanersTextBox.Text = string.Empty;
+        }
+        private void CleanersCopyButton_Click(object sender, EventArgs e)
+        {
+            if (Clipboard.ContainsText())
+            {
+                CleanersRichTextBox.Text = Clipboard.GetText();
+            }
+        }
+        private void CleanersResetButton_Click(object sender, EventArgs e)
+        {
+            CleanersRichTextBox.Text = string.Empty;
+        }
+        private void ShipCopyButton_Click(object sender, EventArgs e)
+        {
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, ShipRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void ShipResetButton_Click(object sender, EventArgs e)
+        {
+            ShipRichTextBox.Text = string.Empty;
+        }
+        private void CPUCopyButton_Click(object sender, EventArgs e)
+        {
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, CPURichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void CPUResetButton_Click(object sender, EventArgs e)
+        {
+            CPURichTextBox.Text = string.Empty;
+        }
+        private void CopySuppliersButton_Click(object sender, EventArgs e)
+        {
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void DeleteSuppliersButton_Click(object sender, EventArgs e)
+        {
+            SuppliersRichTextBox.Text = string.Empty;
+        }
+        private void BatteryCopyButton_Click(object sender, EventArgs e)
+        {
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, BatteryRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void BatteryResetButton_Click(object sender, EventArgs e)
+        {
+            BatteryRichTextBox.Text = string.Empty;
         }
     }
 }
