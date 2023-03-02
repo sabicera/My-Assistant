@@ -151,7 +151,7 @@ namespace My_Assistant
             CPURichTextBox.Text = string.Empty;
             string orderNumber = CPU14TextBox.Text;
             string selectedDate = CPUDateTimePicker.Value.ToString("dddd d/M");
-            CPURichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
+            CPURichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με Courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
             DataObject data = new DataObject();
             data.SetData(DataFormats.UnicodeText, CPURichTextBox.Text);
             Clipboard.SetDataObject(data, true);
@@ -174,7 +174,7 @@ namespace My_Assistant
             BatteryRichTextBox.Text = string.Empty;
             string orderNumber = Battery14TextBox.Text;
             string selectedDate = BatteryDateTimePicker.Value.ToString("dddd d/M");
-            BatteryRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
+            BatteryRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με Courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
             DataObject data = new DataObject();
             data.SetData(DataFormats.UnicodeText, BatteryRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
@@ -186,7 +186,7 @@ namespace My_Assistant
             string orderNumber = Battery14TextBox.Text;
             string selectedDate = BatteryDateTimePicker.Value.ToString("dddd d/M");
             string selectedDate2 = BatteryDateTimePicker2.Value.ToString("dddd d/M");
-            BatteryRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + " ή " + selectedDate2 + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
+            BatteryRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με Courier " + selectedDate + " ή " + selectedDate2 + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
             DataObject data = new DataObject();
             data.SetData(DataFormats.UnicodeText, BatteryRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
@@ -197,7 +197,7 @@ namespace My_Assistant
             ShipRichTextBox.Text = string.Empty;
             string orderNumber = Ship14TextBox.Text;
             string selectedDate = ShipDateTimePicker.Value.ToString("dddd d/M");
-            ShipRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
+            ShipRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με Καράβι " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
             DataObject data = new DataObject();
             data.SetData(DataFormats.UnicodeText, ShipRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
@@ -209,7 +209,7 @@ namespace My_Assistant
             string orderNumber = Ship14TextBox.Text;
             string selectedDate = ShipDateTimePicker.Value.ToString("dddd d/M");
             string selectedDate2 = ShipDateTimePicker2.Value.ToString("dddd d/M");
-            ShipRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + " ή " + selectedDate2 + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
+            ShipRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με Καράβι " + selectedDate + " ή " + selectedDate2 + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
             DataObject data = new DataObject();
             data.SetData(DataFormats.UnicodeText, ShipRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
@@ -220,7 +220,7 @@ namespace My_Assistant
             CleanersRichTextBox.Text = string.Empty;
             string orderNumber = CleanersTextBox.Text;
             string selectedDate = CleanersDateTimePicker.Value.ToString("dddd d/M");
-            CleanersRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
+            CleanersRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με Καράβι " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
             DataObject data = new DataObject();
             data.SetData(DataFormats.UnicodeText, CleanersRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
@@ -232,7 +232,7 @@ namespace My_Assistant
             string orderNumber = CleanersTextBox.Text;
             string selectedDate = CleanersDateTimePicker.Value.ToString("dddd d/M");
             string selectedDate2 = CleanersDateTimePicker2.Value.ToString("dddd d/M");
-            CleanersRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με courier " + selectedDate + " ή " + selectedDate2 + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
+            CleanersRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με Καράβι " + selectedDate + " ή " + selectedDate2 + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
             DataObject data = new DataObject();
             data.SetData(DataFormats.UnicodeText, CleanersRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
@@ -316,10 +316,9 @@ namespace My_Assistant
         }
         private void CleanersCopyButton_Click(object sender, EventArgs e)
         {
-            if (Clipboard.ContainsText())
-            {
-                CleanersRichTextBox.Text = Clipboard.GetText();
-            }
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, CleanersRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
         }
         private void CleanersResetButton_Click(object sender, EventArgs e)
         {
@@ -364,6 +363,57 @@ namespace My_Assistant
         private void BatteryResetButton_Click(object sender, EventArgs e)
         {
             BatteryRichTextBox.Text = string.Empty;
+        }
+
+        private void ShipAutoButton_Click(object sender, EventArgs e)
+        {
+            // Get the current date and time
+            DateTime currentDate = DateTime.Now;
+            Clipboard.Clear();
+            if (Ship14TextBox.Text is not null)
+                if (currentDate.DayOfWeek > DayOfWeek.Friday || (currentDate.DayOfWeek == DayOfWeek.Friday && currentDate.TimeOfDay > TimeSpan.FromHours(11)))
+                {
+                    // Calculate the second next Friday
+                    DateTime secondnextFriday = currentDate.AddDays(14).AddDays((DayOfWeek.Friday + 7 - currentDate.AddDays(7).DayOfWeek) % 7);
+                    // Display the next Friday in the ShipRichTextBox
+                    ShipRichTextBox.Text = Ship14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + secondnextFriday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy"); ;
+                }
+                else
+                {
+                    // Calculate this Friday
+                    DateTime nextFriday = currentDate.AddDays(7).AddDays((DayOfWeek.Friday + 7 - currentDate.DayOfWeek) % 7);
+                    // Display the upcoming Friday in the ShipRichTextBox
+                    ShipRichTextBox.Text = Ship14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + nextFriday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy"); ;
+                }
+            else
+            {
+                ShipRichTextBox.Text = "";
+            }
+        }
+        private void CleanersAutoButton_Click(object sender, EventArgs e)
+        {
+            // Get the current date and time
+            DateTime currentDate = DateTime.Now;
+            Clipboard.Clear();
+            if (CleanersTextBox.Text is not null)
+                if (currentDate.DayOfWeek > DayOfWeek.Friday || (currentDate.DayOfWeek == DayOfWeek.Friday && currentDate.TimeOfDay > TimeSpan.FromHours(11)))
+                {
+                    // Calculate the second next Friday
+                    DateTime secondnextFriday = currentDate.AddDays(14).AddDays((DayOfWeek.Friday + 7 - currentDate.AddDays(7).DayOfWeek) % 7);
+                    // Display the next Friday in the ShipRichTextBox
+                    CleanersRichTextBox.Text = CleanersTextBox.Text + " Παραλαμβάνουμε με Καράβι " + secondnextFriday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy"); ;
+                }
+                else
+                {
+                    // Calculate this Friday
+                    DateTime nextFriday = currentDate.AddDays(7).AddDays((DayOfWeek.Friday + 7 - currentDate.DayOfWeek) % 7);
+                    // Display the upcoming Friday in the ShipRichTextBox
+                    CleanersRichTextBox.Text = CleanersTextBox.Text + " Παραλαμβάνουμε με Καράβι " + nextFriday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy"); ;
+                }
+            else
+            {
+                CleanersRichTextBox.Text = "";
+            }
         }
     }
 }

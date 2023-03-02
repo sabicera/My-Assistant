@@ -90,6 +90,11 @@
             ShiporLabel = new Label();
             Ship0Label = new Label();
             OrdersTabPage = new TabPage();
+            Battery0CopyButton = new Button();
+            CPU0CopyButton = new Button();
+            Ship0CopyButton = new Button();
+            CleanersAutoButton = new Button();
+            ShipAutoButton = new Button();
             PasteBattery0Button = new Button();
             PasteBattery14Button = new Button();
             PasteCPU0Button = new Button();
@@ -167,11 +172,11 @@
             // 
             // BatteryDateTimePicker
             // 
-            BatteryDateTimePicker.CustomFormat = "dd/MM/yy";
+            BatteryDateTimePicker.CustomFormat = "dd/MM";
             BatteryDateTimePicker.Format = DateTimePickerFormat.Custom;
-            BatteryDateTimePicker.Location = new Point(278, 143);
+            BatteryDateTimePicker.Location = new Point(296, 143);
             BatteryDateTimePicker.Name = "BatteryDateTimePicker";
-            BatteryDateTimePicker.Size = new Size(68, 23);
+            BatteryDateTimePicker.Size = new Size(50, 23);
             BatteryDateTimePicker.TabIndex = 15;
             BatteryDateTimePicker.ValueChanged += BatteryDateTimePicker_ValueChanged;
             // 
@@ -179,9 +184,9 @@
             // 
             BatteryDateTimePicker2.CustomFormat = "dd/MM/yy";
             BatteryDateTimePicker2.Format = DateTimePickerFormat.Custom;
-            BatteryDateTimePicker2.Location = new Point(364, 143);
+            BatteryDateTimePicker2.Location = new Point(366, 143);
             BatteryDateTimePicker2.Name = "BatteryDateTimePicker2";
-            BatteryDateTimePicker2.Size = new Size(68, 23);
+            BatteryDateTimePicker2.Size = new Size(49, 23);
             BatteryDateTimePicker2.TabIndex = 21;
             BatteryDateTimePicker2.ValueChanged += BatteryDateTimePicker2_ValueChanged;
             // 
@@ -231,9 +236,9 @@
             // 
             CleanersCopyButton.BackColor = Color.Chartreuse;
             CleanersCopyButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            CleanersCopyButton.Location = new Point(333, 408);
+            CleanersCopyButton.Location = new Point(333, 432);
             CleanersCopyButton.Name = "CleanersCopyButton";
-            CleanersCopyButton.Size = new Size(49, 28);
+            CleanersCopyButton.Size = new Size(49, 41);
             CleanersCopyButton.TabIndex = 53;
             CleanersCopyButton.Text = "Copy";
             CleanersCopyButton.UseVisualStyleBackColor = false;
@@ -241,21 +246,21 @@
             // 
             // CleanersDateTimePicker
             // 
-            CleanersDateTimePicker.CustomFormat = "dd/MM/yy";
+            CleanersDateTimePicker.CustomFormat = "dd/MM";
             CleanersDateTimePicker.Format = DateTimePickerFormat.Custom;
-            CleanersDateTimePicker.Location = new Point(278, 379);
+            CleanersDateTimePicker.Location = new Point(296, 379);
             CleanersDateTimePicker.Name = "CleanersDateTimePicker";
-            CleanersDateTimePicker.Size = new Size(68, 23);
+            CleanersDateTimePicker.Size = new Size(50, 23);
             CleanersDateTimePicker.TabIndex = 39;
             CleanersDateTimePicker.ValueChanged += CleanersDateTimePicker_ValueChanged;
             // 
             // CleanersDateTimePicker2
             // 
-            CleanersDateTimePicker2.CustomFormat = "dd/MM/yy";
+            CleanersDateTimePicker2.CustomFormat = "dd/MM";
             CleanersDateTimePicker2.Format = DateTimePickerFormat.Custom;
-            CleanersDateTimePicker2.Location = new Point(364, 379);
+            CleanersDateTimePicker2.Location = new Point(366, 379);
             CleanersDateTimePicker2.Name = "CleanersDateTimePicker2";
-            CleanersDateTimePicker2.Size = new Size(68, 23);
+            CleanersDateTimePicker2.Size = new Size(49, 23);
             CleanersDateTimePicker2.TabIndex = 44;
             CleanersDateTimePicker2.ValueChanged += CleanersDateTimePicker2_ValueChanged;
             // 
@@ -263,7 +268,7 @@
             // 
             CleanersLabel.AutoSize = true;
             CleanersLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            CleanersLabel.Location = new Point(62, 361);
+            CleanersLabel.Location = new Point(62, 362);
             CleanersLabel.Name = "CleanersLabel";
             CleanersLabel.Size = new Size(141, 15);
             CleanersLabel.TabIndex = 38;
@@ -271,12 +276,12 @@
             // 
             // CleanersPasteButton
             // 
-            CleanersPasteButton.BackColor = Color.Chartreuse;
+            CleanersPasteButton.BackColor = Color.DeepSkyBlue;
             CleanersPasteButton.Location = new Point(230, 379);
             CleanersPasteButton.Name = "CleanersPasteButton";
             CleanersPasteButton.Size = new Size(23, 23);
             CleanersPasteButton.TabIndex = 41;
-            CleanersPasteButton.Text = "✔";
+            CleanersPasteButton.Text = "P";
             CleanersPasteButton.UseVisualStyleBackColor = false;
             CleanersPasteButton.Click += CleanersPasteButton_Click;
             // 
@@ -284,9 +289,9 @@
             // 
             CleanersResetButton.BackColor = Color.DarkSalmon;
             CleanersResetButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            CleanersResetButton.Location = new Point(383, 408);
+            CleanersResetButton.Location = new Point(383, 432);
             CleanersResetButton.Name = "CleanersResetButton";
-            CleanersResetButton.Size = new Size(49, 28);
+            CleanersResetButton.Size = new Size(49, 41);
             CleanersResetButton.TabIndex = 52;
             CleanersResetButton.Text = "Reset";
             CleanersResetButton.UseVisualStyleBackColor = false;
@@ -295,9 +300,9 @@
             // CleanersRichTextBox
             // 
             CleanersRichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            CleanersRichTextBox.Location = new Point(23, 408);
+            CleanersRichTextBox.Location = new Point(23, 432);
             CleanersRichTextBox.Name = "CleanersRichTextBox";
-            CleanersRichTextBox.Size = new Size(304, 28);
+            CleanersRichTextBox.Size = new Size(304, 41);
             CleanersRichTextBox.TabIndex = 51;
             CleanersRichTextBox.Text = "";
             // 
@@ -311,7 +316,7 @@
             // ClearBattery0Button
             // 
             ClearBattery0Button.BackColor = Color.DarkSalmon;
-            ClearBattery0Button.Location = new Point(253, 170);
+            ClearBattery0Button.Location = new Point(276, 170);
             ClearBattery0Button.Name = "ClearBattery0Button";
             ClearBattery0Button.Size = new Size(23, 23);
             ClearBattery0Button.TabIndex = 24;
@@ -333,7 +338,7 @@
             // ClearCPU0Button
             // 
             ClearCPU0Button.BackColor = Color.DarkSalmon;
-            ClearCPU0Button.Location = new Point(253, 53);
+            ClearCPU0Button.Location = new Point(276, 53);
             ClearCPU0Button.Name = "ClearCPU0Button";
             ClearCPU0Button.Size = new Size(23, 23);
             ClearCPU0Button.TabIndex = 12;
@@ -355,7 +360,7 @@
             // ClearShip0Button
             // 
             ClearShip0Button.BackColor = Color.DarkSalmon;
-            ClearShip0Button.Location = new Point(253, 288);
+            ClearShip0Button.Location = new Point(276, 288);
             ClearShip0Button.Name = "ClearShip0Button";
             ClearShip0Button.Size = new Size(23, 23);
             ClearShip0Button.TabIndex = 36;
@@ -454,21 +459,21 @@
             // 
             // CPUDateTimePicker
             // 
-            CPUDateTimePicker.CustomFormat = "dd/MM/yy";
+            CPUDateTimePicker.CustomFormat = "dd/MM";
             CPUDateTimePicker.Format = DateTimePickerFormat.Custom;
-            CPUDateTimePicker.Location = new Point(278, 25);
+            CPUDateTimePicker.Location = new Point(296, 25);
             CPUDateTimePicker.Name = "CPUDateTimePicker";
-            CPUDateTimePicker.Size = new Size(68, 23);
+            CPUDateTimePicker.Size = new Size(50, 23);
             CPUDateTimePicker.TabIndex = 1;
             CPUDateTimePicker.ValueChanged += CPUDateTimePicker_ValueChanged;
             // 
             // CPUDateTimePicker2
             // 
-            CPUDateTimePicker2.CustomFormat = "dd/MM/yy";
+            CPUDateTimePicker2.CustomFormat = "dd/MM";
             CPUDateTimePicker2.Format = DateTimePickerFormat.Custom;
-            CPUDateTimePicker2.Location = new Point(364, 25);
+            CPUDateTimePicker2.Location = new Point(366, 25);
             CPUDateTimePicker2.Name = "CPUDateTimePicker2";
-            CPUDateTimePicker2.Size = new Size(68, 23);
+            CPUDateTimePicker2.Size = new Size(49, 23);
             CPUDateTimePicker2.TabIndex = 9;
             CPUDateTimePicker2.ValueChanged += CPUDateTimePicker2_ValueChanged;
             // 
@@ -534,7 +539,7 @@
             HomeTabPage.Location = new Point(4, 24);
             HomeTabPage.Name = "HomeTabPage";
             HomeTabPage.Padding = new Padding(3);
-            HomeTabPage.Size = new Size(438, 443);
+            HomeTabPage.Size = new Size(438, 487);
             HomeTabPage.TabIndex = 0;
             HomeTabPage.Text = "Αρχική";
             HomeTabPage.UseVisualStyleBackColor = true;
@@ -662,7 +667,7 @@
             // CleanersorLabel
             // 
             CleanersorLabel.AutoSize = true;
-            CleanersorLabel.Location = new Point(347, 383);
+            CleanersorLabel.Location = new Point(349, 383);
             CleanersorLabel.Name = "CleanersorLabel";
             CleanersorLabel.Size = new Size(14, 15);
             CleanersorLabel.TabIndex = 43;
@@ -682,7 +687,7 @@
             // CPUorLabel
             // 
             CPUorLabel.AutoSize = true;
-            CPUorLabel.Location = new Point(347, 29);
+            CPUorLabel.Location = new Point(349, 29);
             CPUorLabel.Name = "CPUorLabel";
             CPUorLabel.Size = new Size(14, 15);
             CPUorLabel.TabIndex = 8;
@@ -691,7 +696,7 @@
             // BatteryorLabel
             // 
             BatteryorLabel.AutoSize = true;
-            BatteryorLabel.Location = new Point(347, 147);
+            BatteryorLabel.Location = new Point(349, 147);
             BatteryorLabel.Name = "BatteryorLabel";
             BatteryorLabel.Size = new Size(14, 15);
             BatteryorLabel.TabIndex = 20;
@@ -721,7 +726,7 @@
             // ShiporLabel
             // 
             ShiporLabel.AutoSize = true;
-            ShiporLabel.Location = new Point(347, 265);
+            ShiporLabel.Location = new Point(349, 265);
             ShiporLabel.Name = "ShiporLabel";
             ShiporLabel.Size = new Size(14, 15);
             ShiporLabel.TabIndex = 32;
@@ -739,6 +744,11 @@
             // 
             // OrdersTabPage
             // 
+            OrdersTabPage.Controls.Add(Battery0CopyButton);
+            OrdersTabPage.Controls.Add(CPU0CopyButton);
+            OrdersTabPage.Controls.Add(Ship0CopyButton);
+            OrdersTabPage.Controls.Add(CleanersAutoButton);
+            OrdersTabPage.Controls.Add(ShipAutoButton);
             OrdersTabPage.Controls.Add(Battery0TextBox);
             OrdersTabPage.Controls.Add(Battery14TextBox);
             OrdersTabPage.Controls.Add(BatteryCopyButton);
@@ -797,74 +807,126 @@
             OrdersTabPage.Location = new Point(4, 24);
             OrdersTabPage.Name = "OrdersTabPage";
             OrdersTabPage.Padding = new Padding(3);
-            OrdersTabPage.Size = new Size(438, 443);
+            OrdersTabPage.Size = new Size(438, 487);
             OrdersTabPage.TabIndex = 2;
             OrdersTabPage.Text = "Παραγγελίες";
             OrdersTabPage.UseVisualStyleBackColor = true;
             // 
+            // Battery0CopyButton
+            // 
+            Battery0CopyButton.BackColor = Color.Chartreuse;
+            Battery0CopyButton.Location = new Point(253, 170);
+            Battery0CopyButton.Name = "Battery0CopyButton";
+            Battery0CopyButton.Size = new Size(23, 23);
+            Battery0CopyButton.TabIndex = 57;
+            Battery0CopyButton.Text = "C";
+            Battery0CopyButton.UseVisualStyleBackColor = false;
+            // 
+            // CPU0CopyButton
+            // 
+            CPU0CopyButton.BackColor = Color.Chartreuse;
+            CPU0CopyButton.Location = new Point(253, 53);
+            CPU0CopyButton.Name = "CPU0CopyButton";
+            CPU0CopyButton.Size = new Size(23, 23);
+            CPU0CopyButton.TabIndex = 56;
+            CPU0CopyButton.Text = "C";
+            CPU0CopyButton.UseVisualStyleBackColor = false;
+            // 
+            // Ship0CopyButton
+            // 
+            Ship0CopyButton.BackColor = Color.Chartreuse;
+            Ship0CopyButton.Location = new Point(253, 288);
+            Ship0CopyButton.Name = "Ship0CopyButton";
+            Ship0CopyButton.Size = new Size(23, 23);
+            Ship0CopyButton.TabIndex = 58;
+            Ship0CopyButton.Text = "C";
+            Ship0CopyButton.UseVisualStyleBackColor = false;
+            // 
+            // CleanersAutoButton
+            // 
+            CleanersAutoButton.BackColor = Color.Thistle;
+            CleanersAutoButton.Location = new Point(317, 405);
+            CleanersAutoButton.Name = "CleanersAutoButton";
+            CleanersAutoButton.Size = new Size(75, 23);
+            CleanersAutoButton.TabIndex = 55;
+            CleanersAutoButton.Text = "Auto";
+            CleanersAutoButton.UseVisualStyleBackColor = false;
+            CleanersAutoButton.Click += CleanersAutoButton_Click;
+            // 
+            // ShipAutoButton
+            // 
+            ShipAutoButton.BackColor = Color.Thistle;
+            ShipAutoButton.Location = new Point(317, 288);
+            ShipAutoButton.Name = "ShipAutoButton";
+            ShipAutoButton.Size = new Size(75, 23);
+            ShipAutoButton.TabIndex = 54;
+            ShipAutoButton.Text = "Auto";
+            ShipAutoButton.UseVisualStyleBackColor = false;
+            ShipAutoButton.Click += ShipAutoButton_Click;
+            // 
             // PasteBattery0Button
             // 
-            PasteBattery0Button.BackColor = Color.Chartreuse;
+            PasteBattery0Button.BackColor = Color.DeepSkyBlue;
             PasteBattery0Button.Location = new Point(230, 170);
             PasteBattery0Button.Name = "PasteBattery0Button";
             PasteBattery0Button.Size = new Size(23, 23);
             PasteBattery0Button.TabIndex = 23;
-            PasteBattery0Button.Text = "✔";
+            PasteBattery0Button.Text = "P";
             PasteBattery0Button.UseVisualStyleBackColor = false;
             PasteBattery0Button.Click += PasteBattery0Button_Click;
             // 
             // PasteBattery14Button
             // 
-            PasteBattery14Button.BackColor = Color.Chartreuse;
+            PasteBattery14Button.BackColor = Color.DeepSkyBlue;
             PasteBattery14Button.Location = new Point(230, 143);
             PasteBattery14Button.Name = "PasteBattery14Button";
             PasteBattery14Button.Size = new Size(23, 23);
             PasteBattery14Button.TabIndex = 18;
-            PasteBattery14Button.Text = "✔";
+            PasteBattery14Button.Text = "P";
             PasteBattery14Button.UseVisualStyleBackColor = false;
             PasteBattery14Button.Click += PasteBattery14Button_Click;
             // 
             // PasteCPU0Button
             // 
-            PasteCPU0Button.BackColor = Color.Chartreuse;
+            PasteCPU0Button.BackColor = Color.DeepSkyBlue;
             PasteCPU0Button.Location = new Point(230, 53);
             PasteCPU0Button.Name = "PasteCPU0Button";
             PasteCPU0Button.Size = new Size(23, 23);
             PasteCPU0Button.TabIndex = 11;
-            PasteCPU0Button.Text = "✔";
+            PasteCPU0Button.Text = "P";
             PasteCPU0Button.UseVisualStyleBackColor = false;
             PasteCPU0Button.Click += PasteCPU0Button_Click;
             // 
             // PasteCPU14Button
             // 
-            PasteCPU14Button.BackColor = Color.Chartreuse;
+            PasteCPU14Button.BackColor = Color.DeepSkyBlue;
             PasteCPU14Button.Location = new Point(230, 25);
             PasteCPU14Button.Name = "PasteCPU14Button";
             PasteCPU14Button.Size = new Size(23, 23);
             PasteCPU14Button.TabIndex = 6;
-            PasteCPU14Button.Text = "✔";
+            PasteCPU14Button.Text = "P";
             PasteCPU14Button.UseVisualStyleBackColor = false;
             PasteCPU14Button.Click += PasteCPU14Button_Click;
             // 
             // PasteShip0Button
             // 
-            PasteShip0Button.BackColor = Color.Chartreuse;
+            PasteShip0Button.BackColor = Color.DeepSkyBlue;
             PasteShip0Button.Location = new Point(230, 288);
             PasteShip0Button.Name = "PasteShip0Button";
             PasteShip0Button.Size = new Size(23, 23);
             PasteShip0Button.TabIndex = 35;
-            PasteShip0Button.Text = "✔";
+            PasteShip0Button.Text = "P";
             PasteShip0Button.UseVisualStyleBackColor = false;
             PasteShip0Button.Click += PasteShip0Button_Click;
             // 
             // PasteShip14Button
             // 
-            PasteShip14Button.BackColor = Color.Chartreuse;
+            PasteShip14Button.BackColor = Color.DeepSkyBlue;
             PasteShip14Button.Location = new Point(230, 261);
             PasteShip14Button.Name = "PasteShip14Button";
             PasteShip14Button.Size = new Size(23, 23);
             PasteShip14Button.TabIndex = 30;
-            PasteShip14Button.Text = "✔";
+            PasteShip14Button.Text = "P";
             PasteShip14Button.UseVisualStyleBackColor = false;
             PasteShip14Button.Click += PasteShip14Button_Click;
             // 
@@ -896,21 +958,21 @@
             // 
             // ShipDateTimePicker
             // 
-            ShipDateTimePicker.CustomFormat = "dd/MM/yy";
+            ShipDateTimePicker.CustomFormat = "dd/MM";
             ShipDateTimePicker.Format = DateTimePickerFormat.Custom;
-            ShipDateTimePicker.Location = new Point(278, 261);
+            ShipDateTimePicker.Location = new Point(296, 261);
             ShipDateTimePicker.Name = "ShipDateTimePicker";
-            ShipDateTimePicker.Size = new Size(68, 23);
+            ShipDateTimePicker.Size = new Size(50, 23);
             ShipDateTimePicker.TabIndex = 27;
             ShipDateTimePicker.ValueChanged += ShipDateTimePicker_ValueChanged;
             // 
             // ShipDateTimePicker2
             // 
-            ShipDateTimePicker2.CustomFormat = "dd/MM/yy";
+            ShipDateTimePicker2.CustomFormat = "dd/MM";
             ShipDateTimePicker2.Format = DateTimePickerFormat.Custom;
-            ShipDateTimePicker2.Location = new Point(364, 261);
+            ShipDateTimePicker2.Location = new Point(366, 261);
             ShipDateTimePicker2.Name = "ShipDateTimePicker2";
-            ShipDateTimePicker2.Size = new Size(68, 23);
+            ShipDateTimePicker2.Size = new Size(49, 23);
             ShipDateTimePicker2.TabIndex = 33;
             ShipDateTimePicker2.ValueChanged += ShipDateTimePicker2_ValueChanged;
             // 
@@ -1000,7 +1062,7 @@
             SupplierTabPage.Location = new Point(4, 24);
             SupplierTabPage.Name = "SupplierTabPage";
             SupplierTabPage.Padding = new Padding(3);
-            SupplierTabPage.Size = new Size(438, 443);
+            SupplierTabPage.Size = new Size(438, 487);
             SupplierTabPage.TabIndex = 1;
             SupplierTabPage.Text = "Προμηθευτές";
             SupplierTabPage.UseVisualStyleBackColor = true;
@@ -1013,14 +1075,14 @@
             TabControl.Location = new Point(0, 0);
             TabControl.Name = "TabControl";
             TabControl.SelectedIndex = 0;
-            TabControl.Size = new Size(446, 471);
+            TabControl.Size = new Size(446, 515);
             TabControl.TabIndex = 17;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(445, 468);
+            ClientSize = new Size(445, 513);
             Controls.Add(TabControl);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
@@ -1120,5 +1182,11 @@
         private TextBox CPU14TextBox;
         private TextBox Ship0TextBox;
         private TextBox Ship14TextBox;
+        private Button button1;
+        private Button ShipAutoButton;
+        private Button Battery0CopyButton;
+        private Button CPU0CopyButton;
+        private Button Ship0CopyButton;
+        private Button CleanersAutoButton;
     }
 }
