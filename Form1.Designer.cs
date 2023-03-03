@@ -1258,7 +1258,6 @@
         private TextBox CPU14TextBox;
         private TextBox Ship0TextBox;
         private TextBox Ship14TextBox;
-        private Button button1;
         private Button ShipAutoButton;
         private Button Battery0CopyButton;
         private Button CPU0CopyButton;
