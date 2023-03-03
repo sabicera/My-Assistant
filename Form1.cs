@@ -2,13 +2,32 @@ namespace My_Assistant
 {
     public partial class Form1 : Form
     {
+        private string myValue;
         public Form1()
         {
             InitializeComponent();
+            // Load the saved value if it exists
+            if (Properties.Settings.Default.MyValue != null)
+            {
+                myValue = Properties.Settings.Default.MyValue;
+            }
+        }
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // Save the value to the application settings
+            Properties.Settings.Default.MyValue = myValue;
+            Properties.Settings.Default.Save();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            if (!string.IsNullOrEmpty(Properties.Settings.Default.LatestCPU14Value))
+            {
+                CPU14TextBox.Text = Properties.Settings.Default.LatestCPU14Value;
+            }
+            if (!string.IsNullOrEmpty(Properties.Settings.Default.LatestCPU0Value))
+            {
+                CPU0TextBox.Text = Properties.Settings.Default.LatestCPU0Value;
+            }
         }
         private void AdressofOrderComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -130,7 +149,10 @@ namespace My_Assistant
             CPURichTextBox.Text = string.Empty;
             string orderNumber = CPU14TextBox.Text;
             string selectedDate = CPUDateTimePicker.Value.ToString("dddd d/M");
-            CPURichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με Courier " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
+            string newValue = $"{orderNumber} Παραλαμβάνουμε με Courier {selectedDate}=ΠΚ={DateTime.Now:d/M/yy}"; ;
+            // Append the new value to the text box and update the class-level variable
+            CPURichTextBox.AppendText(newValue);
+            myValue = newValue;
             DataObject data = new DataObject();
             data.SetData(DataFormats.UnicodeText, CPURichTextBox.Text);
             Clipboard.SetDataObject(data, true);
@@ -434,6 +456,17 @@ namespace My_Assistant
         private void DeleteSuppliersButton_Click(object sender, EventArgs e)
         {
             SuppliersRichTextBox.Text = string.Empty;
+        }
+        // Save and Load Function
+        private void CPU14TextBox_TextChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.LatestCPU14Value = CPU14TextBox.Text;
+            Properties.Settings.Default.Save();
+        }
+        private void CPU0TextBox_TextChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.LatestCPU0Value = CPU0TextBox.Text;
+            Properties.Settings.Default.Save();
         }
     }
 }

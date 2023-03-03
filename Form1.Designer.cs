@@ -121,12 +121,56 @@
             SuppliersRichTextBox = new RichTextBox();
             SupplierTabPage = new TabPage();
             TabControl = new TabControl();
+            PricingTabPage = new TabPage();
+            panel3 = new Panel();
+            textBox13 = new TextBox();
+            textBox14 = new TextBox();
+            textBox15 = new TextBox();
+            textBox16 = new TextBox();
+            textBox17 = new TextBox();
+            textBox18 = new TextBox();
+            textBox19 = new TextBox();
+            textBox20 = new TextBox();
+            textBox21 = new TextBox();
+            textBox22 = new TextBox();
+            textBox23 = new TextBox();
+            textBox24 = new TextBox();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            label13 = new Label();
+            panel2 = new Panel();
+            textBox7 = new TextBox();
+            textBox8 = new TextBox();
+            textBox9 = new TextBox();
+            textBox10 = new TextBox();
+            textBox11 = new TextBox();
+            textBox12 = new TextBox();
+            textBox6 = new TextBox();
+            textBox5 = new TextBox();
+            textBox4 = new TextBox();
+            textBox3 = new TextBox();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            GreeksLabel = new Label();
             HomeTabPage.SuspendLayout();
             panel1.SuspendLayout();
             NotesPanel.SuspendLayout();
             OrdersTabPage.SuspendLayout();
             SupplierTabPage.SuspendLayout();
             TabControl.SuspendLayout();
+            PricingTabPage.SuspendLayout();
+            panel3.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // AdressofOrderComboBox
@@ -219,7 +263,7 @@
             // 
             // CancelPreorderButton
             // 
-            CancelPreorderButton.Location = new Point(8, 93);
+            CancelPreorderButton.Location = new Point(136, 93);
             CancelPreorderButton.Name = "CancelPreorderButton";
             CancelPreorderButton.Size = new Size(168, 23);
             CancelPreorderButton.TabIndex = 3;
@@ -274,7 +318,7 @@
             // 
             CleanersLabel.AutoSize = true;
             CleanersLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            CleanersLabel.Location = new Point(62, 362);
+            CleanersLabel.Location = new Point(56, 362);
             CleanersLabel.Name = "CleanersLabel";
             CleanersLabel.Size = new Size(141, 15);
             CleanersLabel.TabIndex = 38;
@@ -389,7 +433,7 @@
             // 
             CopyHomeButton.BackColor = Color.Chartreuse;
             CopyHomeButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            CopyHomeButton.Location = new Point(6, 253);
+            CopyHomeButton.Location = new Point(21, 253);
             CopyHomeButton.Name = "CopyHomeButton";
             CopyHomeButton.Size = new Size(138, 43);
             CopyHomeButton.TabIndex = 20;
@@ -399,7 +443,7 @@
             // 
             // CopyOKButton
             // 
-            CopyOKButton.Location = new Point(8, 64);
+            CopyOKButton.Location = new Point(136, 64);
             CopyOKButton.Name = "CopyOKButton";
             CopyOKButton.Size = new Size(168, 23);
             CopyOKButton.TabIndex = 2;
@@ -409,7 +453,7 @@
             // 
             // CourrierButton
             // 
-            CourrierButton.Location = new Point(8, 6);
+            CourrierButton.Location = new Point(136, 6);
             CourrierButton.Name = "CourrierButton";
             CourrierButton.Size = new Size(168, 23);
             CourrierButton.TabIndex = 0;
@@ -421,7 +465,7 @@
             // 
             CourrierLabel.AutoSize = true;
             CourrierLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            CourrierLabel.Location = new Point(68, 125);
+            CourrierLabel.Location = new Point(61, 125);
             CourrierLabel.Name = "CourrierLabel";
             CourrierLabel.Size = new Size(130, 15);
             CourrierLabel.TabIndex = 14;
@@ -443,6 +487,7 @@
             CPU0TextBox.Name = "CPU0TextBox";
             CPU0TextBox.Size = new Size(206, 23);
             CPU0TextBox.TabIndex = 10;
+            CPU0TextBox.TextChanged += CPU0TextBox_TextChanged;
             // 
             // CPU14TextBox
             // 
@@ -450,6 +495,7 @@
             CPU14TextBox.Name = "CPU14TextBox";
             CPU14TextBox.Size = new Size(206, 23);
             CPU14TextBox.TabIndex = 5;
+            CPU14TextBox.TextChanged += CPU14TextBox_TextChanged;
             // 
             // CPUCopyButton
             // 
@@ -487,7 +533,7 @@
             // 
             CPULabel.AutoSize = true;
             CPULabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            CPULabel.Location = new Point(27, 7);
+            CPULabel.Location = new Point(23, 7);
             CPULabel.Name = "CPULabel";
             CPULabel.Size = new Size(206, 15);
             CPULabel.TabIndex = 0;
@@ -518,7 +564,7 @@
             // 
             DeleteHomeButton.BackColor = Color.DarkSalmon;
             DeleteHomeButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            DeleteHomeButton.Location = new Point(272, 253);
+            DeleteHomeButton.Location = new Point(287, 253);
             DeleteHomeButton.Name = "DeleteHomeButton";
             DeleteHomeButton.Size = new Size(138, 43);
             DeleteHomeButton.TabIndex = 19;
@@ -529,7 +575,7 @@
             // HomeRichTextBox
             // 
             HomeRichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            HomeRichTextBox.Location = new Point(6, 302);
+            HomeRichTextBox.Location = new Point(21, 302);
             HomeRichTextBox.Name = "HomeRichTextBox";
             HomeRichTextBox.Size = new Size(404, 63);
             HomeRichTextBox.TabIndex = 18;
@@ -558,7 +604,7 @@
             panel1.Controls.Add(AdressofOrderLabel);
             panel1.Controls.Add(AdressofOrderComboBox);
             panel1.Controls.Add(OnHoldLabel);
-            panel1.Location = new Point(6, 6);
+            panel1.Location = new Point(21, 6);
             panel1.Name = "panel1";
             panel1.Size = new Size(404, 113);
             panel1.TabIndex = 16;
@@ -567,7 +613,7 @@
             // 
             NotesLlabel.AutoSize = true;
             NotesLlabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            NotesLlabel.Location = new Point(157, 9);
+            NotesLlabel.Location = new Point(189, 9);
             NotesLlabel.Name = "NotesLlabel";
             NotesLlabel.Size = new Size(68, 15);
             NotesLlabel.TabIndex = 16;
@@ -602,7 +648,7 @@
             NotesPanel.Controls.Add(SendSMSCustomerLlabel);
             NotesPanel.Controls.Add(SendMsgComboBox);
             NotesPanel.Controls.Add(SendMsgLabel);
-            NotesPanel.Location = new Point(6, 122);
+            NotesPanel.Location = new Point(21, 122);
             NotesPanel.Name = "NotesPanel";
             NotesPanel.Size = new Size(404, 125);
             NotesPanel.TabIndex = 11;
@@ -632,7 +678,7 @@
             // 
             SendSMSCustomerLlabel.AutoSize = true;
             SendSMSCustomerLlabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            SendSMSCustomerLlabel.Location = new Point(157, 55);
+            SendSMSCustomerLlabel.Location = new Point(178, 55);
             SendSMSCustomerLlabel.Name = "SendSMSCustomerLlabel";
             SendSMSCustomerLlabel.Size = new Size(90, 15);
             SendSMSCustomerLlabel.TabIndex = 13;
@@ -921,7 +967,7 @@
             // CleanersAutoButton
             // 
             CleanersAutoButton.BackColor = Color.DeepSkyBlue;
-            CleanersAutoButton.Location = new Point(335, 405);
+            CleanersAutoButton.Location = new Point(337, 405);
             CleanersAutoButton.Name = "CleanersAutoButton";
             CleanersAutoButton.Size = new Size(75, 23);
             CleanersAutoButton.TabIndex = 55;
@@ -932,7 +978,7 @@
             // ShipAutoButton
             // 
             ShipAutoButton.BackColor = Color.DeepSkyBlue;
-            ShipAutoButton.Location = new Point(335, 288);
+            ShipAutoButton.Location = new Point(337, 288);
             ShipAutoButton.Name = "ShipAutoButton";
             ShipAutoButton.Size = new Size(75, 23);
             ShipAutoButton.TabIndex = 54;
@@ -1056,7 +1102,7 @@
             // 
             ShipLabel.AutoSize = true;
             ShipLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            ShipLabel.Location = new Point(106, 243);
+            ShipLabel.Location = new Point(102, 243);
             ShipLabel.Name = "ShipLabel";
             ShipLabel.Size = new Size(49, 15);
             ShipLabel.TabIndex = 26;
@@ -1085,7 +1131,7 @@
             // 
             // ShipButton
             // 
-            ShipButton.Location = new Point(8, 35);
+            ShipButton.Location = new Point(136, 35);
             ShipButton.Name = "ShipButton";
             ShipButton.Size = new Size(168, 23);
             ShipButton.TabIndex = 1;
@@ -1148,11 +1194,372 @@
             TabControl.Controls.Add(HomeTabPage);
             TabControl.Controls.Add(SupplierTabPage);
             TabControl.Controls.Add(OrdersTabPage);
+            TabControl.Controls.Add(PricingTabPage);
             TabControl.Location = new Point(0, 0);
             TabControl.Name = "TabControl";
             TabControl.SelectedIndex = 0;
             TabControl.Size = new Size(446, 515);
             TabControl.TabIndex = 17;
+            // 
+            // PricingTabPage
+            // 
+            PricingTabPage.Controls.Add(panel3);
+            PricingTabPage.Controls.Add(panel2);
+            PricingTabPage.Location = new Point(4, 24);
+            PricingTabPage.Name = "PricingTabPage";
+            PricingTabPage.Padding = new Padding(3);
+            PricingTabPage.Size = new Size(438, 487);
+            PricingTabPage.TabIndex = 3;
+            PricingTabPage.Text = "Κοστολόγηση";
+            PricingTabPage.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(textBox13);
+            panel3.Controls.Add(textBox14);
+            panel3.Controls.Add(textBox15);
+            panel3.Controls.Add(textBox16);
+            panel3.Controls.Add(textBox17);
+            panel3.Controls.Add(textBox18);
+            panel3.Controls.Add(textBox19);
+            panel3.Controls.Add(textBox20);
+            panel3.Controls.Add(textBox21);
+            panel3.Controls.Add(textBox22);
+            panel3.Controls.Add(textBox23);
+            panel3.Controls.Add(textBox24);
+            panel3.Controls.Add(label7);
+            panel3.Controls.Add(label8);
+            panel3.Controls.Add(label9);
+            panel3.Controls.Add(label10);
+            panel3.Controls.Add(label11);
+            panel3.Controls.Add(label12);
+            panel3.Controls.Add(label13);
+            panel3.Location = new Point(3, 140);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(432, 131);
+            panel3.TabIndex = 19;
+            // 
+            // textBox13
+            // 
+            textBox13.Location = new Point(364, 82);
+            textBox13.Name = "textBox13";
+            textBox13.Size = new Size(65, 23);
+            textBox13.TabIndex = 18;
+            // 
+            // textBox14
+            // 
+            textBox14.Location = new Point(295, 82);
+            textBox14.Name = "textBox14";
+            textBox14.Size = new Size(65, 23);
+            textBox14.TabIndex = 17;
+            // 
+            // textBox15
+            // 
+            textBox15.Location = new Point(224, 82);
+            textBox15.Name = "textBox15";
+            textBox15.Size = new Size(65, 23);
+            textBox15.TabIndex = 16;
+            // 
+            // textBox16
+            // 
+            textBox16.Location = new Point(153, 82);
+            textBox16.Name = "textBox16";
+            textBox16.Size = new Size(65, 23);
+            textBox16.TabIndex = 15;
+            // 
+            // textBox17
+            // 
+            textBox17.Location = new Point(82, 82);
+            textBox17.Name = "textBox17";
+            textBox17.Size = new Size(65, 23);
+            textBox17.TabIndex = 14;
+            // 
+            // textBox18
+            // 
+            textBox18.Location = new Point(8, 82);
+            textBox18.Name = "textBox18";
+            textBox18.Size = new Size(65, 23);
+            textBox18.TabIndex = 13;
+            // 
+            // textBox19
+            // 
+            textBox19.Location = new Point(364, 53);
+            textBox19.Name = "textBox19";
+            textBox19.Size = new Size(65, 23);
+            textBox19.TabIndex = 12;
+            // 
+            // textBox20
+            // 
+            textBox20.Location = new Point(295, 53);
+            textBox20.Name = "textBox20";
+            textBox20.Size = new Size(65, 23);
+            textBox20.TabIndex = 11;
+            // 
+            // textBox21
+            // 
+            textBox21.Location = new Point(224, 53);
+            textBox21.Name = "textBox21";
+            textBox21.Size = new Size(65, 23);
+            textBox21.TabIndex = 10;
+            // 
+            // textBox22
+            // 
+            textBox22.Location = new Point(153, 53);
+            textBox22.Name = "textBox22";
+            textBox22.Size = new Size(65, 23);
+            textBox22.TabIndex = 9;
+            // 
+            // textBox23
+            // 
+            textBox23.Location = new Point(82, 53);
+            textBox23.Name = "textBox23";
+            textBox23.Size = new Size(65, 23);
+            textBox23.TabIndex = 8;
+            // 
+            // textBox24
+            // 
+            textBox24.Location = new Point(8, 53);
+            textBox24.Name = "textBox24";
+            textBox24.Size = new Size(65, 23);
+            textBox24.TabIndex = 7;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(373, 35);
+            label7.Name = "label7";
+            label7.Size = new Size(46, 15);
+            label7.TabIndex = 6;
+            label7.Text = "Σύνολο";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(313, 35);
+            label8.Name = "label8";
+            label8.Size = new Size(29, 15);
+            label8.TabIndex = 5;
+            label8.Text = "24%";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(245, 35);
+            label9.Name = "label9";
+            label9.Size = new Size(23, 15);
+            label9.TabIndex = 4;
+            label9.Text = "4%";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(174, 35);
+            label10.Name = "label10";
+            label10.Size = new Size(23, 15);
+            label10.TabIndex = 3;
+            label10.Text = "3%";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(77, 35);
+            label11.Name = "label11";
+            label11.Size = new Size(75, 15);
+            label11.TabIndex = 2;
+            label11.Text = "Μεταφορικά";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(17, 35);
+            label12.Name = "label12";
+            label12.Size = new Size(47, 15);
+            label12.TabIndex = 1;
+            label12.Text = "Κόστος";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label13.Location = new Point(200, 10);
+            label13.Name = "label13";
+            label13.Size = new Size(38, 15);
+            label13.TabIndex = 0;
+            label13.Text = "Ξένοι";
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(textBox7);
+            panel2.Controls.Add(textBox8);
+            panel2.Controls.Add(textBox9);
+            panel2.Controls.Add(textBox10);
+            panel2.Controls.Add(textBox11);
+            panel2.Controls.Add(textBox12);
+            panel2.Controls.Add(textBox6);
+            panel2.Controls.Add(textBox5);
+            panel2.Controls.Add(textBox4);
+            panel2.Controls.Add(textBox3);
+            panel2.Controls.Add(textBox2);
+            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(label6);
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(label4);
+            panel2.Controls.Add(label3);
+            panel2.Controls.Add(label2);
+            panel2.Controls.Add(label1);
+            panel2.Controls.Add(GreeksLabel);
+            panel2.Location = new Point(3, 3);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(432, 131);
+            panel2.TabIndex = 0;
+            // 
+            // textBox7
+            // 
+            textBox7.Location = new Point(364, 82);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(65, 23);
+            textBox7.TabIndex = 18;
+            // 
+            // textBox8
+            // 
+            textBox8.Location = new Point(295, 82);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(65, 23);
+            textBox8.TabIndex = 17;
+            // 
+            // textBox9
+            // 
+            textBox9.Location = new Point(224, 82);
+            textBox9.Name = "textBox9";
+            textBox9.Size = new Size(65, 23);
+            textBox9.TabIndex = 16;
+            // 
+            // textBox10
+            // 
+            textBox10.Location = new Point(153, 82);
+            textBox10.Name = "textBox10";
+            textBox10.Size = new Size(65, 23);
+            textBox10.TabIndex = 15;
+            // 
+            // textBox11
+            // 
+            textBox11.Location = new Point(82, 82);
+            textBox11.Name = "textBox11";
+            textBox11.Size = new Size(65, 23);
+            textBox11.TabIndex = 14;
+            // 
+            // textBox12
+            // 
+            textBox12.Location = new Point(8, 82);
+            textBox12.Name = "textBox12";
+            textBox12.Size = new Size(65, 23);
+            textBox12.TabIndex = 13;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(364, 53);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(65, 23);
+            textBox6.TabIndex = 12;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(295, 53);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(65, 23);
+            textBox5.TabIndex = 11;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(224, 53);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(65, 23);
+            textBox4.TabIndex = 10;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(153, 53);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(65, 23);
+            textBox3.TabIndex = 9;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(82, 53);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(65, 23);
+            textBox2.TabIndex = 8;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(8, 53);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(65, 23);
+            textBox1.TabIndex = 7;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(373, 35);
+            label6.Name = "label6";
+            label6.Size = new Size(46, 15);
+            label6.TabIndex = 6;
+            label6.Text = "Σύνολο";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(313, 35);
+            label5.Name = "label5";
+            label5.Size = new Size(29, 15);
+            label5.TabIndex = 5;
+            label5.Text = "24%";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(245, 35);
+            label4.Name = "label4";
+            label4.Size = new Size(23, 15);
+            label4.TabIndex = 4;
+            label4.Text = "4%";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(174, 35);
+            label3.Name = "label3";
+            label3.Size = new Size(23, 15);
+            label3.TabIndex = 3;
+            label3.Text = "3%";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(77, 35);
+            label2.Name = "label2";
+            label2.Size = new Size(75, 15);
+            label2.TabIndex = 2;
+            label2.Text = "Μεταφορικά";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(17, 35);
+            label1.Name = "label1";
+            label1.Size = new Size(47, 15);
+            label1.TabIndex = 1;
+            label1.Text = "Κόστος";
+            // 
+            // GreeksLabel
+            // 
+            GreeksLabel.AutoSize = true;
+            GreeksLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            GreeksLabel.Location = new Point(192, 10);
+            GreeksLabel.Name = "GreeksLabel";
+            GreeksLabel.Size = new Size(55, 15);
+            GreeksLabel.TabIndex = 0;
+            GreeksLabel.Text = "Έλληνες";
             // 
             // Form1
             // 
@@ -1163,6 +1570,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Product Assistant";
+            FormClosed += Form1_FormClosed;
             Load += Form1_Load;
             HomeTabPage.ResumeLayout(false);
             panel1.ResumeLayout(false);
@@ -1173,6 +1581,11 @@
             OrdersTabPage.PerformLayout();
             SupplierTabPage.ResumeLayout(false);
             TabControl.ResumeLayout(false);
+            PricingTabPage.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -1269,5 +1682,46 @@
         private Label Cleaners0Label;
         private Button Cleaners0PasteButton;
         private TextBox Cleaners0TextBox;
+        private TabPage PricingTabPage;
+        private Panel panel2;
+        private TextBox textBox7;
+        private TextBox textBox8;
+        private TextBox textBox9;
+        private TextBox textBox10;
+        private TextBox textBox11;
+        private TextBox textBox12;
+        private TextBox textBox6;
+        private TextBox textBox5;
+        private TextBox textBox4;
+        private TextBox textBox3;
+        private TextBox textBox2;
+        private TextBox textBox1;
+        private Label label6;
+        private Label label5;
+        private Label label4;
+        private Label label3;
+        private Label label2;
+        private Label label1;
+        private Label GreeksLabel;
+        private Panel panel3;
+        private TextBox textBox13;
+        private TextBox textBox14;
+        private TextBox textBox15;
+        private TextBox textBox16;
+        private TextBox textBox17;
+        private TextBox textBox18;
+        private TextBox textBox19;
+        private TextBox textBox20;
+        private TextBox textBox21;
+        private TextBox textBox22;
+        private TextBox textBox23;
+        private TextBox textBox24;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private Label label11;
+        private Label label12;
+        private Label label13;
     }
 }
