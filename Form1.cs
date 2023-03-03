@@ -145,6 +145,7 @@ namespace My_Assistant
             data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
+        // Date Time Pickers
         private void CPUDateTimePicker_ValueChanged(object sender, EventArgs e)
         {
             Clipboard.Clear();
@@ -218,7 +219,7 @@ namespace My_Assistant
         {
             Clipboard.Clear();
             CleanersRichTextBox.Text = string.Empty;
-            string orderNumber = CleanersTextBox.Text;
+            string orderNumber = Cleaners14TextBox.Text;
             string selectedDate = CleanersDateTimePicker.Value.ToString("dddd d/M");
             CleanersRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με Καράβι " + selectedDate + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
             DataObject data = new DataObject();
@@ -229,7 +230,7 @@ namespace My_Assistant
         {
             Clipboard.Clear();
             CleanersRichTextBox.Text = string.Empty;
-            string orderNumber = CleanersTextBox.Text;
+            string orderNumber = Cleaners14TextBox.Text;
             string selectedDate = CleanersDateTimePicker.Value.ToString("dddd d/M");
             string selectedDate2 = CleanersDateTimePicker2.Value.ToString("dddd d/M");
             CleanersRichTextBox.AppendText(orderNumber + " Παραλαμβάνουμε με Καράβι " + selectedDate + " ή " + selectedDate2 + "=ΠΚ=" + DateTime.Now.ToString("d/M/yy")); ;
@@ -237,16 +238,13 @@ namespace My_Assistant
             data.SetData(DataFormats.UnicodeText, CleanersRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
+        // Paste Order Buttons
         private void PasteCPU14Button_Click(object sender, EventArgs e)
         {
             if (Clipboard.ContainsText())
             {
                 CPU14TextBox.Text = Clipboard.GetText();
             }
-        }
-        private void ClearCPU14Button_Click(object sender, EventArgs e)
-        {
-            CPU14TextBox.Text = string.Empty;
         }
         private void PasteCPU0Button_Click(object sender, EventArgs e)
         {
@@ -255,20 +253,12 @@ namespace My_Assistant
                 CPU0TextBox.Text = Clipboard.GetText();
             }
         }
-        private void ClearCPU0Button_Click(object sender, EventArgs e)
-        {
-            CPU0TextBox.Text = string.Empty;
-        }
         private void PasteBattery14Button_Click(object sender, EventArgs e)
         {
             if (Clipboard.ContainsText())
             {
                 Battery14TextBox.Text = Clipboard.GetText();
             }
-        }
-        private void ClearBattery14Button_Click(object sender, EventArgs e)
-        {
-            Battery14TextBox.Text = string.Empty;
         }
         private void PasteBattery0Button_Click(object sender, EventArgs e)
         {
@@ -277,20 +267,12 @@ namespace My_Assistant
                 Battery0TextBox.Text = Clipboard.GetText();
             }
         }
-        private void ClearBattery0Button_Click(object sender, EventArgs e)
-        {
-            Battery0TextBox.Text = string.Empty;
-        }
         private void PasteShip14Button_Click(object sender, EventArgs e)
         {
             if (Clipboard.ContainsText())
             {
                 Ship14TextBox.Text = Clipboard.GetText();
             }
-        }
-        private void ClearShip14Button_Click(object sender, EventArgs e)
-        {
-            Ship14TextBox.Text = string.Empty;
         }
         private void PasteShip0Button_Click(object sender, EventArgs e)
         {
@@ -299,60 +281,59 @@ namespace My_Assistant
                 Ship0TextBox.Text = Clipboard.GetText();
             }
         }
+        private void Cleaners14PasteButton_Click(object sender, EventArgs e)
+        {
+            if (Clipboard.ContainsText())
+            {
+                Cleaners14TextBox.Text = Clipboard.GetText();
+            }
+        }
+        private void Cleaners0PasteButton_Click(object sender, EventArgs e)
+        {
+            if (Clipboard.ContainsText())
+            {
+                Cleaners0TextBox.Text = Clipboard.GetText();
+            }
+        }
+        // Clear Order Buttons
+        private void ClearCPU14Button_Click(object sender, EventArgs e)
+        {
+            CPU14TextBox.Text = string.Empty;
+        }
+        private void ClearCPU0Button_Click(object sender, EventArgs e)
+        {
+            CPU0TextBox.Text = string.Empty;
+        }
+        private void ClearBattery14Button_Click(object sender, EventArgs e)
+        {
+            Battery14TextBox.Text = string.Empty;
+        }
+        private void ClearBattery0Button_Click(object sender, EventArgs e)
+        {
+            Battery0TextBox.Text = string.Empty;
+        }
+        private void ClearShip14Button_Click(object sender, EventArgs e)
+        {
+            Ship14TextBox.Text = string.Empty;
+        }
         private void ClearShip0Button_Click(object sender, EventArgs e)
         {
             Ship0TextBox.Text = string.Empty;
         }
-        private void CleanersPasteButton_Click(object sender, EventArgs e)
+        private void Cleaners14ClearButton_Click(object sender, EventArgs e)
         {
-            if (Clipboard.ContainsText())
-            {
-                CleanersTextBox.Text = Clipboard.GetText();
-            }
+            Cleaners14TextBox.Text = string.Empty;
         }
-        private void ClearCleanersButton_Click(object sender, EventArgs e)
+        private void Cleaners0ClearButton_Click(object sender, EventArgs e)
         {
-            CleanersTextBox.Text = string.Empty;
+            Cleaners0TextBox.Text = string.Empty;
         }
-        private void CleanersCopyButton_Click(object sender, EventArgs e)
-        {
-            DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, CleanersRichTextBox.Text);
-            Clipboard.SetDataObject(data, true);
-        }
-        private void CleanersResetButton_Click(object sender, EventArgs e)
-        {
-            CleanersRichTextBox.Text = string.Empty;
-        }
-        private void ShipCopyButton_Click(object sender, EventArgs e)
-        {
-            DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, ShipRichTextBox.Text);
-            Clipboard.SetDataObject(data, true);
-        }
-        private void ShipResetButton_Click(object sender, EventArgs e)
-        {
-            ShipRichTextBox.Text = string.Empty;
-        }
+        // Orders Copy Rich Text Box
         private void CPUCopyButton_Click(object sender, EventArgs e)
         {
             DataObject data = new DataObject();
             data.SetData(DataFormats.UnicodeText, CPURichTextBox.Text);
             Clipboard.SetDataObject(data, true);
-        }
-        private void CPUResetButton_Click(object sender, EventArgs e)
-        {
-            CPURichTextBox.Text = string.Empty;
-        }
-        private void CopySuppliersButton_Click(object sender, EventArgs e)
-        {
-            DataObject data = new DataObject();
-            data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
-            Clipboard.SetDataObject(data, true);
-        }
-        private void DeleteSuppliersButton_Click(object sender, EventArgs e)
-        {
-            SuppliersRichTextBox.Text = string.Empty;
         }
         private void BatteryCopyButton_Click(object sender, EventArgs e)
         {
@@ -360,11 +341,36 @@ namespace My_Assistant
             data.SetData(DataFormats.UnicodeText, BatteryRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
+        private void ShipCopyButton_Click(object sender, EventArgs e)
+        {
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, ShipRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void CleanersCopyButton_Click(object sender, EventArgs e)
+        {
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, CleanersRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        // Orders Reset Rich Text Box
+        private void CPUResetButton_Click(object sender, EventArgs e)
+        {
+            CPURichTextBox.Text = string.Empty;
+        }
         private void BatteryResetButton_Click(object sender, EventArgs e)
         {
             BatteryRichTextBox.Text = string.Empty;
         }
-
+        private void ShipResetButton_Click(object sender, EventArgs e)
+        {
+            ShipRichTextBox.Text = string.Empty;
+        }
+        private void CleanersResetButton_Click(object sender, EventArgs e)
+        {
+            CleanersRichTextBox.Text = string.Empty;
+        }
+        // Auto Gen Buttons
         private void ShipAutoButton_Click(object sender, EventArgs e)
         {
             // Get the current date and time
@@ -395,25 +401,61 @@ namespace My_Assistant
             // Get the current date and time
             DateTime currentDate = DateTime.Now;
             Clipboard.Clear();
-            if (CleanersTextBox.Text is not null)
+            if (Cleaners14TextBox.Text is not null)
                 if (currentDate.DayOfWeek > DayOfWeek.Friday || (currentDate.DayOfWeek == DayOfWeek.Friday && currentDate.TimeOfDay > TimeSpan.FromHours(11)))
                 {
                     // Calculate the second next Friday
                     DateTime secondnextFriday = currentDate.AddDays(14).AddDays((DayOfWeek.Friday + 7 - currentDate.AddDays(7).DayOfWeek) % 7);
                     // Display the next Friday in the ShipRichTextBox
-                    CleanersRichTextBox.Text = CleanersTextBox.Text + " Παραλαμβάνουμε με Καράβι " + secondnextFriday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy"); ;
+                    CleanersRichTextBox.Text = Cleaners14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + secondnextFriday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy"); ;
                 }
                 else
                 {
                     // Calculate this Friday
                     DateTime nextFriday = currentDate.AddDays(7).AddDays((DayOfWeek.Friday + 7 - currentDate.DayOfWeek) % 7);
                     // Display the upcoming Friday in the ShipRichTextBox
-                    CleanersRichTextBox.Text = CleanersTextBox.Text + " Παραλαμβάνουμε με Καράβι " + nextFriday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy"); ;
+                    CleanersRichTextBox.Text = Cleaners14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + nextFriday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy"); ;
                 }
             else
             {
                 CleanersRichTextBox.Text = "";
             }
+        }
+        // Copy from Order Text Box
+        private void Ship0CopyButton_Click(object sender, EventArgs e)
+        {
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, Ship0TextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void Battery0CopyButton_Click(object sender, EventArgs e)
+        {
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, Battery0TextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void CPU0CopyButton_Click(object sender, EventArgs e)
+        {
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, CPU0TextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void Cleaners0CopyButton_Click(object sender, EventArgs e)
+        {
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, Cleaners0TextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        // Suppliers Tab
+        private void CopySuppliersButton_Click(object sender, EventArgs e)
+        {
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void DeleteSuppliersButton_Click(object sender, EventArgs e)
+        {
+            SuppliersRichTextBox.Text = string.Empty;
         }
     }
 }
