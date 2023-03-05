@@ -136,6 +136,9 @@
             GreeksLabel = new Label();
             HomeRichTextBox = new RichTextBox();
             HomeTabPage = new TabPage();
+            TempButton = new Button();
+            ContactWaitButton = new Button();
+            TempOrderButton = new Button();
             FromLarnacaButton = new Button();
             FromNicosiaButton = new Button();
             ToLimassolButton = new Button();
@@ -233,6 +236,12 @@
             SuppliersDeleteButton = new Button();
             SuppliersRichTextBox = new RichTextBox();
             SupplierTabPage = new TabPage();
+            PricesNotButton = new Button();
+            FixPricesButton = new Button();
+            BooksOrderButton = new Button();
+            BooksButton = new Button();
+            MasksButton = new Button();
+            ArticleButton39 = new Button();
             TabControl = new TabControl();
             HomeTabPage.SuspendLayout();
             panel1.SuspendLayout();
@@ -543,9 +552,9 @@
             // 
             // CancelPreorderButton
             // 
-            CancelPreorderButton.Location = new Point(136, 93);
+            CancelPreorderButton.Location = new Point(8, 142);
             CancelPreorderButton.Name = "CancelPreorderButton";
-            CancelPreorderButton.Size = new Size(168, 23);
+            CancelPreorderButton.Size = new Size(199, 33);
             CancelPreorderButton.TabIndex = 3;
             CancelPreorderButton.Text = "Ακύρωση προέγκρισης";
             CancelPreorderButton.UseVisualStyleBackColor = true;
@@ -807,9 +816,9 @@
             // 
             // CopyOKButton
             // 
-            CopyOKButton.Location = new Point(136, 64);
+            CopyOKButton.Location = new Point(8, 103);
             CopyOKButton.Name = "CopyOKButton";
-            CopyOKButton.Size = new Size(168, 23);
+            CopyOKButton.Size = new Size(199, 33);
             CopyOKButton.TabIndex = 2;
             CopyOKButton.Text = "Αντιγραφή ΟΚ";
             CopyOKButton.UseVisualStyleBackColor = true;
@@ -857,9 +866,9 @@
             // 
             // CourrierButton
             // 
-            CourrierButton.Location = new Point(136, 6);
+            CourrierButton.Location = new Point(8, 25);
             CourrierButton.Name = "CourrierButton";
-            CourrierButton.Size = new Size(168, 23);
+            CourrierButton.Size = new Size(199, 33);
             CourrierButton.TabIndex = 0;
             CourrierButton.Text = "Courier + Λειτουργικά";
             CourrierButton.UseVisualStyleBackColor = true;
@@ -1350,6 +1359,9 @@
             // HomeTabPage
             // 
             HomeTabPage.BackColor = SystemColors.ButtonFace;
+            HomeTabPage.Controls.Add(TempButton);
+            HomeTabPage.Controls.Add(ContactWaitButton);
+            HomeTabPage.Controls.Add(TempOrderButton);
             HomeTabPage.Controls.Add(FromLarnacaButton);
             HomeTabPage.Controls.Add(FromNicosiaButton);
             HomeTabPage.Controls.Add(ToLimassolButton);
@@ -1364,6 +1376,36 @@
             HomeTabPage.Size = new Size(433, 533);
             HomeTabPage.TabIndex = 0;
             HomeTabPage.Text = "Αρχική";
+            // 
+            // TempButton
+            // 
+            TempButton.Location = new Point(292, 311);
+            TempButton.Name = "TempButton";
+            TempButton.Size = new Size(138, 32);
+            TempButton.TabIndex = 15;
+            TempButton.Text = "Προσωρινή Δέσμευση";
+            TempButton.UseVisualStyleBackColor = true;
+            TempButton.Click += TempButton_Click;
+            // 
+            // ContactWaitButton
+            // 
+            ContactWaitButton.Location = new Point(292, 273);
+            ContactWaitButton.Name = "ContactWaitButton";
+            ContactWaitButton.Size = new Size(138, 32);
+            ContactWaitButton.TabIndex = 14;
+            ContactWaitButton.Text = "Αναμονή Επικοινωνίας";
+            ContactWaitButton.UseVisualStyleBackColor = true;
+            ContactWaitButton.Click += ContactWaitButton_Click;
+            // 
+            // TempOrderButton
+            // 
+            TempOrderButton.Location = new Point(292, 235);
+            TempOrderButton.Name = "TempOrderButton";
+            TempOrderButton.Size = new Size(138, 32);
+            TempOrderButton.TabIndex = 13;
+            TempOrderButton.Text = "Προσωρινή Δέσμευση";
+            TempOrderButton.UseVisualStyleBackColor = true;
+            TempOrderButton.Click += TempOrderButton_Click;
             // 
             // FromLarnacaButton
             // 
@@ -2492,9 +2534,9 @@
             // 
             // ShipButton
             // 
-            ShipButton.Location = new Point(136, 35);
+            ShipButton.Location = new Point(8, 64);
             ShipButton.Name = "ShipButton";
-            ShipButton.Size = new Size(168, 23);
+            ShipButton.Size = new Size(199, 33);
             ShipButton.TabIndex = 1;
             ShipButton.Text = "Καράβι-Σημερινό";
             ShipButton.UseVisualStyleBackColor = true;
@@ -2504,10 +2546,10 @@
             // 
             SuppliersCopyButton.BackColor = Color.Chartreuse;
             SuppliersCopyButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            SuppliersCopyButton.Location = new Point(8, 132);
+            SuppliersCopyButton.Location = new Point(6, 418);
             SuppliersCopyButton.Name = "SuppliersCopyButton";
             SuppliersCopyButton.Size = new Size(138, 43);
-            SuppliersCopyButton.TabIndex = 4;
+            SuppliersCopyButton.TabIndex = 50;
             SuppliersCopyButton.Text = "Αντιγραφή";
             SuppliersCopyButton.UseVisualStyleBackColor = false;
             SuppliersCopyButton.Click += CopySuppliersButton_Click;
@@ -2516,10 +2558,10 @@
             // 
             SuppliersDeleteButton.BackColor = Color.DarkSalmon;
             SuppliersDeleteButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            SuppliersDeleteButton.Location = new Point(276, 132);
+            SuppliersDeleteButton.Location = new Point(289, 418);
             SuppliersDeleteButton.Name = "SuppliersDeleteButton";
             SuppliersDeleteButton.Size = new Size(138, 43);
-            SuppliersDeleteButton.TabIndex = 5;
+            SuppliersDeleteButton.TabIndex = 51;
             SuppliersDeleteButton.Text = "Διαγραφή";
             SuppliersDeleteButton.UseVisualStyleBackColor = false;
             SuppliersDeleteButton.Click += DeleteSuppliersButton_Click;
@@ -2527,15 +2569,21 @@
             // SuppliersRichTextBox
             // 
             SuppliersRichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            SuppliersRichTextBox.Location = new Point(8, 181);
+            SuppliersRichTextBox.Location = new Point(2, 467);
             SuppliersRichTextBox.Name = "SuppliersRichTextBox";
-            SuppliersRichTextBox.Size = new Size(425, 63);
-            SuppliersRichTextBox.TabIndex = 6;
+            SuppliersRichTextBox.Size = new Size(428, 63);
+            SuppliersRichTextBox.TabIndex = 52;
             SuppliersRichTextBox.Text = "";
             // 
             // SupplierTabPage
             // 
             SupplierTabPage.BackColor = SystemColors.ButtonFace;
+            SupplierTabPage.Controls.Add(PricesNotButton);
+            SupplierTabPage.Controls.Add(FixPricesButton);
+            SupplierTabPage.Controls.Add(BooksOrderButton);
+            SupplierTabPage.Controls.Add(BooksButton);
+            SupplierTabPage.Controls.Add(MasksButton);
+            SupplierTabPage.Controls.Add(ArticleButton39);
             SupplierTabPage.Controls.Add(SuppliersCopyButton);
             SupplierTabPage.Controls.Add(SuppliersRichTextBox);
             SupplierTabPage.Controls.Add(SuppliersDeleteButton);
@@ -2549,6 +2597,70 @@
             SupplierTabPage.Size = new Size(433, 533);
             SupplierTabPage.TabIndex = 1;
             SupplierTabPage.Text = "Προμηθευτές";
+            // 
+            // PricesNotButton
+            // 
+            PricesNotButton.Location = new Point(225, 181);
+            PricesNotButton.Name = "PricesNotButton";
+            PricesNotButton.Size = new Size(199, 33);
+            PricesNotButton.TabIndex = 9;
+            PricesNotButton.Text = "Τιμές ΟΚ, εκτός";
+            PricesNotButton.UseVisualStyleBackColor = true;
+            PricesNotButton.Click += PricesNotButton_Click;
+            // 
+            // FixPricesButton
+            // 
+            FixPricesButton.Location = new Point(225, 142);
+            FixPricesButton.Name = "FixPricesButton";
+            FixPricesButton.Size = new Size(199, 33);
+            FixPricesButton.TabIndex = 8;
+            FixPricesButton.Text = "Φτιάξε τιμές";
+            FixPricesButton.UseVisualStyleBackColor = true;
+            FixPricesButton.Click += FixPricesButton_Click;
+            // 
+            // BooksOrderButton
+            // 
+            BooksOrderButton.Location = new Point(225, 103);
+            BooksOrderButton.Name = "BooksOrderButton";
+            BooksOrderButton.Size = new Size(199, 33);
+            BooksOrderButton.TabIndex = 7;
+            BooksOrderButton.Text = "Δέσμευση Κύπρου - Βιβλια";
+            BooksOrderButton.UseVisualStyleBackColor = true;
+            BooksOrderButton.Click += BooksOrderButton_Click;
+            // 
+            // BooksButton
+            // 
+            BooksButton.BackColor = Color.MistyRose;
+            BooksButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            BooksButton.Location = new Point(225, 64);
+            BooksButton.Name = "BooksButton";
+            BooksButton.Size = new Size(199, 33);
+            BooksButton.TabIndex = 6;
+            BooksButton.Text = "Βιβλία ΦΠΑ 6,5%";
+            BooksButton.UseVisualStyleBackColor = false;
+            BooksButton.Click += BooksButton_Click;
+            // 
+            // MasksButton
+            // 
+            MasksButton.BackColor = Color.MistyRose;
+            MasksButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            MasksButton.Location = new Point(225, 25);
+            MasksButton.Name = "MasksButton";
+            MasksButton.Size = new Size(199, 33);
+            MasksButton.TabIndex = 5;
+            MasksButton.Text = "Μάσκες ΦΠΑ 6%";
+            MasksButton.UseVisualStyleBackColor = false;
+            MasksButton.Click += MasksButton_Click;
+            // 
+            // ArticleButton39
+            // 
+            ArticleButton39.Location = new Point(8, 180);
+            ArticleButton39.Name = "ArticleButton39";
+            ArticleButton39.Size = new Size(199, 33);
+            ArticleButton39.TabIndex = 4;
+            ArticleButton39.Text = "Άρθρο 39α";
+            ArticleButton39.UseVisualStyleBackColor = true;
+            ArticleButton39.Click += ArticleButton39_Click;
             // 
             // TabControl
             // 
@@ -2795,5 +2907,14 @@
         private Button FromLarnacaButton;
         private Button FromNicosiaButton;
         private Button ToLimassolButton;
+        private Button TempOrderButton;
+        private Button TempButton;
+        private Button ContactWaitButton;
+        private Button ArticleButton39;
+        private Button BooksButton;
+        private Button MasksButton;
+        private Button FixPricesButton;
+        private Button BooksOrderButton;
+        private Button PricesNotButton;
     }
 }

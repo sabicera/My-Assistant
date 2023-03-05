@@ -846,5 +846,78 @@ namespace My_Assistant
             data.SetData(DataFormats.UnicodeText, HomeRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
+        private void TempOrderButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            HomeRichTextBox.Text = $"ΠΡΟΣΩΡΙΝΗ ΔΕΣΜΕΥΣΗ αναμονη προκαταβολης _ το προϊόν είναι δεσμευμένο στον προμηθευτή και θα είναι κανονικά διαθέσιμο 3-4 ΜΕΡΕΣ μετά την προκαταβολή του πελάτη=ΠΚ {DateTime.Now:dd/MM/yy}";
+            DataObject data = new();
+            data.SetData(DataFormats.UnicodeText, HomeRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void ContactWaitButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            HomeRichTextBox.Text = $"Αναμονή επικοινωνίας από πελάτη=ΠΚ {DateTime.Now:dd/MM/yy}";
+            DataObject data = new();
+            data.SetData(DataFormats.UnicodeText, HomeRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+
+        }
+        private void TempButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            HomeRichTextBox.Text = $"Αναμονή προκαταβολής=ΠΚ {DateTime.Now:dd/MM/yy}";
+            DataObject data = new();
+            data.SetData(DataFormats.UnicodeText, HomeRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void ArticleButton39_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            SuppliersRichTextBox.Text = $"Άρθρο 39α ,υπόχρεος για την καταβολή του φόρου είναι ο αγοραστής";
+            DataObject data = new();
+            data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void BooksButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            SuppliersRichTextBox.Text = $"ΠΡΟΣΟΧΗ - ΒΙΒΛΙΑ - ΦΠΑ 6,5%";
+            DataObject data = new();
+            data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void MasksButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            SuppliersRichTextBox.Text = $"ΠΡΟΣΟΧΗ - ΜΑΣΚΕΣ - ΦΠΑ 6%";
+            DataObject data = new();
+            data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void BooksOrderButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            SuppliersRichTextBox.Text = $"ΔΕΣΜΕΥΣΗ ΚΥΠΡΟΥ(ΒΙΒΛΙΑ)";
+            DataObject data = new();
+            data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void FixPricesButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            SuppliersRichTextBox.Text = $"Καλημέρα, φτιάξε τιμές μόλις μπορέσεις, ευχαριστώ....";
+            DataObject data = new();
+            data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void PricesNotButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            SuppliersRichTextBox.Text = $"Τιμές ΟΚ, εκτός";
+            DataObject data = new();
+            data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
     }
 }
