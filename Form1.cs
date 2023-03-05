@@ -1,3 +1,6 @@
+using System.Globalization;
+using System.Text.RegularExpressions;
+
 namespace My_Assistant
 {
     public partial class Form1 : Form
@@ -467,6 +470,124 @@ namespace My_Assistant
         {
             Properties.Settings.Default.LatestCPU0Value = CPU0TextBox.Text;
             Properties.Settings.Default.Save();
+        }
+        // Calculations
+        private void CostGRTextBox_TextChanged(object sender, EventArgs e) => CalculateGRTotal();
+        private void ShippingGRTextBox_TextChanged(object sender, EventArgs e) => CalculateGRTotal();
+        private void CalculateGRTotal()
+        {
+            // Set the culture to a European culture that uses the euro symbol
+            var culture = new CultureInfo("en-EN");
+            var format = (NumberFormatInfo)culture.NumberFormat.Clone();
+            format.CurrencySymbol = "";
+
+            decimal cost = 0;
+            decimal.TryParse(CostGRTextBox.Text, NumberStyles.AllowDecimalPoint | NumberStyles.AllowThousands, culture, out cost);
+
+            decimal shipping = 0;
+            decimal.TryParse(ShippingGRTextBox.Text, NumberStyles.AllowDecimalPoint | NumberStyles.AllowThousands, culture, out shipping);
+
+            // Perform the calculations
+            decimal subtotal = cost + shipping;
+            decimal tax = (subtotal * 1.04m) * 1.24m;
+            decimal total = tax;
+
+            // Display the result in the TotalTextBox with 2 decimal places and the euro symbol
+            TotalGRButton.Text = total.ToString("N4", format);
+        }
+        private void CostGRSecTextBox_TextChanged(object sender, EventArgs e) => CalculateGRSecTotal();
+        private void ShippingGRSecTextBox_TextChanged(object sender, EventArgs e) => CalculateGRSecTotal();
+        private void CalculateGRSecTotal()
+        {
+            // Set the culture to a European culture that uses the euro symbol
+            var culture = new CultureInfo("en-EN");
+            var format = (NumberFormatInfo)culture.NumberFormat.Clone();
+            format.CurrencySymbol = "";
+
+            decimal cost = 0;
+            decimal.TryParse(CostGRSecTextBox.Text, NumberStyles.AllowDecimalPoint | NumberStyles.AllowThousands, culture, out cost);
+
+            decimal shipping = 0;
+            decimal.TryParse(ShippingGRSecTextBox.Text, NumberStyles.AllowDecimalPoint | NumberStyles.AllowThousands, culture, out shipping);
+
+            // Perform the calculations
+            decimal subtotal = cost + shipping;
+            decimal tax = (subtotal * 1.04m) * 1.24m;
+            decimal total = tax;
+
+            // Display the result in the TotalTextBox with 2 decimal places and the euro symbol
+            TotalGRSecButton.Text = total.ToString("N4", format);
+        }
+        private void CostUKTextBox_TextChanged(object sender, EventArgs e) => CalculateUKTotal();
+        private void ShippingUKTextBox_TextChanged(object sender, EventArgs e) => CalculateUKTotal();
+        private void CalculateUKTotal()
+        {
+            // Set the culture to a European culture that uses the euro symbol
+            var culture = new CultureInfo("en-EN");
+            var format = (NumberFormatInfo)culture.NumberFormat.Clone();
+            format.CurrencySymbol = "";
+
+            decimal cost = 0;
+            decimal.TryParse(CostUKTextBox.Text, NumberStyles.AllowDecimalPoint | NumberStyles.AllowThousands, culture, out cost);
+
+            decimal shipping = 0;
+            decimal.TryParse(ShippingUKTextBox.Text, NumberStyles.AllowDecimalPoint | NumberStyles.AllowThousands, culture, out shipping);
+
+            // Perform the calculations
+            decimal subtotal = cost + shipping;
+            decimal tax = ((subtotal * 1.03m) * 1.04m) * 1.24m;
+            decimal total = tax;
+
+            // Display the result in the TotalTextBox with 2 decimal places and the euro symbol
+            TotalUKButton.Text = total.ToString("N4", format);
+        }
+        private void CostUKSecTextBox_TextChanged(object sender, EventArgs e) => CalculateUKSecTotal();
+        private void ShippingUKSecTextBox_TextChanged(object sender, EventArgs e) => CalculateUKSecTotal();
+        private void CalculateUKSecTotal()
+        {
+            // Set the culture to a European culture that uses the euro symbol
+            var culture = new CultureInfo("en-EN");
+            var format = (NumberFormatInfo)culture.NumberFormat.Clone();
+            format.CurrencySymbol = "";
+
+            decimal cost = 0;
+            decimal.TryParse(CostUKSecTextBox.Text, NumberStyles.AllowDecimalPoint | NumberStyles.AllowThousands, culture, out cost);
+
+            decimal shipping = 0;
+            decimal.TryParse(ShippingUKSecTextBox.Text, NumberStyles.AllowDecimalPoint | NumberStyles.AllowThousands, culture, out shipping);
+
+            // Perform the calculations
+            decimal subtotal = cost + shipping;
+            decimal tax = ((subtotal * 1.03m) * 1.04m) * 1.24m;
+            decimal total = tax;
+
+            // Display the result in the TotalTextBox with 2 decimal places and the euro symbol
+            TotalUKSecButton.Text = total.ToString("N4", format);
+        }
+        // Calculations Copy Buttons
+        private void TotalGRButton_Click(object sender, EventArgs e)
+        {
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, TotalGRButton.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void TotalGRSecButton_Click(object sender, EventArgs e)
+        {
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, TotalGRSecButton.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void TotalUKButton_Click(object sender, EventArgs e)
+        {
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, TotalUKButton.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void TotalUKSecButton_Click(object sender, EventArgs e)
+        {
+            DataObject data = new DataObject();
+            data.SetData(DataFormats.UnicodeText, TotalUKSecButton.Text);
+            Clipboard.SetDataObject(data, true);
         }
     }
 }

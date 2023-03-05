@@ -122,12 +122,46 @@
             SupplierTabPage = new TabPage();
             TabControl = new TabControl();
             PricingTabPage = new TabPage();
-            panel3 = new Panel();
+            TotalUKSecButton = new Button();
+            TotalUKButton = new Button();
+            TotalGRSecButton = new Button();
+            TotalGRButton = new Button();
+            ShippingUKTextBox = new TextBox();
+            ShippingUKSecTextBox = new TextBox();
+            CostUKTextBox = new TextBox();
+            label13 = new Label();
+            CostUKSecTextBox = new TextBox();
+            textBox25 = new TextBox();
+            textBox26 = new TextBox();
+            textBox27 = new TextBox();
+            textBox28 = new TextBox();
+            textBox29 = new TextBox();
+            textBox30 = new TextBox();
+            textBox31 = new TextBox();
+            textBox32 = new TextBox();
+            textBox33 = new TextBox();
+            textBox34 = new TextBox();
+            textBox35 = new TextBox();
+            textBox36 = new TextBox();
+            label4 = new Label();
+            textBox37 = new TextBox();
+            textBox38 = new TextBox();
+            textBox39 = new TextBox();
+            textBox40 = new TextBox();
+            textBox41 = new TextBox();
+            textBox42 = new TextBox();
+            textBox43 = new TextBox();
+            textBox44 = new TextBox();
+            textBox45 = new TextBox();
+            textBox46 = new TextBox();
+            textBox47 = new TextBox();
+            textBox48 = new TextBox();
+            label5 = new Label();
+            textBox10 = new TextBox();
+            textBox11 = new TextBox();
+            textBox12 = new TextBox();
             textBox13 = new TextBox();
             textBox14 = new TextBox();
-            textBox15 = new TextBox();
-            textBox16 = new TextBox();
-            textBox17 = new TextBox();
             textBox18 = new TextBox();
             textBox19 = new TextBox();
             textBox20 = new TextBox();
@@ -135,33 +169,29 @@
             textBox22 = new TextBox();
             textBox23 = new TextBox();
             textBox24 = new TextBox();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
-            label13 = new Label();
-            panel2 = new Panel();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
-            textBox10 = new TextBox();
-            textBox11 = new TextBox();
-            textBox12 = new TextBox();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
             label3 = new Label();
+            textBox15 = new TextBox();
+            textBox16 = new TextBox();
+            textBox17 = new TextBox();
+            ShippingGRSecTextBox = new TextBox();
+            CostGRSecTextBox = new TextBox();
+            textBox9 = new TextBox();
+            ShippingGRTextBox = new TextBox();
+            textBox7 = new TextBox();
+            CostGRTextBox = new TextBox();
+            label6 = new Label();
+            textBox8 = new TextBox();
             label2 = new Label();
             label1 = new Label();
+            textBox5 = new TextBox();
             GreeksLabel = new Label();
+            textBox6 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            label14 = new Label();
+            button1 = new Button();
             HomeTabPage.SuspendLayout();
             panel1.SuspendLayout();
             NotesPanel.SuspendLayout();
@@ -169,8 +199,6 @@
             SupplierTabPage.SuspendLayout();
             TabControl.SuspendLayout();
             PricingTabPage.SuspendLayout();
-            panel3.SuspendLayout();
-            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // AdressofOrderComboBox
@@ -198,14 +226,14 @@
             // 
             Battery0TextBox.Location = new Point(23, 170);
             Battery0TextBox.Name = "Battery0TextBox";
-            Battery0TextBox.Size = new Size(206, 23);
+            Battery0TextBox.Size = new Size(206, 21);
             Battery0TextBox.TabIndex = 22;
             // 
             // Battery14TextBox
             // 
             Battery14TextBox.Location = new Point(23, 143);
             Battery14TextBox.Name = "Battery14TextBox";
-            Battery14TextBox.Size = new Size(206, 23);
+            Battery14TextBox.Size = new Size(206, 21);
             Battery14TextBox.TabIndex = 17;
             // 
             // BatteryCopyButton
@@ -226,7 +254,7 @@
             BatteryDateTimePicker.Format = DateTimePickerFormat.Custom;
             BatteryDateTimePicker.Location = new Point(314, 143);
             BatteryDateTimePicker.Name = "BatteryDateTimePicker";
-            BatteryDateTimePicker.Size = new Size(50, 23);
+            BatteryDateTimePicker.Size = new Size(50, 21);
             BatteryDateTimePicker.TabIndex = 15;
             BatteryDateTimePicker.ValueChanged += BatteryDateTimePicker_ValueChanged;
             // 
@@ -236,7 +264,7 @@
             BatteryDateTimePicker2.Format = DateTimePickerFormat.Custom;
             BatteryDateTimePicker2.Location = new Point(384, 143);
             BatteryDateTimePicker2.Name = "BatteryDateTimePicker2";
-            BatteryDateTimePicker2.Size = new Size(49, 23);
+            BatteryDateTimePicker2.Size = new Size(49, 21);
             BatteryDateTimePicker2.TabIndex = 21;
             BatteryDateTimePicker2.ValueChanged += BatteryDateTimePicker2_ValueChanged;
             // 
@@ -300,7 +328,7 @@
             CleanersDateTimePicker.Format = DateTimePickerFormat.Custom;
             CleanersDateTimePicker.Location = new Point(314, 379);
             CleanersDateTimePicker.Name = "CleanersDateTimePicker";
-            CleanersDateTimePicker.Size = new Size(50, 23);
+            CleanersDateTimePicker.Size = new Size(50, 21);
             CleanersDateTimePicker.TabIndex = 39;
             CleanersDateTimePicker.ValueChanged += CleanersDateTimePicker_ValueChanged;
             // 
@@ -310,7 +338,7 @@
             CleanersDateTimePicker2.Format = DateTimePickerFormat.Custom;
             CleanersDateTimePicker2.Location = new Point(384, 379);
             CleanersDateTimePicker2.Name = "CleanersDateTimePicker2";
-            CleanersDateTimePicker2.Size = new Size(49, 23);
+            CleanersDateTimePicker2.Size = new Size(49, 21);
             CleanersDateTimePicker2.TabIndex = 44;
             CleanersDateTimePicker2.ValueChanged += CleanersDateTimePicker2_ValueChanged;
             // 
@@ -360,7 +388,7 @@
             // 
             Cleaners14TextBox.Location = new Point(23, 379);
             Cleaners14TextBox.Name = "Cleaners14TextBox";
-            Cleaners14TextBox.Size = new Size(206, 23);
+            Cleaners14TextBox.Size = new Size(206, 21);
             Cleaners14TextBox.TabIndex = 40;
             // 
             // ClearBattery0Button
@@ -477,7 +505,7 @@
             CPU0Label.ForeColor = Color.IndianRed;
             CPU0Label.Location = new Point(7, 57);
             CPU0Label.Name = "CPU0Label";
-            CPU0Label.Size = new Size(13, 15);
+            CPU0Label.Size = new Size(14, 15);
             CPU0Label.TabIndex = 2;
             CPU0Label.Text = "0";
             // 
@@ -485,7 +513,7 @@
             // 
             CPU0TextBox.Location = new Point(23, 53);
             CPU0TextBox.Name = "CPU0TextBox";
-            CPU0TextBox.Size = new Size(206, 23);
+            CPU0TextBox.Size = new Size(206, 21);
             CPU0TextBox.TabIndex = 10;
             CPU0TextBox.TextChanged += CPU0TextBox_TextChanged;
             // 
@@ -493,7 +521,7 @@
             // 
             CPU14TextBox.Location = new Point(23, 25);
             CPU14TextBox.Name = "CPU14TextBox";
-            CPU14TextBox.Size = new Size(206, 23);
+            CPU14TextBox.Size = new Size(206, 21);
             CPU14TextBox.TabIndex = 5;
             CPU14TextBox.TextChanged += CPU14TextBox_TextChanged;
             // 
@@ -515,7 +543,7 @@
             CPUDateTimePicker.Format = DateTimePickerFormat.Custom;
             CPUDateTimePicker.Location = new Point(314, 25);
             CPUDateTimePicker.Name = "CPUDateTimePicker";
-            CPUDateTimePicker.Size = new Size(50, 23);
+            CPUDateTimePicker.Size = new Size(50, 21);
             CPUDateTimePicker.TabIndex = 1;
             CPUDateTimePicker.ValueChanged += CPUDateTimePicker_ValueChanged;
             // 
@@ -525,7 +553,7 @@
             CPUDateTimePicker2.Format = DateTimePickerFormat.Custom;
             CPUDateTimePicker2.Location = new Point(384, 25);
             CPUDateTimePicker2.Name = "CPUDateTimePicker2";
-            CPUDateTimePicker2.Size = new Size(49, 23);
+            CPUDateTimePicker2.Size = new Size(50, 21);
             CPUDateTimePicker2.TabIndex = 9;
             CPUDateTimePicker2.ValueChanged += CPUDateTimePicker2_ValueChanged;
             // 
@@ -583,6 +611,7 @@
             // 
             // HomeTabPage
             // 
+            HomeTabPage.BackColor = SystemColors.ButtonFace;
             HomeTabPage.Controls.Add(panel1);
             HomeTabPage.Controls.Add(CopyHomeButton);
             HomeTabPage.Controls.Add(NotesPanel);
@@ -591,10 +620,9 @@
             HomeTabPage.Location = new Point(4, 24);
             HomeTabPage.Name = "HomeTabPage";
             HomeTabPage.Padding = new Padding(3);
-            HomeTabPage.Size = new Size(438, 487);
+            HomeTabPage.Size = new Size(433, 511);
             HomeTabPage.TabIndex = 0;
             HomeTabPage.Text = "Αρχική";
-            HomeTabPage.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -760,7 +788,7 @@
             Battery0Label.ForeColor = Color.IndianRed;
             Battery0Label.Location = new Point(7, 174);
             Battery0Label.Name = "Battery0Label";
-            Battery0Label.Size = new Size(13, 15);
+            Battery0Label.Size = new Size(14, 15);
             Battery0Label.TabIndex = 16;
             Battery0Label.Text = "0";
             // 
@@ -790,12 +818,13 @@
             Ship0Label.ForeColor = Color.IndianRed;
             Ship0Label.Location = new Point(7, 292);
             Ship0Label.Name = "Ship0Label";
-            Ship0Label.Size = new Size(13, 15);
+            Ship0Label.Size = new Size(14, 15);
             Ship0Label.TabIndex = 28;
             Ship0Label.Text = "0";
             // 
             // OrdersTabPage
             // 
+            OrdersTabPage.BackColor = SystemColors.ButtonFace;
             OrdersTabPage.Controls.Add(Cleaners14Label);
             OrdersTabPage.Controls.Add(Cleaners0CopyButton);
             OrdersTabPage.Controls.Add(Cleaners0ClearButton);
@@ -865,10 +894,9 @@
             OrdersTabPage.Location = new Point(4, 24);
             OrdersTabPage.Name = "OrdersTabPage";
             OrdersTabPage.Padding = new Padding(3);
-            OrdersTabPage.Size = new Size(438, 487);
+            OrdersTabPage.Size = new Size(433, 511);
             OrdersTabPage.TabIndex = 2;
             OrdersTabPage.Text = "Παραγγελίες";
-            OrdersTabPage.UseVisualStyleBackColor = true;
             // 
             // Cleaners14Label
             // 
@@ -909,7 +937,7 @@
             Cleaners0Label.ForeColor = Color.IndianRed;
             Cleaners0Label.Location = new Point(7, 409);
             Cleaners0Label.Name = "Cleaners0Label";
-            Cleaners0Label.Size = new Size(13, 15);
+            Cleaners0Label.Size = new Size(14, 15);
             Cleaners0Label.TabIndex = 59;
             Cleaners0Label.Text = "0";
             // 
@@ -928,7 +956,7 @@
             // 
             Cleaners0TextBox.Location = new Point(23, 405);
             Cleaners0TextBox.Name = "Cleaners0TextBox";
-            Cleaners0TextBox.Size = new Size(206, 23);
+            Cleaners0TextBox.Size = new Size(206, 21);
             Cleaners0TextBox.TabIndex = 60;
             // 
             // Battery0CopyButton
@@ -1056,14 +1084,14 @@
             // 
             Ship0TextBox.Location = new Point(23, 288);
             Ship0TextBox.Name = "Ship0TextBox";
-            Ship0TextBox.Size = new Size(206, 23);
+            Ship0TextBox.Size = new Size(206, 21);
             Ship0TextBox.TabIndex = 34;
             // 
             // Ship14TextBox
             // 
             Ship14TextBox.Location = new Point(23, 261);
             Ship14TextBox.Name = "Ship14TextBox";
-            Ship14TextBox.Size = new Size(206, 23);
+            Ship14TextBox.Size = new Size(206, 21);
             Ship14TextBox.TabIndex = 29;
             // 
             // ShipCopyButton
@@ -1084,7 +1112,7 @@
             ShipDateTimePicker.Format = DateTimePickerFormat.Custom;
             ShipDateTimePicker.Location = new Point(314, 261);
             ShipDateTimePicker.Name = "ShipDateTimePicker";
-            ShipDateTimePicker.Size = new Size(50, 23);
+            ShipDateTimePicker.Size = new Size(50, 21);
             ShipDateTimePicker.TabIndex = 27;
             ShipDateTimePicker.ValueChanged += ShipDateTimePicker_ValueChanged;
             // 
@@ -1094,7 +1122,7 @@
             ShipDateTimePicker2.Format = DateTimePickerFormat.Custom;
             ShipDateTimePicker2.Location = new Point(384, 261);
             ShipDateTimePicker2.Name = "ShipDateTimePicker2";
-            ShipDateTimePicker2.Size = new Size(49, 23);
+            ShipDateTimePicker2.Size = new Size(49, 21);
             ShipDateTimePicker2.TabIndex = 33;
             ShipDateTimePicker2.ValueChanged += ShipDateTimePicker2_ValueChanged;
             // 
@@ -1174,6 +1202,7 @@
             // 
             // SupplierTabPage
             // 
+            SupplierTabPage.BackColor = SystemColors.ButtonFace;
             SupplierTabPage.Controls.Add(SuppliersCopyButton);
             SupplierTabPage.Controls.Add(SuppliersRichTextBox);
             SupplierTabPage.Controls.Add(SuppliersDeleteButton);
@@ -1184,10 +1213,9 @@
             SupplierTabPage.Location = new Point(4, 24);
             SupplierTabPage.Name = "SupplierTabPage";
             SupplierTabPage.Padding = new Padding(3);
-            SupplierTabPage.Size = new Size(438, 487);
+            SupplierTabPage.Size = new Size(433, 511);
             SupplierTabPage.TabIndex = 1;
             SupplierTabPage.Text = "Προμηθευτές";
-            SupplierTabPage.UseVisualStyleBackColor = true;
             // 
             // TabControl
             // 
@@ -1198,345 +1226,631 @@
             TabControl.Location = new Point(0, 0);
             TabControl.Name = "TabControl";
             TabControl.SelectedIndex = 0;
-            TabControl.Size = new Size(446, 515);
+            TabControl.Size = new Size(441, 539);
             TabControl.TabIndex = 17;
             // 
             // PricingTabPage
             // 
-            PricingTabPage.Controls.Add(panel3);
-            PricingTabPage.Controls.Add(panel2);
+            PricingTabPage.BackColor = SystemColors.ButtonFace;
+            PricingTabPage.Controls.Add(TotalUKSecButton);
+            PricingTabPage.Controls.Add(TotalUKButton);
+            PricingTabPage.Controls.Add(TotalGRSecButton);
+            PricingTabPage.Controls.Add(TotalGRButton);
+            PricingTabPage.Controls.Add(ShippingUKTextBox);
+            PricingTabPage.Controls.Add(ShippingUKSecTextBox);
+            PricingTabPage.Controls.Add(CostUKTextBox);
+            PricingTabPage.Controls.Add(label13);
+            PricingTabPage.Controls.Add(CostUKSecTextBox);
+            PricingTabPage.Controls.Add(textBox25);
+            PricingTabPage.Controls.Add(textBox26);
+            PricingTabPage.Controls.Add(textBox27);
+            PricingTabPage.Controls.Add(textBox28);
+            PricingTabPage.Controls.Add(textBox29);
+            PricingTabPage.Controls.Add(textBox30);
+            PricingTabPage.Controls.Add(textBox31);
+            PricingTabPage.Controls.Add(textBox32);
+            PricingTabPage.Controls.Add(textBox33);
+            PricingTabPage.Controls.Add(textBox34);
+            PricingTabPage.Controls.Add(textBox35);
+            PricingTabPage.Controls.Add(textBox36);
+            PricingTabPage.Controls.Add(label4);
+            PricingTabPage.Controls.Add(textBox37);
+            PricingTabPage.Controls.Add(textBox38);
+            PricingTabPage.Controls.Add(textBox39);
+            PricingTabPage.Controls.Add(textBox40);
+            PricingTabPage.Controls.Add(textBox41);
+            PricingTabPage.Controls.Add(textBox42);
+            PricingTabPage.Controls.Add(textBox43);
+            PricingTabPage.Controls.Add(textBox44);
+            PricingTabPage.Controls.Add(textBox45);
+            PricingTabPage.Controls.Add(textBox46);
+            PricingTabPage.Controls.Add(textBox47);
+            PricingTabPage.Controls.Add(textBox48);
+            PricingTabPage.Controls.Add(label5);
+            PricingTabPage.Controls.Add(textBox10);
+            PricingTabPage.Controls.Add(textBox11);
+            PricingTabPage.Controls.Add(textBox12);
+            PricingTabPage.Controls.Add(textBox13);
+            PricingTabPage.Controls.Add(textBox14);
+            PricingTabPage.Controls.Add(textBox18);
+            PricingTabPage.Controls.Add(textBox19);
+            PricingTabPage.Controls.Add(textBox20);
+            PricingTabPage.Controls.Add(textBox21);
+            PricingTabPage.Controls.Add(textBox22);
+            PricingTabPage.Controls.Add(textBox23);
+            PricingTabPage.Controls.Add(textBox24);
+            PricingTabPage.Controls.Add(label3);
+            PricingTabPage.Controls.Add(textBox15);
+            PricingTabPage.Controls.Add(textBox16);
+            PricingTabPage.Controls.Add(textBox17);
+            PricingTabPage.Controls.Add(ShippingGRSecTextBox);
+            PricingTabPage.Controls.Add(CostGRSecTextBox);
+            PricingTabPage.Controls.Add(textBox9);
+            PricingTabPage.Controls.Add(ShippingGRTextBox);
+            PricingTabPage.Controls.Add(textBox7);
+            PricingTabPage.Controls.Add(CostGRTextBox);
+            PricingTabPage.Controls.Add(label6);
+            PricingTabPage.Controls.Add(textBox8);
+            PricingTabPage.Controls.Add(label2);
+            PricingTabPage.Controls.Add(label1);
+            PricingTabPage.Controls.Add(textBox5);
+            PricingTabPage.Controls.Add(GreeksLabel);
+            PricingTabPage.Controls.Add(textBox6);
+            PricingTabPage.Controls.Add(textBox3);
+            PricingTabPage.Controls.Add(textBox4);
+            PricingTabPage.Controls.Add(textBox2);
+            PricingTabPage.Controls.Add(textBox1);
+            PricingTabPage.Controls.Add(label14);
             PricingTabPage.Location = new Point(4, 24);
             PricingTabPage.Name = "PricingTabPage";
             PricingTabPage.Padding = new Padding(3);
-            PricingTabPage.Size = new Size(438, 487);
+            PricingTabPage.Size = new Size(433, 511);
             PricingTabPage.TabIndex = 3;
             PricingTabPage.Text = "Κοστολόγηση";
-            PricingTabPage.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // TotalUKSecButton
             // 
-            panel3.Controls.Add(textBox13);
-            panel3.Controls.Add(textBox14);
-            panel3.Controls.Add(textBox15);
-            panel3.Controls.Add(textBox16);
-            panel3.Controls.Add(textBox17);
-            panel3.Controls.Add(textBox18);
-            panel3.Controls.Add(textBox19);
-            panel3.Controls.Add(textBox20);
-            panel3.Controls.Add(textBox21);
-            panel3.Controls.Add(textBox22);
-            panel3.Controls.Add(textBox23);
-            panel3.Controls.Add(textBox24);
-            panel3.Controls.Add(label7);
-            panel3.Controls.Add(label8);
-            panel3.Controls.Add(label9);
-            panel3.Controls.Add(label10);
-            panel3.Controls.Add(label11);
-            panel3.Controls.Add(label12);
-            panel3.Controls.Add(label13);
-            panel3.Location = new Point(3, 140);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(432, 131);
-            panel3.TabIndex = 19;
+            TotalUKSecButton.Location = new Point(297, 102);
+            TotalUKSecButton.Name = "TotalUKSecButton";
+            TotalUKSecButton.Size = new Size(105, 23);
+            TotalUKSecButton.TabIndex = 74;
+            TotalUKSecButton.TextAlign = ContentAlignment.MiddleRight;
+            TotalUKSecButton.UseVisualStyleBackColor = true;
+            TotalUKSecButton.Click += TotalUKSecButton_Click;
             // 
-            // textBox13
+            // TotalUKButton
             // 
-            textBox13.Location = new Point(364, 82);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(65, 23);
-            textBox13.TabIndex = 18;
+            TotalUKButton.Location = new Point(297, 75);
+            TotalUKButton.Name = "TotalUKButton";
+            TotalUKButton.Size = new Size(105, 23);
+            TotalUKButton.TabIndex = 73;
+            TotalUKButton.TextAlign = ContentAlignment.MiddleRight;
+            TotalUKButton.UseVisualStyleBackColor = true;
+            TotalUKButton.Click += TotalUKButton_Click;
             // 
-            // textBox14
+            // TotalGRSecButton
             // 
-            textBox14.Location = new Point(295, 82);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(65, 23);
-            textBox14.TabIndex = 17;
+            TotalGRSecButton.Location = new Point(297, 48);
+            TotalGRSecButton.Name = "TotalGRSecButton";
+            TotalGRSecButton.Size = new Size(105, 23);
+            TotalGRSecButton.TabIndex = 72;
+            TotalGRSecButton.TextAlign = ContentAlignment.MiddleRight;
+            TotalGRSecButton.UseVisualStyleBackColor = true;
+            TotalGRSecButton.Click += TotalGRSecButton_Click;
             // 
-            // textBox15
+            // TotalGRButton
             // 
-            textBox15.Location = new Point(224, 82);
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(65, 23);
-            textBox15.TabIndex = 16;
+            TotalGRButton.Location = new Point(297, 21);
+            TotalGRButton.Name = "TotalGRButton";
+            TotalGRButton.Size = new Size(105, 23);
+            TotalGRButton.TabIndex = 71;
+            TotalGRButton.TextAlign = ContentAlignment.MiddleRight;
+            TotalGRButton.UseVisualStyleBackColor = true;
+            TotalGRButton.Click += TotalGRButton_Click;
             // 
-            // textBox16
+            // ShippingUKTextBox
             // 
-            textBox16.Location = new Point(153, 82);
-            textBox16.Name = "textBox16";
-            textBox16.Size = new Size(65, 23);
-            textBox16.TabIndex = 15;
+            ShippingUKTextBox.Location = new Point(192, 76);
+            ShippingUKTextBox.Name = "ShippingUKTextBox";
+            ShippingUKTextBox.Size = new Size(99, 21);
+            ShippingUKTextBox.TabIndex = 8;
+            ShippingUKTextBox.TextAlign = HorizontalAlignment.Right;
+            ShippingUKTextBox.TextChanged += ShippingUKTextBox_TextChanged;
             // 
-            // textBox17
+            // ShippingUKSecTextBox
             // 
-            textBox17.Location = new Point(82, 82);
-            textBox17.Name = "textBox17";
-            textBox17.Size = new Size(65, 23);
-            textBox17.TabIndex = 14;
+            ShippingUKSecTextBox.Location = new Point(192, 103);
+            ShippingUKSecTextBox.Name = "ShippingUKSecTextBox";
+            ShippingUKSecTextBox.Size = new Size(99, 21);
+            ShippingUKSecTextBox.TabIndex = 14;
+            ShippingUKSecTextBox.TextAlign = HorizontalAlignment.Right;
+            ShippingUKSecTextBox.TextChanged += ShippingUKSecTextBox_TextChanged;
             // 
-            // textBox18
+            // CostUKTextBox
             // 
-            textBox18.Location = new Point(8, 82);
-            textBox18.Name = "textBox18";
-            textBox18.Size = new Size(65, 23);
-            textBox18.TabIndex = 13;
-            // 
-            // textBox19
-            // 
-            textBox19.Location = new Point(364, 53);
-            textBox19.Name = "textBox19";
-            textBox19.Size = new Size(65, 23);
-            textBox19.TabIndex = 12;
-            // 
-            // textBox20
-            // 
-            textBox20.Location = new Point(295, 53);
-            textBox20.Name = "textBox20";
-            textBox20.Size = new Size(65, 23);
-            textBox20.TabIndex = 11;
-            // 
-            // textBox21
-            // 
-            textBox21.Location = new Point(224, 53);
-            textBox21.Name = "textBox21";
-            textBox21.Size = new Size(65, 23);
-            textBox21.TabIndex = 10;
-            // 
-            // textBox22
-            // 
-            textBox22.Location = new Point(153, 53);
-            textBox22.Name = "textBox22";
-            textBox22.Size = new Size(65, 23);
-            textBox22.TabIndex = 9;
-            // 
-            // textBox23
-            // 
-            textBox23.Location = new Point(82, 53);
-            textBox23.Name = "textBox23";
-            textBox23.Size = new Size(65, 23);
-            textBox23.TabIndex = 8;
-            // 
-            // textBox24
-            // 
-            textBox24.Location = new Point(8, 53);
-            textBox24.Name = "textBox24";
-            textBox24.Size = new Size(65, 23);
-            textBox24.TabIndex = 7;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(373, 35);
-            label7.Name = "label7";
-            label7.Size = new Size(46, 15);
-            label7.TabIndex = 6;
-            label7.Text = "Σύνολο";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(313, 35);
-            label8.Name = "label8";
-            label8.Size = new Size(29, 15);
-            label8.TabIndex = 5;
-            label8.Text = "24%";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(245, 35);
-            label9.Name = "label9";
-            label9.Size = new Size(23, 15);
-            label9.TabIndex = 4;
-            label9.Text = "4%";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(174, 35);
-            label10.Name = "label10";
-            label10.Size = new Size(23, 15);
-            label10.TabIndex = 3;
-            label10.Text = "3%";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(77, 35);
-            label11.Name = "label11";
-            label11.Size = new Size(75, 15);
-            label11.TabIndex = 2;
-            label11.Text = "Μεταφορικά";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(17, 35);
-            label12.Name = "label12";
-            label12.Size = new Size(47, 15);
-            label12.TabIndex = 1;
-            label12.Text = "Κόστος";
+            CostUKTextBox.Location = new Point(70, 76);
+            CostUKTextBox.Name = "CostUKTextBox";
+            CostUKTextBox.Size = new Size(116, 21);
+            CostUKTextBox.TabIndex = 7;
+            CostUKTextBox.TextAlign = HorizontalAlignment.Right;
+            CostUKTextBox.TextChanged += CostUKTextBox_TextChanged;
             // 
             // label13
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label13.Location = new Point(200, 10);
+            label13.Location = new Point(17, 94);
             label13.Name = "label13";
             label13.Size = new Size(38, 15);
             label13.TabIndex = 0;
             label13.Text = "Ξένοι";
             // 
-            // panel2
+            // CostUKSecTextBox
             // 
-            panel2.Controls.Add(textBox7);
-            panel2.Controls.Add(textBox8);
-            panel2.Controls.Add(textBox9);
-            panel2.Controls.Add(textBox10);
-            panel2.Controls.Add(textBox11);
-            panel2.Controls.Add(textBox12);
-            panel2.Controls.Add(textBox6);
-            panel2.Controls.Add(textBox5);
-            panel2.Controls.Add(textBox4);
-            panel2.Controls.Add(textBox3);
-            panel2.Controls.Add(textBox2);
-            panel2.Controls.Add(textBox1);
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(label3);
-            panel2.Controls.Add(label2);
-            panel2.Controls.Add(label1);
-            panel2.Controls.Add(GreeksLabel);
-            panel2.Location = new Point(3, 3);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(432, 131);
-            panel2.TabIndex = 0;
+            CostUKSecTextBox.Location = new Point(70, 103);
+            CostUKSecTextBox.Name = "CostUKSecTextBox";
+            CostUKSecTextBox.Size = new Size(116, 21);
+            CostUKSecTextBox.TabIndex = 13;
+            CostUKSecTextBox.TextAlign = HorizontalAlignment.Right;
+            CostUKSecTextBox.TextChanged += CostUKSecTextBox_TextChanged;
             // 
-            // textBox7
+            // textBox25
             // 
-            textBox7.Location = new Point(364, 82);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(65, 23);
-            textBox7.TabIndex = 18;
+            textBox25.BackColor = Color.FromArgb(255, 255, 192);
+            textBox25.Location = new Point(329, 446);
+            textBox25.Name = "textBox25";
+            textBox25.Size = new Size(97, 21);
+            textBox25.TabIndex = 69;
+            textBox25.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox8
+            // textBox26
             // 
-            textBox8.Location = new Point(295, 82);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(65, 23);
-            textBox8.TabIndex = 17;
+            textBox26.BackColor = Color.FromArgb(255, 255, 192);
+            textBox26.Location = new Point(329, 419);
+            textBox26.Name = "textBox26";
+            textBox26.Size = new Size(97, 21);
+            textBox26.TabIndex = 68;
+            textBox26.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox9
+            // textBox27
             // 
-            textBox9.Location = new Point(224, 82);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(65, 23);
-            textBox9.TabIndex = 16;
+            textBox27.BackColor = Color.FromArgb(255, 255, 192);
+            textBox27.Location = new Point(329, 392);
+            textBox27.Name = "textBox27";
+            textBox27.Size = new Size(97, 21);
+            textBox27.TabIndex = 67;
+            textBox27.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox28
+            // 
+            textBox28.BackColor = Color.FromArgb(255, 255, 192);
+            textBox28.Location = new Point(329, 365);
+            textBox28.Name = "textBox28";
+            textBox28.Size = new Size(97, 21);
+            textBox28.TabIndex = 66;
+            textBox28.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox29
+            // 
+            textBox29.BackColor = Color.FromArgb(255, 255, 192);
+            textBox29.Location = new Point(329, 338);
+            textBox29.Name = "textBox29";
+            textBox29.Size = new Size(97, 21);
+            textBox29.TabIndex = 65;
+            textBox29.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox30
+            // 
+            textBox30.BackColor = Color.FromArgb(255, 255, 192);
+            textBox30.Location = new Point(329, 311);
+            textBox30.Name = "textBox30";
+            textBox30.Size = new Size(97, 21);
+            textBox30.TabIndex = 64;
+            textBox30.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox31
+            // 
+            textBox31.BackColor = Color.FromArgb(255, 255, 192);
+            textBox31.Location = new Point(329, 284);
+            textBox31.Name = "textBox31";
+            textBox31.Size = new Size(97, 21);
+            textBox31.TabIndex = 63;
+            textBox31.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox32
+            // 
+            textBox32.BackColor = Color.FromArgb(255, 255, 192);
+            textBox32.Location = new Point(329, 257);
+            textBox32.Name = "textBox32";
+            textBox32.Size = new Size(97, 21);
+            textBox32.TabIndex = 62;
+            textBox32.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox33
+            // 
+            textBox33.BackColor = Color.FromArgb(255, 255, 192);
+            textBox33.Location = new Point(329, 230);
+            textBox33.Name = "textBox33";
+            textBox33.Size = new Size(97, 21);
+            textBox33.TabIndex = 61;
+            textBox33.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox34
+            // 
+            textBox34.BackColor = Color.FromArgb(255, 255, 192);
+            textBox34.Location = new Point(329, 203);
+            textBox34.Name = "textBox34";
+            textBox34.Size = new Size(97, 21);
+            textBox34.TabIndex = 60;
+            textBox34.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox35
+            // 
+            textBox35.BackColor = Color.FromArgb(255, 255, 192);
+            textBox35.Location = new Point(329, 176);
+            textBox35.Name = "textBox35";
+            textBox35.Size = new Size(97, 21);
+            textBox35.TabIndex = 59;
+            textBox35.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox36
+            // 
+            textBox36.BackColor = Color.FromArgb(255, 255, 192);
+            textBox36.Location = new Point(329, 149);
+            textBox36.Name = "textBox36";
+            textBox36.Size = new Size(97, 21);
+            textBox36.TabIndex = 57;
+            textBox36.TextAlign = HorizontalAlignment.Center;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(365, 131);
+            label4.Name = "label4";
+            label4.Size = new Size(25, 15);
+            label4.TabIndex = 58;
+            label4.Text = "K 0";
+            // 
+            // textBox37
+            // 
+            textBox37.BackColor = Color.FromArgb(192, 255, 192);
+            textBox37.Location = new Point(226, 446);
+            textBox37.Name = "textBox37";
+            textBox37.Size = new Size(97, 21);
+            textBox37.TabIndex = 56;
+            textBox37.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox38
+            // 
+            textBox38.BackColor = Color.FromArgb(192, 255, 192);
+            textBox38.Location = new Point(226, 419);
+            textBox38.Name = "textBox38";
+            textBox38.Size = new Size(97, 21);
+            textBox38.TabIndex = 55;
+            textBox38.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox39
+            // 
+            textBox39.BackColor = Color.FromArgb(192, 255, 192);
+            textBox39.Location = new Point(226, 392);
+            textBox39.Name = "textBox39";
+            textBox39.Size = new Size(97, 21);
+            textBox39.TabIndex = 54;
+            textBox39.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox40
+            // 
+            textBox40.BackColor = Color.FromArgb(192, 255, 192);
+            textBox40.Location = new Point(226, 365);
+            textBox40.Name = "textBox40";
+            textBox40.Size = new Size(97, 21);
+            textBox40.TabIndex = 53;
+            textBox40.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox41
+            // 
+            textBox41.BackColor = Color.FromArgb(192, 255, 192);
+            textBox41.Location = new Point(226, 338);
+            textBox41.Name = "textBox41";
+            textBox41.Size = new Size(97, 21);
+            textBox41.TabIndex = 52;
+            textBox41.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox42
+            // 
+            textBox42.BackColor = Color.FromArgb(192, 255, 192);
+            textBox42.Location = new Point(226, 311);
+            textBox42.Name = "textBox42";
+            textBox42.Size = new Size(97, 21);
+            textBox42.TabIndex = 51;
+            textBox42.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox43
+            // 
+            textBox43.BackColor = Color.FromArgb(192, 255, 192);
+            textBox43.Location = new Point(226, 284);
+            textBox43.Name = "textBox43";
+            textBox43.Size = new Size(97, 21);
+            textBox43.TabIndex = 50;
+            textBox43.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox44
+            // 
+            textBox44.BackColor = Color.FromArgb(192, 255, 192);
+            textBox44.Location = new Point(226, 257);
+            textBox44.Name = "textBox44";
+            textBox44.Size = new Size(97, 21);
+            textBox44.TabIndex = 49;
+            textBox44.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox45
+            // 
+            textBox45.BackColor = Color.FromArgb(192, 255, 192);
+            textBox45.Location = new Point(226, 230);
+            textBox45.Name = "textBox45";
+            textBox45.Size = new Size(97, 21);
+            textBox45.TabIndex = 48;
+            textBox45.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox46
+            // 
+            textBox46.BackColor = Color.FromArgb(192, 255, 192);
+            textBox46.Location = new Point(226, 203);
+            textBox46.Name = "textBox46";
+            textBox46.Size = new Size(97, 21);
+            textBox46.TabIndex = 47;
+            textBox46.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox47
+            // 
+            textBox47.BackColor = Color.FromArgb(192, 255, 192);
+            textBox47.Location = new Point(226, 176);
+            textBox47.Name = "textBox47";
+            textBox47.Size = new Size(97, 21);
+            textBox47.TabIndex = 46;
+            textBox47.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox48
+            // 
+            textBox48.BackColor = Color.FromArgb(192, 255, 192);
+            textBox48.Location = new Point(226, 149);
+            textBox48.Name = "textBox48";
+            textBox48.Size = new Size(97, 21);
+            textBox48.TabIndex = 45;
+            textBox48.TextAlign = HorizontalAlignment.Center;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(258, 131);
+            label5.Name = "label5";
+            label5.Size = new Size(32, 15);
+            label5.TabIndex = 44;
+            label5.Text = "K 14";
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(153, 82);
+            textBox10.BackColor = Color.FromArgb(192, 192, 255);
+            textBox10.Location = new Point(114, 446);
             textBox10.Name = "textBox10";
-            textBox10.Size = new Size(65, 23);
-            textBox10.TabIndex = 15;
+            textBox10.Size = new Size(97, 21);
+            textBox10.TabIndex = 43;
+            textBox10.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox11
             // 
-            textBox11.Location = new Point(82, 82);
+            textBox11.BackColor = Color.FromArgb(192, 192, 255);
+            textBox11.Location = new Point(114, 419);
             textBox11.Name = "textBox11";
-            textBox11.Size = new Size(65, 23);
-            textBox11.TabIndex = 14;
+            textBox11.Size = new Size(97, 21);
+            textBox11.TabIndex = 42;
+            textBox11.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox12
             // 
-            textBox12.Location = new Point(8, 82);
+            textBox12.BackColor = Color.FromArgb(192, 192, 255);
+            textBox12.Location = new Point(114, 392);
             textBox12.Name = "textBox12";
-            textBox12.Size = new Size(65, 23);
-            textBox12.TabIndex = 13;
+            textBox12.Size = new Size(97, 21);
+            textBox12.TabIndex = 41;
+            textBox12.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox6
+            // textBox13
             // 
-            textBox6.Location = new Point(364, 53);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(65, 23);
-            textBox6.TabIndex = 12;
+            textBox13.BackColor = Color.FromArgb(192, 192, 255);
+            textBox13.Location = new Point(114, 365);
+            textBox13.Name = "textBox13";
+            textBox13.Size = new Size(97, 21);
+            textBox13.TabIndex = 40;
+            textBox13.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox5
+            // textBox14
             // 
-            textBox5.Location = new Point(295, 53);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(65, 23);
-            textBox5.TabIndex = 11;
+            textBox14.BackColor = Color.FromArgb(192, 192, 255);
+            textBox14.Location = new Point(114, 338);
+            textBox14.Name = "textBox14";
+            textBox14.Size = new Size(97, 21);
+            textBox14.TabIndex = 39;
+            textBox14.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox4
+            // textBox18
             // 
-            textBox4.Location = new Point(224, 53);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(65, 23);
-            textBox4.TabIndex = 10;
+            textBox18.BackColor = Color.FromArgb(192, 192, 255);
+            textBox18.Location = new Point(114, 311);
+            textBox18.Name = "textBox18";
+            textBox18.Size = new Size(97, 21);
+            textBox18.TabIndex = 38;
+            textBox18.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox3
+            // textBox19
             // 
-            textBox3.Location = new Point(153, 53);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(65, 23);
-            textBox3.TabIndex = 9;
+            textBox19.BackColor = Color.FromArgb(192, 192, 255);
+            textBox19.Location = new Point(114, 284);
+            textBox19.Name = "textBox19";
+            textBox19.Size = new Size(97, 21);
+            textBox19.TabIndex = 37;
+            textBox19.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox2
+            // textBox20
             // 
-            textBox2.Location = new Point(82, 53);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(65, 23);
-            textBox2.TabIndex = 8;
+            textBox20.BackColor = Color.FromArgb(192, 192, 255);
+            textBox20.Location = new Point(114, 257);
+            textBox20.Name = "textBox20";
+            textBox20.Size = new Size(97, 21);
+            textBox20.TabIndex = 36;
+            textBox20.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox1
+            // textBox21
             // 
-            textBox1.Location = new Point(8, 53);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(65, 23);
-            textBox1.TabIndex = 7;
+            textBox21.BackColor = Color.FromArgb(192, 192, 255);
+            textBox21.Location = new Point(114, 230);
+            textBox21.Name = "textBox21";
+            textBox21.Size = new Size(97, 21);
+            textBox21.TabIndex = 35;
+            textBox21.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox22
+            // 
+            textBox22.BackColor = Color.FromArgb(192, 192, 255);
+            textBox22.Location = new Point(114, 203);
+            textBox22.Name = "textBox22";
+            textBox22.Size = new Size(97, 21);
+            textBox22.TabIndex = 34;
+            textBox22.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox23
+            // 
+            textBox23.BackColor = Color.FromArgb(192, 192, 255);
+            textBox23.Location = new Point(114, 176);
+            textBox23.Name = "textBox23";
+            textBox23.Size = new Size(97, 21);
+            textBox23.TabIndex = 33;
+            textBox23.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox24
+            // 
+            textBox24.BackColor = Color.FromArgb(192, 192, 255);
+            textBox24.Location = new Point(114, 149);
+            textBox24.Name = "textBox24";
+            textBox24.Size = new Size(97, 21);
+            textBox24.TabIndex = 31;
+            textBox24.TextAlign = HorizontalAlignment.Center;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(153, 131);
+            label3.Name = "label3";
+            label3.Size = new Size(14, 15);
+            label3.TabIndex = 32;
+            label3.Text = "0";
+            // 
+            // textBox15
+            // 
+            textBox15.BackColor = Color.FromArgb(255, 192, 128);
+            textBox15.Location = new Point(11, 446);
+            textBox15.Name = "textBox15";
+            textBox15.Size = new Size(97, 21);
+            textBox15.TabIndex = 30;
+            textBox15.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox16
+            // 
+            textBox16.BackColor = Color.FromArgb(255, 192, 128);
+            textBox16.Location = new Point(11, 419);
+            textBox16.Name = "textBox16";
+            textBox16.Size = new Size(97, 21);
+            textBox16.TabIndex = 29;
+            textBox16.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox17
+            // 
+            textBox17.BackColor = Color.FromArgb(255, 192, 128);
+            textBox17.Location = new Point(11, 392);
+            textBox17.Name = "textBox17";
+            textBox17.Size = new Size(97, 21);
+            textBox17.TabIndex = 28;
+            textBox17.TextAlign = HorizontalAlignment.Center;
+            // 
+            // ShippingGRSecTextBox
+            // 
+            ShippingGRSecTextBox.Location = new Point(192, 49);
+            ShippingGRSecTextBox.Name = "ShippingGRSecTextBox";
+            ShippingGRSecTextBox.Size = new Size(99, 21);
+            ShippingGRSecTextBox.TabIndex = 14;
+            ShippingGRSecTextBox.TextAlign = HorizontalAlignment.Right;
+            ShippingGRSecTextBox.TextChanged += ShippingGRSecTextBox_TextChanged;
+            // 
+            // CostGRSecTextBox
+            // 
+            CostGRSecTextBox.Location = new Point(70, 49);
+            CostGRSecTextBox.Name = "CostGRSecTextBox";
+            CostGRSecTextBox.Size = new Size(116, 21);
+            CostGRSecTextBox.TabIndex = 13;
+            CostGRSecTextBox.TextAlign = HorizontalAlignment.Right;
+            CostGRSecTextBox.TextChanged += CostGRSecTextBox_TextChanged;
+            // 
+            // textBox9
+            // 
+            textBox9.BackColor = Color.FromArgb(255, 192, 128);
+            textBox9.Location = new Point(11, 365);
+            textBox9.Name = "textBox9";
+            textBox9.Size = new Size(97, 21);
+            textBox9.TabIndex = 27;
+            textBox9.TextAlign = HorizontalAlignment.Center;
+            // 
+            // ShippingGRTextBox
+            // 
+            ShippingGRTextBox.Location = new Point(192, 22);
+            ShippingGRTextBox.Name = "ShippingGRTextBox";
+            ShippingGRTextBox.Size = new Size(99, 21);
+            ShippingGRTextBox.TabIndex = 8;
+            ShippingGRTextBox.TextAlign = HorizontalAlignment.Right;
+            ShippingGRTextBox.TextChanged += ShippingGRTextBox_TextChanged;
+            // 
+            // textBox7
+            // 
+            textBox7.BackColor = Color.FromArgb(255, 192, 128);
+            textBox7.Location = new Point(11, 338);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(97, 21);
+            textBox7.TabIndex = 26;
+            textBox7.TextAlign = HorizontalAlignment.Center;
+            // 
+            // CostGRTextBox
+            // 
+            CostGRTextBox.Location = new Point(70, 22);
+            CostGRTextBox.Name = "CostGRTextBox";
+            CostGRTextBox.Size = new Size(116, 21);
+            CostGRTextBox.TabIndex = 7;
+            CostGRTextBox.TextAlign = HorizontalAlignment.Right;
+            CostGRTextBox.TextChanged += CostGRTextBox_TextChanged;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(373, 35);
+            label6.Location = new Point(326, 3);
             label6.Name = "label6";
             label6.Size = new Size(46, 15);
             label6.TabIndex = 6;
             label6.Text = "Σύνολο";
             // 
-            // label5
+            // textBox8
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(313, 35);
-            label5.Name = "label5";
-            label5.Size = new Size(29, 15);
-            label5.TabIndex = 5;
-            label5.Text = "24%";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(245, 35);
-            label4.Name = "label4";
-            label4.Size = new Size(23, 15);
-            label4.TabIndex = 4;
-            label4.Text = "4%";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(174, 35);
-            label3.Name = "label3";
-            label3.Size = new Size(23, 15);
-            label3.TabIndex = 3;
-            label3.Text = "3%";
+            textBox8.BackColor = Color.FromArgb(255, 192, 128);
+            textBox8.Location = new Point(11, 311);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(97, 21);
+            textBox8.TabIndex = 25;
+            textBox8.TextAlign = HorizontalAlignment.Center;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(77, 35);
+            label2.Location = new Point(204, 4);
             label2.Name = "label2";
             label2.Size = new Size(75, 15);
             label2.TabIndex = 2;
@@ -1545,28 +1859,104 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(17, 35);
+            label1.Location = new Point(105, 4);
             label1.Name = "label1";
             label1.Size = new Size(47, 15);
             label1.TabIndex = 1;
             label1.Text = "Κόστος";
             // 
+            // textBox5
+            // 
+            textBox5.BackColor = Color.FromArgb(255, 192, 128);
+            textBox5.Location = new Point(11, 284);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(97, 21);
+            textBox5.TabIndex = 24;
+            textBox5.TextAlign = HorizontalAlignment.Center;
+            // 
             // GreeksLabel
             // 
             GreeksLabel.AutoSize = true;
             GreeksLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            GreeksLabel.Location = new Point(192, 10);
+            GreeksLabel.Location = new Point(9, 38);
             GreeksLabel.Name = "GreeksLabel";
             GreeksLabel.Size = new Size(55, 15);
             GreeksLabel.TabIndex = 0;
             GreeksLabel.Text = "Έλληνες";
             // 
+            // textBox6
+            // 
+            textBox6.BackColor = Color.FromArgb(255, 192, 128);
+            textBox6.Location = new Point(11, 257);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(97, 21);
+            textBox6.TabIndex = 23;
+            textBox6.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox3
+            // 
+            textBox3.BackColor = Color.FromArgb(255, 192, 128);
+            textBox3.Location = new Point(11, 230);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(97, 21);
+            textBox3.TabIndex = 22;
+            textBox3.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox4
+            // 
+            textBox4.BackColor = Color.FromArgb(255, 192, 128);
+            textBox4.Location = new Point(11, 203);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(97, 21);
+            textBox4.TabIndex = 21;
+            textBox4.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox2
+            // 
+            textBox2.BackColor = Color.FromArgb(255, 192, 128);
+            textBox2.Location = new Point(11, 176);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(97, 21);
+            textBox2.TabIndex = 20;
+            textBox2.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.FromArgb(255, 192, 128);
+            textBox1.Location = new Point(11, 149);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(97, 21);
+            textBox1.TabIndex = 19;
+            textBox1.TextAlign = HorizontalAlignment.Center;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label14.Location = new Point(50, 131);
+            label14.Name = "label14";
+            label14.Size = new Size(21, 15);
+            label14.TabIndex = 19;
+            label14.Text = "14";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(0, 192, 0);
+            button1.Location = new Point(311, 545);
+            button1.Name = "button1";
+            button1.Size = new Size(117, 32);
+            button1.TabIndex = 75;
+            button1.Text = "Τιμές ΟΚ";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(445, 513);
+            ClientSize = new Size(440, 589);
+            Controls.Add(button1);
             Controls.Add(TabControl);
+            Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Product Assistant";
@@ -1582,10 +1972,7 @@
             SupplierTabPage.ResumeLayout(false);
             TabControl.ResumeLayout(false);
             PricingTabPage.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
+            PricingTabPage.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -1683,32 +2070,60 @@
         private Button Cleaners0PasteButton;
         private TextBox Cleaners0TextBox;
         private TabPage PricingTabPage;
-        private Panel panel2;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private TextBox textBox10;
-        private TextBox textBox11;
-        private TextBox textBox12;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox ShippingGRSecTextBox;
+        private TextBox CostGRSecTextBox;
+        private TextBox ShippingGRTextBox;
+        private TextBox CostGRTextBox;
         private Label label6;
-        private Label label5;
-        private Label label4;
-        private Label label3;
         private Label label2;
         private Label label1;
         private Label GreeksLabel;
-        private Panel panel3;
+        private TextBox ShippingUKSecTextBox;
+        private TextBox CostUKSecTextBox;
+        private TextBox ShippingUKTextBox;
+        private TextBox CostUKTextBox;
+        private Label label13;
+        private TextBox textBox9;
+        private TextBox textBox7;
+        private TextBox textBox8;
+        private TextBox textBox5;
+        private TextBox textBox6;
+        private TextBox textBox3;
+        private TextBox textBox4;
+        private TextBox textBox2;
+        private TextBox textBox1;
+        private Label label14;
+        private TextBox textBox25;
+        private TextBox textBox26;
+        private TextBox textBox27;
+        private TextBox textBox28;
+        private TextBox textBox29;
+        private TextBox textBox30;
+        private TextBox textBox31;
+        private TextBox textBox32;
+        private TextBox textBox33;
+        private TextBox textBox34;
+        private TextBox textBox35;
+        private TextBox textBox36;
+        private Label label4;
+        private TextBox textBox37;
+        private TextBox textBox38;
+        private TextBox textBox39;
+        private TextBox textBox40;
+        private TextBox textBox41;
+        private TextBox textBox42;
+        private TextBox textBox43;
+        private TextBox textBox44;
+        private TextBox textBox45;
+        private TextBox textBox46;
+        private TextBox textBox47;
+        private TextBox textBox48;
+        private Label label5;
+        private TextBox textBox10;
+        private TextBox textBox11;
+        private TextBox textBox12;
         private TextBox textBox13;
         private TextBox textBox14;
-        private TextBox textBox15;
-        private TextBox textBox16;
-        private TextBox textBox17;
         private TextBox textBox18;
         private TextBox textBox19;
         private TextBox textBox20;
@@ -1716,12 +2131,14 @@
         private TextBox textBox22;
         private TextBox textBox23;
         private TextBox textBox24;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-        private Label label10;
-        private Label label11;
-        private Label label12;
-        private Label label13;
+        private Label label3;
+        private TextBox textBox15;
+        private TextBox textBox16;
+        private TextBox textBox17;
+        private Button TotalGRButton;
+        private Button TotalGRSecButton;
+        private Button TotalUKSecButton;
+        private Button TotalUKButton;
+        private Button button1;
     }
 }
