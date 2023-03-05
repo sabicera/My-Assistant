@@ -70,5 +70,113 @@ namespace My_Assistant.Properties {
                 this["LatestCPURichTextBoxValue"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LatestBattery14Value {
+            get {
+                return ((string)(this["LatestBattery14Value"]));
+            }
+            set {
+                this["LatestBattery14Value"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LatestBattery0Value {
+            get {
+                return ((string)(this["LatestBattery0Value"]));
+            }
+            set {
+                this["LatestBattery0Value"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LatestBatteryRichTextBoxValue {
+            get {
+                return ((string)(this["LatestBatteryRichTextBoxValue"]));
+            }
+            set {
+                this["LatestBatteryRichTextBoxValue"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LatestShip14Value {
+            get {
+                return ((string)(this["LatestShip14Value"]));
+            }
+            set {
+                this["LatestShip14Value"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LatestShip0Value {
+            get {
+                return ((string)(this["LatestShip0Value"]));
+            }
+            set {
+                this["LatestShip0Value"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LatestShipRichTextBoxValue {
+            get {
+                return ((string)(this["LatestShipRichTextBoxValue"]));
+            }
+            set {
+                this["LatestShipRichTextBoxValue"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LatestCleaners14Value {
+            get {
+                return ((string)(this["LatestCleaners14Value"]));
+            }
+            set {
+                this["LatestCleaners14Value"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LatestCleaners0Value {
+            get {
+                return ((string)(this["LatestCleaners0Value"]));
+            }
+            set {
+                this["LatestCleaners0Value"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LatestCleanersRichTextBoxValue {
+            get {
+                return ((string)(this["LatestCleanersRichTextBoxValue"]));
+            }
+            set {
+                this["LatestCleanersRichTextBoxValue"] = value;
+            }
+        }
     }
 }
