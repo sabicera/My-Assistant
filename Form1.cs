@@ -580,7 +580,7 @@ namespace My_Assistant
         private void CalculateGRTotal()
         {
             // Set the culture to a European culture that uses the euro symbol
-            var culture = new CultureInfo("en-EN");
+            var culture = new CultureInfo("en-US");
             var format = (NumberFormatInfo)culture.NumberFormat.Clone();
             format.CurrencySymbol = string.Empty;
 
@@ -600,7 +600,7 @@ namespace My_Assistant
         private void CalculateGRSecTotal()
         {
             // Set the culture to a European culture that uses the euro symbol
-            var culture = new CultureInfo("en-EN");
+            var culture = new CultureInfo("en-US");
             var format = (NumberFormatInfo)culture.NumberFormat.Clone();
             format.CurrencySymbol = string.Empty;
 
@@ -620,7 +620,7 @@ namespace My_Assistant
         private void CalculateUKTotal()
         {
             // Set the culture to a European culture that uses the euro symbol
-            var culture = new CultureInfo("en-EN");
+            var culture = new CultureInfo("en-US");
             var format = (NumberFormatInfo)culture.NumberFormat.Clone();
             format.CurrencySymbol = string.Empty;
 
@@ -640,7 +640,7 @@ namespace My_Assistant
         private void CalculateUKSecTotal()
         {
             // Set the culture to a European culture that uses the euro symbol
-            var culture = new CultureInfo("en-EN");
+            var culture = new CultureInfo("en-US");
             var format = (NumberFormatInfo)culture.NumberFormat.Clone();
             format.CurrencySymbol = string.Empty;
 
@@ -670,7 +670,7 @@ namespace My_Assistant
         private void Calculator()
         {
             // Set the culture to a European culture that uses the euro symbol
-            var culture = new CultureInfo("en-EN");
+            var culture = new CultureInfo("en-US");
             var format = (NumberFormatInfo)culture.NumberFormat.Clone();
             format.CurrencySymbol = string.Empty;
 
@@ -918,6 +918,21 @@ namespace My_Assistant
             DataObject data = new();
             data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
+        }
+        private void ResetTotalButton_Click(object sender, EventArgs e)
+        {
+            CalcTextBox1.Text = string.Empty;
+            CalcTextBox2.Text = string.Empty;
+            CalcTextBox3.Text = string.Empty;
+            CalcTextBox4.Text = string.Empty;
+            CalcTextBox5.Text = string.Empty;
+            CalcTextBox6.Text = string.Empty;
+            CalcTextBox7.Text = string.Empty;
+            CalcTextBox8.Text = string.Empty;
+            CalcTextBox9.Text = string.Empty;
+            CalcTextBox10.Text = string.Empty;
+            CalcTextBox11.Text = string.Empty;
+            CalcTextBox12.Text = string.Empty;
         }
     }
 }

@@ -2093,6 +2093,7 @@
             ResetTotalButton.TabIndex = 98;
             ResetTotalButton.Text = "Reset";
             ResetTotalButton.UseVisualStyleBackColor = false;
+            ResetTotalButton.Click += ResetTotalButton_Click;
             // 
             // ResetUKButton
             // 
