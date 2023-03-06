@@ -433,7 +433,7 @@ namespace My_Assistant
             DateTime currentDate = DateTime.Now;
             Clipboard.Clear();
             if (Ship14TextBox.Text is not null)
-                if (currentDate.DayOfWeek > DayOfWeek.Wednesday || (currentDate.DayOfWeek == DayOfWeek.Wednesday && currentDate.TimeOfDay > TimeSpan.FromHours(11)))
+                if (currentDate.DayOfWeek > DayOfWeek.Wednesday || (currentDate.DayOfWeek == DayOfWeek.Wednesday && currentDate.TimeOfDay > TimeSpan.FromHours(10)))
                 {
                     // Calculate the second next Wednesday
                     DateTime secondnextWednesday = currentDate.AddDays(14).AddDays((DayOfWeek.Wednesday + 7 - currentDate.AddDays(7).DayOfWeek) % 7);
@@ -458,7 +458,7 @@ namespace My_Assistant
             DateTime currentDate = DateTime.Now;
             Clipboard.Clear();
             if (Cleaners14TextBox.Text is not null)
-                if (currentDate.DayOfWeek > DayOfWeek.Wednesday || (currentDate.DayOfWeek == DayOfWeek.Wednesday && currentDate.TimeOfDay > TimeSpan.FromHours(11)))
+                if (currentDate.DayOfWeek > DayOfWeek.Wednesday || (currentDate.DayOfWeek == DayOfWeek.Wednesday && currentDate.TimeOfDay > TimeSpan.FromHours(10)))
                 {
                     // Calculate the second next Wednesday
                     DateTime secondnextWednesday = currentDate.AddDays(14).AddDays((DayOfWeek.Wednesday + 7 - currentDate.AddDays(7).DayOfWeek) % 7);
