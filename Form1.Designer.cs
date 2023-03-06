@@ -136,6 +136,8 @@
             GreeksLabel = new Label();
             HomeRichTextBox = new RichTextBox();
             HomeTabPage = new TabPage();
+            PriceChangeButton = new Button();
+            CyprusPreButton = new Button();
             TempButton = new Button();
             ContactWaitButton = new Button();
             TempOrderButton = new Button();
@@ -809,7 +811,7 @@
             CopyHomeButton.Location = new Point(3, 418);
             CopyHomeButton.Name = "CopyHomeButton";
             CopyHomeButton.Size = new Size(138, 43);
-            CopyHomeButton.TabIndex = 7;
+            CopyHomeButton.TabIndex = 800;
             CopyHomeButton.Text = "Αντιγραφή";
             CopyHomeButton.UseVisualStyleBackColor = false;
             CopyHomeButton.Click += CopyHomeButton_Click;
@@ -1012,7 +1014,7 @@
             DeleteHomeButton.Location = new Point(292, 418);
             DeleteHomeButton.Name = "DeleteHomeButton";
             DeleteHomeButton.Size = new Size(138, 43);
-            DeleteHomeButton.TabIndex = 8;
+            DeleteHomeButton.TabIndex = 801;
             DeleteHomeButton.Text = "Διαγραφή";
             DeleteHomeButton.UseVisualStyleBackColor = false;
             DeleteHomeButton.Click += DeleteHomeButton_Click;
@@ -1353,12 +1355,14 @@
             HomeRichTextBox.Location = new Point(3, 467);
             HomeRichTextBox.Name = "HomeRichTextBox";
             HomeRichTextBox.Size = new Size(427, 63);
-            HomeRichTextBox.TabIndex = 9;
+            HomeRichTextBox.TabIndex = 900;
             HomeRichTextBox.Text = "";
             // 
             // HomeTabPage
             // 
             HomeTabPage.BackColor = SystemColors.ButtonFace;
+            HomeTabPage.Controls.Add(PriceChangeButton);
+            HomeTabPage.Controls.Add(CyprusPreButton);
             HomeTabPage.Controls.Add(TempButton);
             HomeTabPage.Controls.Add(ContactWaitButton);
             HomeTabPage.Controls.Add(TempOrderButton);
@@ -1377,29 +1381,49 @@
             HomeTabPage.TabIndex = 0;
             HomeTabPage.Text = "Αρχική";
             // 
+            // PriceChangeButton
+            // 
+            PriceChangeButton.Location = new Point(289, 273);
+            PriceChangeButton.Name = "PriceChangeButton";
+            PriceChangeButton.Size = new Size(138, 44);
+            PriceChangeButton.TabIndex = 16;
+            PriceChangeButton.Text = "Αναμονή Διόρθωσης Τιμών";
+            PriceChangeButton.UseVisualStyleBackColor = true;
+            PriceChangeButton.Click += PriceChangeButton_Click;
+            // 
+            // CyprusPreButton
+            // 
+            CyprusPreButton.Location = new Point(129, 273);
+            CyprusPreButton.Name = "CyprusPreButton";
+            CyprusPreButton.Size = new Size(138, 32);
+            CyprusPreButton.TabIndex = 14;
+            CyprusPreButton.Text = "Δέσμευση Κύπρου";
+            CyprusPreButton.UseVisualStyleBackColor = true;
+            CyprusPreButton.Click += CyprusPreButton_Click;
+            // 
             // TempButton
             // 
-            TempButton.Location = new Point(292, 311);
+            TempButton.Location = new Point(289, 323);
             TempButton.Name = "TempButton";
-            TempButton.Size = new Size(138, 32);
-            TempButton.TabIndex = 15;
-            TempButton.Text = "Προσωρινή Δέσμευση";
+            TempButton.Size = new Size(138, 41);
+            TempButton.TabIndex = 17;
+            TempButton.Text = "Αναμονή Προκαταβολής";
             TempButton.UseVisualStyleBackColor = true;
             TempButton.Click += TempButton_Click;
             // 
             // ContactWaitButton
             // 
-            ContactWaitButton.Location = new Point(292, 273);
+            ContactWaitButton.Location = new Point(289, 235);
             ContactWaitButton.Name = "ContactWaitButton";
             ContactWaitButton.Size = new Size(138, 32);
-            ContactWaitButton.TabIndex = 14;
+            ContactWaitButton.TabIndex = 15;
             ContactWaitButton.Text = "Αναμονή Επικοινωνίας";
             ContactWaitButton.UseVisualStyleBackColor = true;
             ContactWaitButton.Click += ContactWaitButton_Click;
             // 
             // TempOrderButton
             // 
-            TempOrderButton.Location = new Point(292, 235);
+            TempOrderButton.Location = new Point(129, 235);
             TempOrderButton.Name = "TempOrderButton";
             TempOrderButton.Size = new Size(138, 32);
             TempOrderButton.TabIndex = 13;
@@ -2917,5 +2941,7 @@
         private Button FixPricesButton;
         private Button BooksOrderButton;
         private Button PricesNotButton;
+        private Button PriceChangeButton;
+        private Button CyprusPreButton;
     }
 }

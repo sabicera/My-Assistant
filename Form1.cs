@@ -433,19 +433,19 @@ namespace My_Assistant
             DateTime currentDate = DateTime.Now;
             Clipboard.Clear();
             if (Ship14TextBox.Text is not null)
-                if (currentDate.DayOfWeek > DayOfWeek.Friday || (currentDate.DayOfWeek == DayOfWeek.Friday && currentDate.TimeOfDay > TimeSpan.FromHours(11)))
+                if (currentDate.DayOfWeek > DayOfWeek.Wednesday || (currentDate.DayOfWeek == DayOfWeek.Wednesday && currentDate.TimeOfDay > TimeSpan.FromHours(11)))
                 {
-                    // Calculate the second next Friday
-                    DateTime secondnextFriday = currentDate.AddDays(14).AddDays((DayOfWeek.Friday + 7 - currentDate.AddDays(7).DayOfWeek) % 7);
-                    // Display the next Friday in the ShipRichTextBox
-                    ShipRichTextBox.Text = Ship14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + secondnextFriday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy");
+                    // Calculate the second next Wednesday
+                    DateTime secondnextWednesday = currentDate.AddDays(14).AddDays((DayOfWeek.Wednesday + 7 - currentDate.AddDays(7).DayOfWeek) % 7);
+                    // Display the next Wednesday in the ShipRichTextBox
+                    ShipRichTextBox.Text = Ship14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + secondnextWednesday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy");
                 }
                 else
                 {
-                    // Calculate this Friday
-                    DateTime nextFriday = currentDate.AddDays(7).AddDays((DayOfWeek.Friday + 7 - currentDate.DayOfWeek) % 7);
-                    // Display the upcoming Friday in the ShipRichTextBox
-                    ShipRichTextBox.Text = Ship14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + nextFriday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy");
+                    // Calculate this Wednesday
+                    DateTime nextWednesday = currentDate.AddDays(7).AddDays((DayOfWeek.Wednesday + 7 - currentDate.DayOfWeek) % 7);
+                    // Display the upcoming Wednesday in the ShipRichTextBox
+                    ShipRichTextBox.Text = Ship14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + nextWednesday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy");
                 }
             else
             {
@@ -458,19 +458,19 @@ namespace My_Assistant
             DateTime currentDate = DateTime.Now;
             Clipboard.Clear();
             if (Cleaners14TextBox.Text is not null)
-                if (currentDate.DayOfWeek > DayOfWeek.Friday || (currentDate.DayOfWeek == DayOfWeek.Friday && currentDate.TimeOfDay > TimeSpan.FromHours(11)))
+                if (currentDate.DayOfWeek > DayOfWeek.Wednesday || (currentDate.DayOfWeek == DayOfWeek.Wednesday && currentDate.TimeOfDay > TimeSpan.FromHours(11)))
                 {
-                    // Calculate the second next Friday
-                    DateTime secondnextFriday = currentDate.AddDays(14).AddDays((DayOfWeek.Friday + 7 - currentDate.AddDays(7).DayOfWeek) % 7);
-                    // Display the next Friday in the ShipRichTextBox
-                    CleanersRichTextBox.Text = Cleaners14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + secondnextFriday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy");
+                    // Calculate the second next Wednesday
+                    DateTime secondnextWednesday = currentDate.AddDays(14).AddDays((DayOfWeek.Wednesday + 7 - currentDate.AddDays(7).DayOfWeek) % 7);
+                    // Display the next Wednesday in the ShipRichTextBox
+                    CleanersRichTextBox.Text = Cleaners14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + secondnextWednesday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy");
                 }
                 else
                 {
-                    // Calculate this Friday
-                    DateTime nextFriday = currentDate.AddDays(7).AddDays((DayOfWeek.Friday + 7 - currentDate.DayOfWeek) % 7);
-                    // Display the upcoming Friday in the ShipRichTextBox
-                    CleanersRichTextBox.Text = Cleaners14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + nextFriday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy");
+                    // Calculate this Wednesday
+                    DateTime nextWednesday = currentDate.AddDays(7).AddDays((DayOfWeek.Wednesday + 7 - currentDate.DayOfWeek) % 7);
+                    // Display the upcoming Wednesday in the ShipRichTextBox
+                    CleanersRichTextBox.Text = Cleaners14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + nextWednesday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy");
                 }
             else
             {
@@ -867,6 +867,22 @@ namespace My_Assistant
         {
             Clipboard.Clear();
             HomeRichTextBox.Text = $"Αναμονή προκαταβολής=ΠΚ {DateTime.Now:dd/MM/yy}";
+            DataObject data = new();
+            data.SetData(DataFormats.UnicodeText, HomeRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void CyprusPreButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            HomeRichTextBox.Text = $"Δέσμευση Κύπρου=ΠΚ {DateTime.Now:dd/MM/yy}";
+            DataObject data = new();
+            data.SetData(DataFormats.UnicodeText, HomeRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void PriceChangeButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            HomeRichTextBox.Text = $"Αναμονή διόρθωσης Τιμών=ΠΚ {DateTime.Now:dd/MM/yy}";
             DataObject data = new();
             data.SetData(DataFormats.UnicodeText, HomeRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
