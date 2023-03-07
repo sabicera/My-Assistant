@@ -68,6 +68,10 @@ namespace My_Assistant
             {
                 CleanersRichTextBox.Text = Properties.Settings.Default.LatestCleanersRichTextBoxValue;
             }
+            if (!string.IsNullOrEmpty(Properties.Settings.Default.LatestNotesValue))
+            {
+                NotesRichTextBox.Text = Properties.Settings.Default.LatestNotesValue;
+            }
         }
         private void AdressofOrderComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -874,7 +878,7 @@ namespace My_Assistant
         private void CyprusPreButton_Click(object sender, EventArgs e)
         {
             Clipboard.Clear();
-            HomeRichTextBox.Text = $"ÄÝóìåõóç Êýðñïõ";
+            HomeRichTextBox.Text = $"ÄÅÓÌÅÕÓÇ ÊÕÐÑÏÕ";
             DataObject data = new();
             data.SetData(DataFormats.UnicodeText, HomeRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
@@ -957,6 +961,15 @@ namespace My_Assistant
             CalcTextBox10.Text = string.Empty;
             CalcTextBox11.Text = string.Empty;
             CalcTextBox12.Text = string.Empty;
+        }
+        private void NotesRichTextBox_TextChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.LatestNotesValue = NotesRichTextBox.Text;
+            Properties.Settings.Default.Save();
+        }
+        private void NotesDeleteButton_Click(object sender, EventArgs e)
+        {
+            NotesRichTextBox.Text = string.Empty;
         }
     }
 }

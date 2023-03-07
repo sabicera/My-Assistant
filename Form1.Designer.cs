@@ -246,6 +246,9 @@
             MasksButton = new Button();
             ArticleButton39 = new Button();
             TabControl = new TabControl();
+            NotesTabPage = new TabPage();
+            NotesDeleteButton = new Button();
+            NotesRichTextBox = new RichTextBox();
             HomeTabPage.SuspendLayout();
             panel1.SuspendLayout();
             NotesPanel.SuspendLayout();
@@ -253,6 +256,7 @@
             PricingTabPage.SuspendLayout();
             SupplierTabPage.SuspendLayout();
             TabControl.SuspendLayout();
+            NotesTabPage.SuspendLayout();
             SuspendLayout();
             // 
             // AdressofOrderComboBox
@@ -2707,11 +2711,43 @@
             TabControl.Controls.Add(SupplierTabPage);
             TabControl.Controls.Add(OrdersTabPage);
             TabControl.Controls.Add(PricingTabPage);
+            TabControl.Controls.Add(NotesTabPage);
             TabControl.Location = new Point(0, 0);
             TabControl.Name = "TabControl";
             TabControl.SelectedIndex = 0;
             TabControl.Size = new Size(441, 561);
             TabControl.TabIndex = 17;
+            // 
+            // NotesTabPage
+            // 
+            NotesTabPage.Controls.Add(NotesDeleteButton);
+            NotesTabPage.Controls.Add(NotesRichTextBox);
+            NotesTabPage.Location = new Point(4, 24);
+            NotesTabPage.Name = "NotesTabPage";
+            NotesTabPage.Padding = new Padding(3);
+            NotesTabPage.Size = new Size(433, 533);
+            NotesTabPage.TabIndex = 4;
+            NotesTabPage.Text = "Σημειώσεις";
+            NotesTabPage.UseVisualStyleBackColor = true;
+            // 
+            // NotesDeleteButton
+            // 
+            NotesDeleteButton.Location = new Point(176, 8);
+            NotesDeleteButton.Name = "NotesDeleteButton";
+            NotesDeleteButton.Size = new Size(75, 23);
+            NotesDeleteButton.TabIndex = 1;
+            NotesDeleteButton.Text = "Διαγραφή όλων";
+            NotesDeleteButton.UseVisualStyleBackColor = true;
+            NotesDeleteButton.Click += NotesDeleteButton_Click;
+            // 
+            // NotesRichTextBox
+            // 
+            NotesRichTextBox.Location = new Point(3, 37);
+            NotesRichTextBox.Name = "NotesRichTextBox";
+            NotesRichTextBox.Size = new Size(427, 490);
+            NotesRichTextBox.TabIndex = 0;
+            NotesRichTextBox.Text = "";
+            NotesRichTextBox.TextChanged += NotesRichTextBox_TextChanged;
             // 
             // Form1
             // 
@@ -2738,6 +2774,7 @@
             PricingTabPage.PerformLayout();
             SupplierTabPage.ResumeLayout(false);
             TabControl.ResumeLayout(false);
+            NotesTabPage.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -2959,5 +2996,8 @@
         private Button PriceChangeButton;
         private Button CyprusPreButton;
         private Button PampersButton;
+        private TabPage NotesTabPage;
+        private RichTextBox NotesRichTextBox;
+        private Button NotesDeleteButton;
     }
 }

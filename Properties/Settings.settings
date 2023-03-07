@@ -41,5 +41,8 @@
     <Setting Name="LatestCleanersRichTextBoxValue" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="LatestNotesValue" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

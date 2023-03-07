@@ -178,5 +178,17 @@ namespace My_Assistant.Properties {
                 this["LatestCleanersRichTextBoxValue"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LatestNotesValue {
+            get {
+                return ((string)(this["LatestNotesValue"]));
+            }
+            set {
+                this["LatestNotesValue"] = value;
+            }
+        }
     }
 }
