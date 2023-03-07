@@ -137,7 +137,6 @@
             HomeRichTextBox = new RichTextBox();
             HomeTabPage = new TabPage();
             PriceChangeButton = new Button();
-            CyprusPreButton = new Button();
             TempButton = new Button();
             ContactWaitButton = new Button();
             TempOrderButton = new Button();
@@ -154,6 +153,7 @@
             SendSMSCustomerLlabel = new Label();
             SendMsgComboBox = new ComboBox();
             SendMsgLabel = new Label();
+            CyprusPreButton = new Button();
             label1 = new Label();
             label13 = new Label();
             label14 = new Label();
@@ -238,6 +238,7 @@
             SuppliersDeleteButton = new Button();
             SuppliersRichTextBox = new RichTextBox();
             SupplierTabPage = new TabPage();
+            PampersButton = new Button();
             PricesNotButton = new Button();
             FixPricesButton = new Button();
             BooksOrderButton = new Button();
@@ -389,9 +390,9 @@
             // PricesOKButton
             // 
             PricesOKButton.BackColor = Color.FromArgb(0, 192, 0);
-            PricesOKButton.Location = new Point(320, 561);
+            PricesOKButton.Location = new Point(299, 563);
             PricesOKButton.Name = "PricesOKButton";
-            PricesOKButton.Size = new Size(117, 26);
+            PricesOKButton.Size = new Size(138, 24);
             PricesOKButton.TabIndex = 900;
             PricesOKButton.Text = "Τιμές ΟΚ";
             PricesOKButton.UseVisualStyleBackColor = false;
@@ -554,7 +555,7 @@
             // 
             // CancelPreorderButton
             // 
-            CancelPreorderButton.Location = new Point(8, 142);
+            CancelPreorderButton.Location = new Point(4, 142);
             CancelPreorderButton.Name = "CancelPreorderButton";
             CancelPreorderButton.Size = new Size(199, 33);
             CancelPreorderButton.TabIndex = 3;
@@ -808,7 +809,7 @@
             // 
             CopyHomeButton.BackColor = Color.Chartreuse;
             CopyHomeButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            CopyHomeButton.Location = new Point(3, 418);
+            CopyHomeButton.Location = new Point(3, 415);
             CopyHomeButton.Name = "CopyHomeButton";
             CopyHomeButton.Size = new Size(138, 43);
             CopyHomeButton.TabIndex = 800;
@@ -818,7 +819,7 @@
             // 
             // CopyOKButton
             // 
-            CopyOKButton.Location = new Point(8, 103);
+            CopyOKButton.Location = new Point(4, 103);
             CopyOKButton.Name = "CopyOKButton";
             CopyOKButton.Size = new Size(199, 33);
             CopyOKButton.TabIndex = 2;
@@ -868,7 +869,7 @@
             // 
             // CourrierButton
             // 
-            CourrierButton.Location = new Point(8, 25);
+            CourrierButton.Location = new Point(4, 25);
             CourrierButton.Name = "CourrierButton";
             CourrierButton.Size = new Size(199, 33);
             CourrierButton.TabIndex = 0;
@@ -1011,7 +1012,7 @@
             // 
             DeleteHomeButton.BackColor = Color.DarkSalmon;
             DeleteHomeButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            DeleteHomeButton.Location = new Point(292, 418);
+            DeleteHomeButton.Location = new Point(292, 415);
             DeleteHomeButton.Name = "DeleteHomeButton";
             DeleteHomeButton.Size = new Size(138, 43);
             DeleteHomeButton.TabIndex = 801;
@@ -1352,9 +1353,9 @@
             // HomeRichTextBox
             // 
             HomeRichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            HomeRichTextBox.Location = new Point(3, 467);
+            HomeRichTextBox.Location = new Point(3, 464);
             HomeRichTextBox.Name = "HomeRichTextBox";
-            HomeRichTextBox.Size = new Size(427, 63);
+            HomeRichTextBox.Size = new Size(427, 66);
             HomeRichTextBox.TabIndex = 900;
             HomeRichTextBox.Text = "";
             // 
@@ -1362,7 +1363,6 @@
             // 
             HomeTabPage.BackColor = SystemColors.ButtonFace;
             HomeTabPage.Controls.Add(PriceChangeButton);
-            HomeTabPage.Controls.Add(CyprusPreButton);
             HomeTabPage.Controls.Add(TempButton);
             HomeTabPage.Controls.Add(ContactWaitButton);
             HomeTabPage.Controls.Add(TempOrderButton);
@@ -1383,7 +1383,7 @@
             // 
             // PriceChangeButton
             // 
-            PriceChangeButton.Location = new Point(289, 273);
+            PriceChangeButton.Location = new Point(292, 273);
             PriceChangeButton.Name = "PriceChangeButton";
             PriceChangeButton.Size = new Size(138, 44);
             PriceChangeButton.TabIndex = 16;
@@ -1391,19 +1391,9 @@
             PriceChangeButton.UseVisualStyleBackColor = true;
             PriceChangeButton.Click += PriceChangeButton_Click;
             // 
-            // CyprusPreButton
-            // 
-            CyprusPreButton.Location = new Point(129, 273);
-            CyprusPreButton.Name = "CyprusPreButton";
-            CyprusPreButton.Size = new Size(138, 32);
-            CyprusPreButton.TabIndex = 14;
-            CyprusPreButton.Text = "Δέσμευση Κύπρου";
-            CyprusPreButton.UseVisualStyleBackColor = true;
-            CyprusPreButton.Click += CyprusPreButton_Click;
-            // 
             // TempButton
             // 
-            TempButton.Location = new Point(289, 323);
+            TempButton.Location = new Point(292, 323);
             TempButton.Name = "TempButton";
             TempButton.Size = new Size(138, 41);
             TempButton.TabIndex = 17;
@@ -1413,7 +1403,7 @@
             // 
             // ContactWaitButton
             // 
-            ContactWaitButton.Location = new Point(289, 235);
+            ContactWaitButton.Location = new Point(292, 235);
             ContactWaitButton.Name = "ContactWaitButton";
             ContactWaitButton.Size = new Size(138, 32);
             ContactWaitButton.TabIndex = 15;
@@ -1423,7 +1413,7 @@
             // 
             // TempOrderButton
             // 
-            TempOrderButton.Location = new Point(129, 235);
+            TempOrderButton.Location = new Point(148, 235);
             TempOrderButton.Name = "TempOrderButton";
             TempOrderButton.Size = new Size(138, 32);
             TempOrderButton.TabIndex = 13;
@@ -1435,7 +1425,7 @@
             // 
             FromLarnacaButton.Location = new Point(3, 311);
             FromLarnacaButton.Name = "FromLarnacaButton";
-            FromLarnacaButton.Size = new Size(104, 32);
+            FromLarnacaButton.Size = new Size(138, 32);
             FromLarnacaButton.TabIndex = 12;
             FromLarnacaButton.Text = "Από Λάρνακα";
             FromLarnacaButton.UseVisualStyleBackColor = true;
@@ -1445,7 +1435,7 @@
             // 
             FromNicosiaButton.Location = new Point(3, 273);
             FromNicosiaButton.Name = "FromNicosiaButton";
-            FromNicosiaButton.Size = new Size(104, 32);
+            FromNicosiaButton.Size = new Size(138, 32);
             FromNicosiaButton.TabIndex = 11;
             FromNicosiaButton.Text = "Από Λευκωσία";
             FromNicosiaButton.UseVisualStyleBackColor = true;
@@ -1455,7 +1445,7 @@
             // 
             ToLimassolButton.Location = new Point(3, 235);
             ToLimassolButton.Name = "ToLimassolButton";
-            ToLimassolButton.Size = new Size(104, 32);
+            ToLimassolButton.Size = new Size(138, 32);
             ToLimassolButton.TabIndex = 10;
             ToLimassolButton.Text = "=1 για Λεμεσό";
             ToLimassolButton.UseVisualStyleBackColor = true;
@@ -1569,6 +1559,17 @@
             SendMsgLabel.Size = new Size(95, 15);
             SendMsgLabel.TabIndex = 4;
             SendMsgLabel.Text = "Ενημέρωσε για :";
+            // 
+            // CyprusPreButton
+            // 
+            CyprusPreButton.BackColor = Color.FromArgb(255, 255, 192);
+            CyprusPreButton.Location = new Point(152, 563);
+            CyprusPreButton.Name = "CyprusPreButton";
+            CyprusPreButton.Size = new Size(138, 24);
+            CyprusPreButton.TabIndex = 14;
+            CyprusPreButton.Text = "Δέσμευση Κύπρου";
+            CyprusPreButton.UseVisualStyleBackColor = false;
+            CyprusPreButton.Click += CyprusPreButton_Click;
             // 
             // label1
             // 
@@ -2559,7 +2560,7 @@
             // 
             // ShipButton
             // 
-            ShipButton.Location = new Point(8, 64);
+            ShipButton.Location = new Point(4, 64);
             ShipButton.Name = "ShipButton";
             ShipButton.Size = new Size(199, 33);
             ShipButton.TabIndex = 1;
@@ -2571,7 +2572,7 @@
             // 
             SuppliersCopyButton.BackColor = Color.Chartreuse;
             SuppliersCopyButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            SuppliersCopyButton.Location = new Point(6, 418);
+            SuppliersCopyButton.Location = new Point(3, 415);
             SuppliersCopyButton.Name = "SuppliersCopyButton";
             SuppliersCopyButton.Size = new Size(138, 43);
             SuppliersCopyButton.TabIndex = 50;
@@ -2583,7 +2584,7 @@
             // 
             SuppliersDeleteButton.BackColor = Color.DarkSalmon;
             SuppliersDeleteButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            SuppliersDeleteButton.Location = new Point(289, 418);
+            SuppliersDeleteButton.Location = new Point(292, 415);
             SuppliersDeleteButton.Name = "SuppliersDeleteButton";
             SuppliersDeleteButton.Size = new Size(138, 43);
             SuppliersDeleteButton.TabIndex = 51;
@@ -2594,15 +2595,16 @@
             // SuppliersRichTextBox
             // 
             SuppliersRichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            SuppliersRichTextBox.Location = new Point(2, 467);
+            SuppliersRichTextBox.Location = new Point(3, 464);
             SuppliersRichTextBox.Name = "SuppliersRichTextBox";
-            SuppliersRichTextBox.Size = new Size(428, 63);
+            SuppliersRichTextBox.Size = new Size(427, 66);
             SuppliersRichTextBox.TabIndex = 52;
             SuppliersRichTextBox.Text = "";
             // 
             // SupplierTabPage
             // 
             SupplierTabPage.BackColor = SystemColors.ButtonFace;
+            SupplierTabPage.Controls.Add(PampersButton);
             SupplierTabPage.Controls.Add(PricesNotButton);
             SupplierTabPage.Controls.Add(FixPricesButton);
             SupplierTabPage.Controls.Add(BooksOrderButton);
@@ -2623,32 +2625,44 @@
             SupplierTabPage.TabIndex = 1;
             SupplierTabPage.Text = "Προμηθευτές";
             // 
+            // PampersButton
+            // 
+            PampersButton.BackColor = Color.MistyRose;
+            PampersButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            PampersButton.Location = new Point(228, 103);
+            PampersButton.Name = "PampersButton";
+            PampersButton.Size = new Size(199, 33);
+            PampersButton.TabIndex = 7;
+            PampersButton.Text = "Πάνες + Υγιεινή ΦΠΑ 13%";
+            PampersButton.UseVisualStyleBackColor = false;
+            PampersButton.Click += PampersButton_Click;
+            // 
             // PricesNotButton
             // 
-            PricesNotButton.Location = new Point(225, 181);
+            PricesNotButton.Location = new Point(228, 220);
             PricesNotButton.Name = "PricesNotButton";
             PricesNotButton.Size = new Size(199, 33);
-            PricesNotButton.TabIndex = 9;
+            PricesNotButton.TabIndex = 10;
             PricesNotButton.Text = "Τιμές ΟΚ, εκτός";
             PricesNotButton.UseVisualStyleBackColor = true;
             PricesNotButton.Click += PricesNotButton_Click;
             // 
             // FixPricesButton
             // 
-            FixPricesButton.Location = new Point(225, 142);
+            FixPricesButton.Location = new Point(228, 181);
             FixPricesButton.Name = "FixPricesButton";
             FixPricesButton.Size = new Size(199, 33);
-            FixPricesButton.TabIndex = 8;
+            FixPricesButton.TabIndex = 9;
             FixPricesButton.Text = "Φτιάξε τιμές";
             FixPricesButton.UseVisualStyleBackColor = true;
             FixPricesButton.Click += FixPricesButton_Click;
             // 
             // BooksOrderButton
             // 
-            BooksOrderButton.Location = new Point(225, 103);
+            BooksOrderButton.Location = new Point(228, 142);
             BooksOrderButton.Name = "BooksOrderButton";
             BooksOrderButton.Size = new Size(199, 33);
-            BooksOrderButton.TabIndex = 7;
+            BooksOrderButton.TabIndex = 8;
             BooksOrderButton.Text = "Δέσμευση Κύπρου - Βιβλια";
             BooksOrderButton.UseVisualStyleBackColor = true;
             BooksOrderButton.Click += BooksOrderButton_Click;
@@ -2657,7 +2671,7 @@
             // 
             BooksButton.BackColor = Color.MistyRose;
             BooksButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            BooksButton.Location = new Point(225, 64);
+            BooksButton.Location = new Point(228, 64);
             BooksButton.Name = "BooksButton";
             BooksButton.Size = new Size(199, 33);
             BooksButton.TabIndex = 6;
@@ -2669,7 +2683,7 @@
             // 
             MasksButton.BackColor = Color.MistyRose;
             MasksButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            MasksButton.Location = new Point(225, 25);
+            MasksButton.Location = new Point(228, 25);
             MasksButton.Name = "MasksButton";
             MasksButton.Size = new Size(199, 33);
             MasksButton.TabIndex = 5;
@@ -2679,7 +2693,7 @@
             // 
             // ArticleButton39
             // 
-            ArticleButton39.Location = new Point(8, 180);
+            ArticleButton39.Location = new Point(4, 180);
             ArticleButton39.Name = "ArticleButton39";
             ArticleButton39.Size = new Size(199, 33);
             ArticleButton39.TabIndex = 4;
@@ -2705,6 +2719,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(440, 589);
             Controls.Add(PricesOKButton);
+            Controls.Add(CyprusPreButton);
             Controls.Add(TabControl);
             Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -2943,5 +2958,6 @@
         private Button PricesNotButton;
         private Button PriceChangeButton;
         private Button CyprusPreButton;
+        private Button PampersButton;
     }
 }

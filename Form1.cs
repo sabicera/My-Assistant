@@ -874,7 +874,7 @@ namespace My_Assistant
         private void CyprusPreButton_Click(object sender, EventArgs e)
         {
             Clipboard.Clear();
-            HomeRichTextBox.Text = $"дщСЛЕУСГ йЩПЯОУ=пй {DateTime.Now:dd/MM/yy}";
+            HomeRichTextBox.Text = $"дщСЛЕУСГ йЩПЯОУ";
             DataObject data = new();
             data.SetData(DataFormats.UnicodeText, HomeRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
@@ -899,6 +899,14 @@ namespace My_Assistant
         {
             Clipboard.Clear();
             SuppliersRichTextBox.Text = $"пяосовг - бибкиа - жпа 6,5%";
+            DataObject data = new();
+            data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void PampersButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            SuppliersRichTextBox.Text = $"памес - лыяоламтика - амтисгптийа ламтикайиа - амтисгптийа пяосовг - жпа 13%";
             DataObject data = new();
             data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
