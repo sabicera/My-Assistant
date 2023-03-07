@@ -1386,7 +1386,7 @@
             PriceChangeButton.Location = new Point(292, 273);
             PriceChangeButton.Name = "PriceChangeButton";
             PriceChangeButton.Size = new Size(138, 44);
-            PriceChangeButton.TabIndex = 16;
+            PriceChangeButton.TabIndex = 15;
             PriceChangeButton.Text = "Αναμονή Διόρθωσης Τιμών";
             PriceChangeButton.UseVisualStyleBackColor = true;
             PriceChangeButton.Click += PriceChangeButton_Click;
@@ -1396,7 +1396,7 @@
             TempButton.Location = new Point(292, 323);
             TempButton.Name = "TempButton";
             TempButton.Size = new Size(138, 41);
-            TempButton.TabIndex = 17;
+            TempButton.TabIndex = 16;
             TempButton.Text = "Αναμονή Προκαταβολής";
             TempButton.UseVisualStyleBackColor = true;
             TempButton.Click += TempButton_Click;
@@ -1406,7 +1406,7 @@
             ContactWaitButton.Location = new Point(292, 235);
             ContactWaitButton.Name = "ContactWaitButton";
             ContactWaitButton.Size = new Size(138, 32);
-            ContactWaitButton.TabIndex = 15;
+            ContactWaitButton.TabIndex = 14;
             ContactWaitButton.Text = "Αναμονή Επικοινωνίας";
             ContactWaitButton.UseVisualStyleBackColor = true;
             ContactWaitButton.Click += ContactWaitButton_Click;
@@ -1566,7 +1566,7 @@
             CyprusPreButton.Location = new Point(152, 563);
             CyprusPreButton.Name = "CyprusPreButton";
             CyprusPreButton.Size = new Size(138, 24);
-            CyprusPreButton.TabIndex = 14;
+            CyprusPreButton.TabIndex = 899;
             CyprusPreButton.Text = "Δέσμευση Κύπρου";
             CyprusPreButton.UseVisualStyleBackColor = false;
             CyprusPreButton.Click += CyprusPreButton_Click;
