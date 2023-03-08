@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             AdressofOrderComboBox = new ComboBox();
             AdressofOrderLabel = new Label();
+            ArticleButton39 = new Button();
             Battery0CopyButton = new Button();
             Battery0Label = new Label();
             Battery0TextBox = new TextBox();
@@ -42,7 +43,9 @@
             BatteryorLabel = new Label();
             BatteryResetButton = new Button();
             BatteryRichTextBox = new RichTextBox();
-            PricesOKButton = new Button();
+            BooksButton = new Button();
+            BooksOrderButton = new Button();
+            ByShipButton = new Button();
             CalcTextBox1 = new TextBox();
             CalcTextBox10 = new TextBox();
             CalcTextBox11 = new TextBox();
@@ -55,16 +58,12 @@
             CalcTextBox7 = new TextBox();
             CalcTextBox8 = new TextBox();
             CalcTextBox9 = new TextBox();
-            CalculatorTotalTextBox = new TextBox();
+            CalculatorTotalButton = new Button();
             CancelPreorderButton = new Button();
-            Cleaners0ClearButton = new Button();
             Cleaners0CopyButton = new Button();
             Cleaners0Label = new Label();
-            Cleaners0PasteButton = new Button();
             Cleaners0TextBox = new TextBox();
-            Cleaners14ClearButton = new Button();
             Cleaners14Label = new Label();
-            Cleaners14PasteButton = new Button();
             Cleaners14TextBox = new TextBox();
             CleanersAutoButton = new Button();
             CleanersCopyButton = new Button();
@@ -74,12 +73,7 @@
             CleanersorLabel = new Label();
             CleanersResetButton = new Button();
             CleanersRichTextBox = new RichTextBox();
-            ClearBattery0Button = new Button();
-            ClearBattery14Button = new Button();
-            ClearCPU0Button = new Button();
-            ClearCPU14Button = new Button();
-            ClearShip0Button = new Button();
-            ClearShip14Button = new Button();
+            ContactWaitButton = new Button();
             CopyHomeButton = new Button();
             CopyOKButton = new Button();
             CostGRSecTextBox = new TextBox();
@@ -100,6 +94,7 @@
             CPUorLabel = new Label();
             CPUResetButton = new Button();
             CPURichTextBox = new RichTextBox();
+            CyprusPreButton = new Button();
             DeleteHomeButton = new Button();
             FirstTextBox1 = new TextBox();
             FirstTextBox10 = new TextBox();
@@ -117,6 +112,7 @@
             FirstTextBox7 = new TextBox();
             FirstTextBox8 = new TextBox();
             FirstTextBox9 = new TextBox();
+            FixPricesButton = new Button();
             ForthTextBox1 = new TextBox();
             ForthTextBox10 = new TextBox();
             ForthTextBox11 = new TextBox();
@@ -133,15 +129,15 @@
             ForthTextBox7 = new TextBox();
             ForthTextBox8 = new TextBox();
             ForthTextBox9 = new TextBox();
+            FromLarnacaButton = new Button();
+            FromNicosiaButton = new Button();
+            GoodEveningButton = new Button();
             GreeksLabel = new Label();
             HomeRichTextBox = new RichTextBox();
             HomeTabPage = new TabPage();
             PriceChangeButton = new Button();
             TempButton = new Button();
-            ContactWaitButton = new Button();
             TempOrderButton = new Button();
-            FromLarnacaButton = new Button();
-            FromNicosiaButton = new Button();
             ToLimassolButton = new Button();
             panel1 = new Panel();
             NotesLabel = new Label();
@@ -153,22 +149,19 @@
             SendSMSCustomerLlabel = new Label();
             SendMsgComboBox = new ComboBox();
             SendMsgLabel = new Label();
-            CyprusPreButton = new Button();
-            label1 = new Label();
-            label13 = new Label();
-            label14 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
+            CostLabel = new Label();
+            ForeignersLabel = new Label();
+            CostLabel14 = new Label();
+            ShippingLabel = new Label();
+            CostLabel0 = new Label();
+            CostKLabel0 = new Label();
+            CostKLabel14 = new Label();
+            CostTotalLabel = new Label();
+            MasksButton = new Button();
+            NotesDeleteButton = new Button();
+            NotesRichTextBox = new RichTextBox();
+            NotesTabPage = new TabPage();
             OrdersTabPage = new TabPage();
-            PasteBattery0Button = new Button();
-            PasteBattery14Button = new Button();
-            PasteCPU0Button = new Button();
-            PasteCPU14Button = new Button();
-            PasteShip0Button = new Button();
-            PasteShip14Button = new Button();
             Ship0CopyButton = new Button();
             Ship0Label = new Label();
             Ship0TextBox = new TextBox();
@@ -182,6 +175,10 @@
             ShiporLabel = new Label();
             ShipResetButton = new Button();
             ShipRichTextBox = new RichTextBox();
+            PampersButton = new Button();
+            PricesNotButton = new Button();
+            PricesOKButton = new Button();
+            PriceWaitButton = new Button();
             PricingTabPage = new TabPage();
             ResetButton0 = new Button();
             ResetButton14 = new Button();
@@ -238,25 +235,15 @@
             SuppliersDeleteButton = new Button();
             SuppliersRichTextBox = new RichTextBox();
             SupplierTabPage = new TabPage();
-            PampersButton = new Button();
-            PricesNotButton = new Button();
-            FixPricesButton = new Button();
-            BooksOrderButton = new Button();
-            BooksButton = new Button();
-            MasksButton = new Button();
-            ArticleButton39 = new Button();
             TabControl = new TabControl();
-            NotesTabPage = new TabPage();
-            NotesDeleteButton = new Button();
-            NotesRichTextBox = new RichTextBox();
             HomeTabPage.SuspendLayout();
             panel1.SuspendLayout();
             NotesPanel.SuspendLayout();
+            NotesTabPage.SuspendLayout();
             OrdersTabPage.SuspendLayout();
             PricingTabPage.SuspendLayout();
             SupplierTabPage.SuspendLayout();
             TabControl.SuspendLayout();
-            NotesTabPage.SuspendLayout();
             SuspendLayout();
             // 
             // AdressofOrderComboBox
@@ -280,14 +267,24 @@
             AdressofOrderLabel.TabIndex = 1;
             AdressofOrderLabel.Text = "Έστειλα για διευθέτηση στην:";
             // 
+            // ArticleButton39
+            // 
+            ArticleButton39.Location = new Point(3, 180);
+            ArticleButton39.Name = "ArticleButton39";
+            ArticleButton39.Size = new Size(199, 33);
+            ArticleButton39.TabIndex = 4;
+            ArticleButton39.Text = "Άρθρο 39α";
+            ArticleButton39.UseVisualStyleBackColor = true;
+            ArticleButton39.Click += ArticleButton39_Click;
+            // 
             // Battery0CopyButton
             // 
             Battery0CopyButton.BackColor = Color.Chartreuse;
-            Battery0CopyButton.Location = new Point(254, 181);
+            Battery0CopyButton.Location = new Point(235, 177);
             Battery0CopyButton.Name = "Battery0CopyButton";
-            Battery0CopyButton.Size = new Size(23, 23);
+            Battery0CopyButton.Size = new Size(51, 29);
             Battery0CopyButton.TabIndex = 100;
-            Battery0CopyButton.Text = "C";
+            Battery0CopyButton.Text = "Copy";
             Battery0CopyButton.UseVisualStyleBackColor = false;
             Battery0CopyButton.Click += Battery0CopyButton_Click;
             // 
@@ -383,6 +380,7 @@
             // 
             // BatteryRichTextBox
             // 
+            BatteryRichTextBox.BackColor = SystemColors.Info;
             BatteryRichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             BatteryRichTextBox.Location = new Point(24, 209);
             BatteryRichTextBox.Name = "BatteryRichTextBox";
@@ -391,25 +389,46 @@
             BatteryRichTextBox.Text = "";
             BatteryRichTextBox.TextChanged += BatteryRichTextBox_TextChanged;
             // 
-            // PricesOKButton
+            // BooksButton
             // 
-            PricesOKButton.BackColor = Color.FromArgb(0, 192, 0);
-            PricesOKButton.Location = new Point(299, 563);
-            PricesOKButton.Name = "PricesOKButton";
-            PricesOKButton.Size = new Size(138, 24);
-            PricesOKButton.TabIndex = 900;
-            PricesOKButton.Text = "Τιμές ΟΚ";
-            PricesOKButton.UseVisualStyleBackColor = false;
-            PricesOKButton.Click += PricesOKButton_Click;
+            BooksButton.BackColor = Color.MistyRose;
+            BooksButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            BooksButton.Location = new Point(231, 63);
+            BooksButton.Name = "BooksButton";
+            BooksButton.Size = new Size(199, 33);
+            BooksButton.TabIndex = 21;
+            BooksButton.Text = "Βιβλία ΦΠΑ 6,5%";
+            BooksButton.UseVisualStyleBackColor = false;
+            BooksButton.Click += BooksButton_Click;
+            // 
+            // BooksOrderButton
+            // 
+            BooksOrderButton.Location = new Point(231, 141);
+            BooksOrderButton.Name = "BooksOrderButton";
+            BooksOrderButton.Size = new Size(199, 33);
+            BooksOrderButton.TabIndex = 23;
+            BooksOrderButton.Text = "Δέσμευση Κύπρου - Βιβλια";
+            BooksOrderButton.UseVisualStyleBackColor = true;
+            BooksOrderButton.Click += BooksOrderButton_Click;
+            // 
+            // ByShipButton
+            // 
+            ByShipButton.Location = new Point(3, 219);
+            ByShipButton.Name = "ByShipButton";
+            ByShipButton.Size = new Size(199, 33);
+            ByShipButton.TabIndex = 5;
+            ByShipButton.Text = "Καράβι";
+            ByShipButton.UseVisualStyleBackColor = true;
+            ByShipButton.Click += ByShipButton_Click;
             // 
             // CalcTextBox1
             // 
             CalcTextBox1.BackColor = Color.White;
             CalcTextBox1.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            CalcTextBox1.Location = new Point(345, 149);
+            CalcTextBox1.Location = new Point(337, 149);
             CalcTextBox1.Margin = new Padding(1);
             CalcTextBox1.Name = "CalcTextBox1";
-            CalcTextBox1.Size = new Size(79, 20);
+            CalcTextBox1.Size = new Size(90, 20);
             CalcTextBox1.TabIndex = 85;
             CalcTextBox1.TextAlign = HorizontalAlignment.Right;
             CalcTextBox1.TextChanged += CalcTextBox1_TextChanged;
@@ -418,10 +437,10 @@
             // 
             CalcTextBox10.BackColor = Color.White;
             CalcTextBox10.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            CalcTextBox10.Location = new Point(345, 347);
+            CalcTextBox10.Location = new Point(337, 347);
             CalcTextBox10.Margin = new Padding(1);
             CalcTextBox10.Name = "CalcTextBox10";
-            CalcTextBox10.Size = new Size(79, 20);
+            CalcTextBox10.Size = new Size(90, 20);
             CalcTextBox10.TabIndex = 94;
             CalcTextBox10.TextAlign = HorizontalAlignment.Right;
             CalcTextBox10.TextChanged += CalcTextBox10_TextChanged;
@@ -430,10 +449,10 @@
             // 
             CalcTextBox11.BackColor = Color.White;
             CalcTextBox11.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            CalcTextBox11.Location = new Point(345, 369);
+            CalcTextBox11.Location = new Point(337, 369);
             CalcTextBox11.Margin = new Padding(1);
             CalcTextBox11.Name = "CalcTextBox11";
-            CalcTextBox11.Size = new Size(79, 20);
+            CalcTextBox11.Size = new Size(90, 20);
             CalcTextBox11.TabIndex = 95;
             CalcTextBox11.TextAlign = HorizontalAlignment.Right;
             CalcTextBox11.TextChanged += CalcTextBox11_TextChanged;
@@ -442,10 +461,10 @@
             // 
             CalcTextBox12.BackColor = Color.White;
             CalcTextBox12.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            CalcTextBox12.Location = new Point(345, 392);
+            CalcTextBox12.Location = new Point(337, 392);
             CalcTextBox12.Margin = new Padding(1);
             CalcTextBox12.Name = "CalcTextBox12";
-            CalcTextBox12.Size = new Size(79, 20);
+            CalcTextBox12.Size = new Size(90, 20);
             CalcTextBox12.TabIndex = 96;
             CalcTextBox12.TextAlign = HorizontalAlignment.Right;
             CalcTextBox12.TextChanged += CalcTextBox12_TextChanged;
@@ -454,10 +473,10 @@
             // 
             CalcTextBox2.BackColor = Color.White;
             CalcTextBox2.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            CalcTextBox2.Location = new Point(345, 171);
+            CalcTextBox2.Location = new Point(337, 171);
             CalcTextBox2.Margin = new Padding(1);
             CalcTextBox2.Name = "CalcTextBox2";
-            CalcTextBox2.Size = new Size(79, 20);
+            CalcTextBox2.Size = new Size(90, 20);
             CalcTextBox2.TabIndex = 86;
             CalcTextBox2.TextAlign = HorizontalAlignment.Right;
             CalcTextBox2.TextChanged += CalcTextBox2_TextChanged;
@@ -466,10 +485,10 @@
             // 
             CalcTextBox3.BackColor = Color.White;
             CalcTextBox3.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            CalcTextBox3.Location = new Point(345, 193);
+            CalcTextBox3.Location = new Point(337, 193);
             CalcTextBox3.Margin = new Padding(1);
             CalcTextBox3.Name = "CalcTextBox3";
-            CalcTextBox3.Size = new Size(79, 20);
+            CalcTextBox3.Size = new Size(90, 20);
             CalcTextBox3.TabIndex = 87;
             CalcTextBox3.TextAlign = HorizontalAlignment.Right;
             CalcTextBox3.TextChanged += CalcTextBox3_TextChanged;
@@ -478,10 +497,10 @@
             // 
             CalcTextBox4.BackColor = Color.White;
             CalcTextBox4.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            CalcTextBox4.Location = new Point(345, 215);
+            CalcTextBox4.Location = new Point(337, 215);
             CalcTextBox4.Margin = new Padding(1);
             CalcTextBox4.Name = "CalcTextBox4";
-            CalcTextBox4.Size = new Size(79, 20);
+            CalcTextBox4.Size = new Size(90, 20);
             CalcTextBox4.TabIndex = 88;
             CalcTextBox4.TextAlign = HorizontalAlignment.Right;
             CalcTextBox4.TextChanged += CalcTextBox4_TextChanged;
@@ -490,10 +509,10 @@
             // 
             CalcTextBox5.BackColor = Color.White;
             CalcTextBox5.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            CalcTextBox5.Location = new Point(345, 237);
+            CalcTextBox5.Location = new Point(337, 237);
             CalcTextBox5.Margin = new Padding(1);
             CalcTextBox5.Name = "CalcTextBox5";
-            CalcTextBox5.Size = new Size(79, 20);
+            CalcTextBox5.Size = new Size(90, 20);
             CalcTextBox5.TabIndex = 89;
             CalcTextBox5.TextAlign = HorizontalAlignment.Right;
             CalcTextBox5.TextChanged += CalcTextBox5_TextChanged;
@@ -502,10 +521,10 @@
             // 
             CalcTextBox6.BackColor = Color.White;
             CalcTextBox6.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            CalcTextBox6.Location = new Point(345, 259);
+            CalcTextBox6.Location = new Point(337, 259);
             CalcTextBox6.Margin = new Padding(1);
             CalcTextBox6.Name = "CalcTextBox6";
-            CalcTextBox6.Size = new Size(79, 20);
+            CalcTextBox6.Size = new Size(90, 20);
             CalcTextBox6.TabIndex = 90;
             CalcTextBox6.TextAlign = HorizontalAlignment.Right;
             CalcTextBox6.TextChanged += CalcTextBox6_TextChanged;
@@ -514,10 +533,10 @@
             // 
             CalcTextBox7.BackColor = Color.White;
             CalcTextBox7.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            CalcTextBox7.Location = new Point(345, 281);
+            CalcTextBox7.Location = new Point(337, 281);
             CalcTextBox7.Margin = new Padding(1);
             CalcTextBox7.Name = "CalcTextBox7";
-            CalcTextBox7.Size = new Size(79, 20);
+            CalcTextBox7.Size = new Size(90, 20);
             CalcTextBox7.TabIndex = 91;
             CalcTextBox7.TextAlign = HorizontalAlignment.Right;
             CalcTextBox7.TextChanged += CalcTextBox7_TextChanged;
@@ -526,10 +545,10 @@
             // 
             CalcTextBox8.BackColor = Color.White;
             CalcTextBox8.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            CalcTextBox8.Location = new Point(345, 303);
+            CalcTextBox8.Location = new Point(337, 303);
             CalcTextBox8.Margin = new Padding(1);
             CalcTextBox8.Name = "CalcTextBox8";
-            CalcTextBox8.Size = new Size(79, 20);
+            CalcTextBox8.Size = new Size(90, 20);
             CalcTextBox8.TabIndex = 92;
             CalcTextBox8.TextAlign = HorizontalAlignment.Right;
             CalcTextBox8.TextChanged += CalcTextBox8_TextChanged;
@@ -538,28 +557,28 @@
             // 
             CalcTextBox9.BackColor = Color.White;
             CalcTextBox9.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            CalcTextBox9.Location = new Point(345, 325);
+            CalcTextBox9.Location = new Point(337, 325);
             CalcTextBox9.Margin = new Padding(1);
             CalcTextBox9.Name = "CalcTextBox9";
-            CalcTextBox9.Size = new Size(79, 20);
+            CalcTextBox9.Size = new Size(90, 20);
             CalcTextBox9.TabIndex = 93;
             CalcTextBox9.TextAlign = HorizontalAlignment.Right;
             CalcTextBox9.TextChanged += CalcTextBox9_TextChanged;
             // 
-            // CalculatorTotalTextBox
+            // CalculatorTotalButton
             // 
-            CalculatorTotalTextBox.BackColor = Color.Gainsboro;
-            CalculatorTotalTextBox.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            CalculatorTotalTextBox.Location = new Point(345, 434);
-            CalculatorTotalTextBox.Margin = new Padding(1);
-            CalculatorTotalTextBox.Name = "CalculatorTotalTextBox";
-            CalculatorTotalTextBox.Size = new Size(79, 20);
-            CalculatorTotalTextBox.TabIndex = 97;
-            CalculatorTotalTextBox.TextAlign = HorizontalAlignment.Right;
+            CalculatorTotalButton.BackColor = Color.Snow;
+            CalculatorTotalButton.Location = new Point(337, 436);
+            CalculatorTotalButton.Name = "CalculatorTotalButton";
+            CalculatorTotalButton.Size = new Size(90, 23);
+            CalculatorTotalButton.TabIndex = 99;
+            CalculatorTotalButton.TextAlign = ContentAlignment.MiddleRight;
+            CalculatorTotalButton.UseVisualStyleBackColor = false;
+            CalculatorTotalButton.Click += CalculatorTotalButton_Click;
             // 
             // CancelPreorderButton
             // 
-            CancelPreorderButton.Location = new Point(4, 142);
+            CancelPreorderButton.Location = new Point(3, 142);
             CancelPreorderButton.Name = "CancelPreorderButton";
             CancelPreorderButton.Size = new Size(199, 33);
             CancelPreorderButton.TabIndex = 3;
@@ -567,25 +586,14 @@
             CancelPreorderButton.UseVisualStyleBackColor = true;
             CancelPreorderButton.Click += CancelPreorderButton_Click;
             // 
-            // Cleaners0ClearButton
-            // 
-            Cleaners0ClearButton.BackColor = Color.DarkSalmon;
-            Cleaners0ClearButton.Location = new Point(276, 437);
-            Cleaners0ClearButton.Name = "Cleaners0ClearButton";
-            Cleaners0ClearButton.Size = new Size(23, 23);
-            Cleaners0ClearButton.TabIndex = 100;
-            Cleaners0ClearButton.Text = "✖";
-            Cleaners0ClearButton.UseVisualStyleBackColor = false;
-            Cleaners0ClearButton.Click += Cleaners0ClearButton_Click;
-            // 
             // Cleaners0CopyButton
             // 
             Cleaners0CopyButton.BackColor = Color.Chartreuse;
-            Cleaners0CopyButton.Location = new Point(253, 437);
+            Cleaners0CopyButton.Location = new Point(235, 433);
             Cleaners0CopyButton.Name = "Cleaners0CopyButton";
-            Cleaners0CopyButton.Size = new Size(23, 23);
+            Cleaners0CopyButton.Size = new Size(51, 29);
             Cleaners0CopyButton.TabIndex = 100;
-            Cleaners0CopyButton.Text = "C";
+            Cleaners0CopyButton.Text = "Copy";
             Cleaners0CopyButton.UseVisualStyleBackColor = false;
             Cleaners0CopyButton.Click += Cleaners0CopyButton_Click;
             // 
@@ -599,17 +607,6 @@
             Cleaners0Label.TabIndex = 59;
             Cleaners0Label.Text = "0";
             // 
-            // Cleaners0PasteButton
-            // 
-            Cleaners0PasteButton.BackColor = Color.DeepSkyBlue;
-            Cleaners0PasteButton.Location = new Point(230, 437);
-            Cleaners0PasteButton.Name = "Cleaners0PasteButton";
-            Cleaners0PasteButton.Size = new Size(23, 23);
-            Cleaners0PasteButton.TabIndex = 100;
-            Cleaners0PasteButton.Text = "P";
-            Cleaners0PasteButton.UseVisualStyleBackColor = false;
-            Cleaners0PasteButton.Click += Cleaners0PasteButton_Click;
-            // 
             // Cleaners0TextBox
             // 
             Cleaners0TextBox.Location = new Point(23, 437);
@@ -617,17 +614,6 @@
             Cleaners0TextBox.Size = new Size(206, 21);
             Cleaners0TextBox.TabIndex = 25;
             Cleaners0TextBox.TextChanged += Cleaners0TextBox_TextChanged;
-            // 
-            // Cleaners14ClearButton
-            // 
-            Cleaners14ClearButton.BackColor = Color.DarkSalmon;
-            Cleaners14ClearButton.Location = new Point(253, 411);
-            Cleaners14ClearButton.Name = "Cleaners14ClearButton";
-            Cleaners14ClearButton.Size = new Size(23, 23);
-            Cleaners14ClearButton.TabIndex = 100;
-            Cleaners14ClearButton.Text = "✖";
-            Cleaners14ClearButton.UseVisualStyleBackColor = false;
-            Cleaners14ClearButton.Click += Cleaners14ClearButton_Click;
             // 
             // Cleaners14Label
             // 
@@ -639,17 +625,6 @@
             Cleaners14Label.Size = new Size(21, 15);
             Cleaners14Label.TabIndex = 64;
             Cleaners14Label.Text = "14";
-            // 
-            // Cleaners14PasteButton
-            // 
-            Cleaners14PasteButton.BackColor = Color.DeepSkyBlue;
-            Cleaners14PasteButton.Location = new Point(230, 411);
-            Cleaners14PasteButton.Name = "Cleaners14PasteButton";
-            Cleaners14PasteButton.Size = new Size(23, 23);
-            Cleaners14PasteButton.TabIndex = 100;
-            Cleaners14PasteButton.Text = "P";
-            Cleaners14PasteButton.UseVisualStyleBackColor = false;
-            Cleaners14PasteButton.Click += Cleaners14PasteButton_Click;
             // 
             // Cleaners14TextBox
             // 
@@ -735,6 +710,7 @@
             // 
             // CleanersRichTextBox
             // 
+            CleanersRichTextBox.BackColor = SystemColors.Info;
             CleanersRichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             CleanersRichTextBox.Location = new Point(23, 464);
             CleanersRichTextBox.Name = "CleanersRichTextBox";
@@ -743,71 +719,15 @@
             CleanersRichTextBox.Text = "";
             CleanersRichTextBox.TextChanged += CleanersRichTextBox_TextChanged;
             // 
-            // ClearBattery0Button
+            // ContactWaitButton
             // 
-            ClearBattery0Button.BackColor = Color.DarkSalmon;
-            ClearBattery0Button.Location = new Point(277, 181);
-            ClearBattery0Button.Name = "ClearBattery0Button";
-            ClearBattery0Button.Size = new Size(23, 23);
-            ClearBattery0Button.TabIndex = 100;
-            ClearBattery0Button.Text = "✖";
-            ClearBattery0Button.UseVisualStyleBackColor = false;
-            ClearBattery0Button.Click += ClearBattery0Button_Click;
-            // 
-            // ClearBattery14Button
-            // 
-            ClearBattery14Button.BackColor = Color.DarkSalmon;
-            ClearBattery14Button.Location = new Point(254, 154);
-            ClearBattery14Button.Name = "ClearBattery14Button";
-            ClearBattery14Button.Size = new Size(23, 23);
-            ClearBattery14Button.TabIndex = 100;
-            ClearBattery14Button.Text = "✖";
-            ClearBattery14Button.UseVisualStyleBackColor = false;
-            ClearBattery14Button.Click += ClearBattery14Button_Click;
-            // 
-            // ClearCPU0Button
-            // 
-            ClearCPU0Button.BackColor = Color.DarkSalmon;
-            ClearCPU0Button.Location = new Point(276, 53);
-            ClearCPU0Button.Name = "ClearCPU0Button";
-            ClearCPU0Button.Size = new Size(23, 23);
-            ClearCPU0Button.TabIndex = 100;
-            ClearCPU0Button.Text = "✖";
-            ClearCPU0Button.UseVisualStyleBackColor = false;
-            ClearCPU0Button.Click += ClearCPU0Button_Click;
-            // 
-            // ClearCPU14Button
-            // 
-            ClearCPU14Button.BackColor = Color.DarkSalmon;
-            ClearCPU14Button.Location = new Point(253, 25);
-            ClearCPU14Button.Name = "ClearCPU14Button";
-            ClearCPU14Button.Size = new Size(23, 23);
-            ClearCPU14Button.TabIndex = 100;
-            ClearCPU14Button.Text = "✖";
-            ClearCPU14Button.UseVisualStyleBackColor = false;
-            ClearCPU14Button.Click += ClearCPU14Button_Click;
-            // 
-            // ClearShip0Button
-            // 
-            ClearShip0Button.BackColor = Color.DarkSalmon;
-            ClearShip0Button.Location = new Point(276, 306);
-            ClearShip0Button.Name = "ClearShip0Button";
-            ClearShip0Button.Size = new Size(23, 23);
-            ClearShip0Button.TabIndex = 100;
-            ClearShip0Button.Text = "✖";
-            ClearShip0Button.UseVisualStyleBackColor = false;
-            ClearShip0Button.Click += ClearShip0Button_Click;
-            // 
-            // ClearShip14Button
-            // 
-            ClearShip14Button.BackColor = Color.DarkSalmon;
-            ClearShip14Button.Location = new Point(253, 279);
-            ClearShip14Button.Name = "ClearShip14Button";
-            ClearShip14Button.Size = new Size(23, 23);
-            ClearShip14Button.TabIndex = 100;
-            ClearShip14Button.Text = "✖";
-            ClearShip14Button.UseVisualStyleBackColor = false;
-            ClearShip14Button.Click += ClearShip14Button_Click;
+            ContactWaitButton.Location = new Point(292, 235);
+            ContactWaitButton.Name = "ContactWaitButton";
+            ContactWaitButton.Size = new Size(138, 32);
+            ContactWaitButton.TabIndex = 14;
+            ContactWaitButton.Text = "Αναμονή Επικοινωνίας";
+            ContactWaitButton.UseVisualStyleBackColor = true;
+            ContactWaitButton.Click += ContactWaitButton_Click;
             // 
             // CopyHomeButton
             // 
@@ -823,7 +743,7 @@
             // 
             // CopyOKButton
             // 
-            CopyOKButton.Location = new Point(4, 103);
+            CopyOKButton.Location = new Point(3, 103);
             CopyOKButton.Name = "CopyOKButton";
             CopyOKButton.Size = new Size(199, 33);
             CopyOKButton.TabIndex = 2;
@@ -873,7 +793,7 @@
             // 
             // CourrierButton
             // 
-            CourrierButton.Location = new Point(4, 25);
+            CourrierButton.Location = new Point(3, 25);
             CourrierButton.Name = "CourrierButton";
             CourrierButton.Size = new Size(199, 33);
             CourrierButton.TabIndex = 0;
@@ -894,11 +814,11 @@
             // CPU0CopyButton
             // 
             CPU0CopyButton.BackColor = Color.Chartreuse;
-            CPU0CopyButton.Location = new Point(253, 53);
+            CPU0CopyButton.Location = new Point(235, 49);
             CPU0CopyButton.Name = "CPU0CopyButton";
-            CPU0CopyButton.Size = new Size(23, 23);
+            CPU0CopyButton.Size = new Size(51, 29);
             CPU0CopyButton.TabIndex = 100;
-            CPU0CopyButton.Text = "C";
+            CPU0CopyButton.Text = "Copy";
             CPU0CopyButton.UseVisualStyleBackColor = false;
             CPU0CopyButton.Click += CPU0CopyButton_Click;
             // 
@@ -1004,6 +924,7 @@
             // 
             // CPURichTextBox
             // 
+            CPURichTextBox.BackColor = SystemColors.Info;
             CPURichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             CPURichTextBox.Location = new Point(23, 80);
             CPURichTextBox.Name = "CPURichTextBox";
@@ -1011,6 +932,17 @@
             CPURichTextBox.TabIndex = 5;
             CPURichTextBox.Text = "";
             CPURichTextBox.TextChanged += CPURichTextBox_TextChanged;
+            // 
+            // CyprusPreButton
+            // 
+            CyprusPreButton.BackColor = Color.FromArgb(255, 255, 192);
+            CyprusPreButton.Location = new Point(152, 563);
+            CyprusPreButton.Name = "CyprusPreButton";
+            CyprusPreButton.Size = new Size(138, 24);
+            CyprusPreButton.TabIndex = 899;
+            CyprusPreButton.Text = "Δέσμευση Κύπρου";
+            CyprusPreButton.UseVisualStyleBackColor = false;
+            CyprusPreButton.Click += CyprusPreButton_Click;
             // 
             // DeleteHomeButton
             // 
@@ -1184,6 +1116,16 @@
             FirstTextBox9.Size = new Size(79, 20);
             FirstTextBox9.TabIndex = 25;
             // 
+            // FixPricesButton
+            // 
+            FixPricesButton.Location = new Point(231, 180);
+            FixPricesButton.Name = "FixPricesButton";
+            FixPricesButton.Size = new Size(199, 33);
+            FixPricesButton.TabIndex = 24;
+            FixPricesButton.Text = "Φτιάξε τιμές";
+            FixPricesButton.UseVisualStyleBackColor = true;
+            FixPricesButton.Click += FixPricesButton_Click;
+            // 
             // ForthTextBox1
             // 
             ForthTextBox1.BackColor = Color.FromArgb(255, 255, 192);
@@ -1344,6 +1286,36 @@
             ForthTextBox9.Size = new Size(79, 20);
             ForthTextBox9.TabIndex = 76;
             // 
+            // FromLarnacaButton
+            // 
+            FromLarnacaButton.Location = new Point(3, 311);
+            FromLarnacaButton.Name = "FromLarnacaButton";
+            FromLarnacaButton.Size = new Size(138, 32);
+            FromLarnacaButton.TabIndex = 12;
+            FromLarnacaButton.Text = "Από Λάρνακα";
+            FromLarnacaButton.UseVisualStyleBackColor = true;
+            FromLarnacaButton.Click += FromLarnacaButton_Click;
+            // 
+            // FromNicosiaButton
+            // 
+            FromNicosiaButton.Location = new Point(3, 273);
+            FromNicosiaButton.Name = "FromNicosiaButton";
+            FromNicosiaButton.Size = new Size(138, 32);
+            FromNicosiaButton.TabIndex = 11;
+            FromNicosiaButton.Text = "Από Λευκωσία";
+            FromNicosiaButton.UseVisualStyleBackColor = true;
+            FromNicosiaButton.Click += FromNicosiaButton_Click;
+            // 
+            // GoodEveningButton
+            // 
+            GoodEveningButton.Location = new Point(3, 258);
+            GoodEveningButton.Name = "GoodEveningButton";
+            GoodEveningButton.Size = new Size(199, 33);
+            GoodEveningButton.TabIndex = 6;
+            GoodEveningButton.Text = "Καλησπέρα, Βρίσκουμε";
+            GoodEveningButton.UseVisualStyleBackColor = true;
+            GoodEveningButton.Click += GoodEveningButton_Click;
+            // 
             // GreeksLabel
             // 
             GreeksLabel.AutoSize = true;
@@ -1356,6 +1328,7 @@
             // 
             // HomeRichTextBox
             // 
+            HomeRichTextBox.BackColor = SystemColors.Info;
             HomeRichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             HomeRichTextBox.Location = new Point(3, 464);
             HomeRichTextBox.Name = "HomeRichTextBox";
@@ -1405,16 +1378,6 @@
             TempButton.UseVisualStyleBackColor = true;
             TempButton.Click += TempButton_Click;
             // 
-            // ContactWaitButton
-            // 
-            ContactWaitButton.Location = new Point(292, 235);
-            ContactWaitButton.Name = "ContactWaitButton";
-            ContactWaitButton.Size = new Size(138, 32);
-            ContactWaitButton.TabIndex = 14;
-            ContactWaitButton.Text = "Αναμονή Επικοινωνίας";
-            ContactWaitButton.UseVisualStyleBackColor = true;
-            ContactWaitButton.Click += ContactWaitButton_Click;
-            // 
             // TempOrderButton
             // 
             TempOrderButton.Location = new Point(148, 235);
@@ -1424,26 +1387,6 @@
             TempOrderButton.Text = "Προσωρινή Δέσμευση";
             TempOrderButton.UseVisualStyleBackColor = true;
             TempOrderButton.Click += TempOrderButton_Click;
-            // 
-            // FromLarnacaButton
-            // 
-            FromLarnacaButton.Location = new Point(3, 311);
-            FromLarnacaButton.Name = "FromLarnacaButton";
-            FromLarnacaButton.Size = new Size(138, 32);
-            FromLarnacaButton.TabIndex = 12;
-            FromLarnacaButton.Text = "Από Λάρνακα";
-            FromLarnacaButton.UseVisualStyleBackColor = true;
-            FromLarnacaButton.Click += FromLarnacaButton_Click;
-            // 
-            // FromNicosiaButton
-            // 
-            FromNicosiaButton.Location = new Point(3, 273);
-            FromNicosiaButton.Name = "FromNicosiaButton";
-            FromNicosiaButton.Size = new Size(138, 32);
-            FromNicosiaButton.TabIndex = 11;
-            FromNicosiaButton.Text = "Από Λευκωσία";
-            FromNicosiaButton.UseVisualStyleBackColor = true;
-            FromNicosiaButton.Click += FromNicosiaButton_Click;
             // 
             // ToLimassolButton
             // 
@@ -1564,93 +1507,127 @@
             SendMsgLabel.TabIndex = 4;
             SendMsgLabel.Text = "Ενημέρωσε για :";
             // 
-            // CyprusPreButton
+            // CostLabel
             // 
-            CyprusPreButton.BackColor = Color.FromArgb(255, 255, 192);
-            CyprusPreButton.Location = new Point(152, 563);
-            CyprusPreButton.Name = "CyprusPreButton";
-            CyprusPreButton.Size = new Size(138, 24);
-            CyprusPreButton.TabIndex = 899;
-            CyprusPreButton.Text = "Δέσμευση Κύπρου";
-            CyprusPreButton.UseVisualStyleBackColor = false;
-            CyprusPreButton.Click += CyprusPreButton_Click;
+            CostLabel.AutoSize = true;
+            CostLabel.Location = new Point(105, 4);
+            CostLabel.Name = "CostLabel";
+            CostLabel.Size = new Size(47, 15);
+            CostLabel.TabIndex = 1;
+            CostLabel.Text = "Κόστος";
             // 
-            // label1
+            // ForeignersLabel
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(105, 4);
-            label1.Name = "label1";
-            label1.Size = new Size(47, 15);
-            label1.TabIndex = 1;
-            label1.Text = "Κόστος";
+            ForeignersLabel.AutoSize = true;
+            ForeignersLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            ForeignersLabel.Location = new Point(17, 94);
+            ForeignersLabel.Name = "ForeignersLabel";
+            ForeignersLabel.Size = new Size(38, 15);
+            ForeignersLabel.TabIndex = 0;
+            ForeignersLabel.Text = "Ξένοι";
             // 
-            // label13
+            // CostLabel14
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label13.Location = new Point(17, 94);
-            label13.Name = "label13";
-            label13.Size = new Size(38, 15);
-            label13.TabIndex = 0;
-            label13.Text = "Ξένοι";
+            CostLabel14.AutoSize = true;
+            CostLabel14.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            CostLabel14.Location = new Point(40, 131);
+            CostLabel14.Name = "CostLabel14";
+            CostLabel14.Size = new Size(21, 15);
+            CostLabel14.TabIndex = 19;
+            CostLabel14.Text = "14";
             // 
-            // label14
+            // ShippingLabel
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label14.Location = new Point(40, 131);
-            label14.Name = "label14";
-            label14.Size = new Size(21, 15);
-            label14.TabIndex = 19;
-            label14.Text = "14";
+            ShippingLabel.AutoSize = true;
+            ShippingLabel.Location = new Point(204, 4);
+            ShippingLabel.Name = "ShippingLabel";
+            ShippingLabel.Size = new Size(75, 15);
+            ShippingLabel.TabIndex = 2;
+            ShippingLabel.Text = "Μεταφορικά";
             // 
-            // label2
+            // CostLabel0
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(204, 4);
-            label2.Name = "label2";
-            label2.Size = new Size(75, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Μεταφορικά";
+            CostLabel0.AutoSize = true;
+            CostLabel0.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            CostLabel0.Location = new Point(124, 131);
+            CostLabel0.Name = "CostLabel0";
+            CostLabel0.Size = new Size(14, 15);
+            CostLabel0.TabIndex = 32;
+            CostLabel0.Text = "0";
             // 
-            // label3
+            // CostKLabel0
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(124, 131);
-            label3.Name = "label3";
-            label3.Size = new Size(14, 15);
-            label3.TabIndex = 32;
-            label3.Text = "0";
+            CostKLabel0.AutoSize = true;
+            CostKLabel0.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            CostKLabel0.Location = new Point(281, 131);
+            CostKLabel0.Name = "CostKLabel0";
+            CostKLabel0.Size = new Size(25, 15);
+            CostKLabel0.TabIndex = 58;
+            CostKLabel0.Text = "K 0";
             // 
-            // label4
+            // CostKLabel14
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(281, 131);
-            label4.Name = "label4";
-            label4.Size = new Size(25, 15);
-            label4.TabIndex = 58;
-            label4.Text = "K 0";
+            CostKLabel14.AutoSize = true;
+            CostKLabel14.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            CostKLabel14.Location = new Point(196, 131);
+            CostKLabel14.Name = "CostKLabel14";
+            CostKLabel14.Size = new Size(32, 15);
+            CostKLabel14.TabIndex = 44;
+            CostKLabel14.Text = "K 14";
             // 
-            // label5
+            // CostTotalLabel
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(196, 131);
-            label5.Name = "label5";
-            label5.Size = new Size(32, 15);
-            label5.TabIndex = 44;
-            label5.Text = "K 14";
+            CostTotalLabel.AutoSize = true;
+            CostTotalLabel.Location = new Point(326, 3);
+            CostTotalLabel.Name = "CostTotalLabel";
+            CostTotalLabel.Size = new Size(46, 15);
+            CostTotalLabel.TabIndex = 6;
+            CostTotalLabel.Text = "Σύνολο";
             // 
-            // label6
+            // MasksButton
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(326, 3);
-            label6.Name = "label6";
-            label6.Size = new Size(46, 15);
-            label6.TabIndex = 6;
-            label6.Text = "Σύνολο";
+            MasksButton.BackColor = Color.MistyRose;
+            MasksButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            MasksButton.Location = new Point(231, 24);
+            MasksButton.Name = "MasksButton";
+            MasksButton.Size = new Size(199, 33);
+            MasksButton.TabIndex = 20;
+            MasksButton.Text = "Μάσκες ΦΠΑ 6%";
+            MasksButton.UseVisualStyleBackColor = false;
+            MasksButton.Click += MasksButton_Click;
+            // 
+            // NotesDeleteButton
+            // 
+            NotesDeleteButton.BackColor = Color.FromArgb(255, 128, 128);
+            NotesDeleteButton.Location = new Point(157, 6);
+            NotesDeleteButton.Name = "NotesDeleteButton";
+            NotesDeleteButton.Size = new Size(118, 30);
+            NotesDeleteButton.TabIndex = 1;
+            NotesDeleteButton.Text = "Διαγραφή όλων";
+            NotesDeleteButton.UseVisualStyleBackColor = false;
+            NotesDeleteButton.Click += NotesDeleteButton_Click;
+            // 
+            // NotesRichTextBox
+            // 
+            NotesRichTextBox.BackColor = SystemColors.Info;
+            NotesRichTextBox.Location = new Point(3, 42);
+            NotesRichTextBox.Name = "NotesRichTextBox";
+            NotesRichTextBox.Size = new Size(427, 485);
+            NotesRichTextBox.TabIndex = 0;
+            NotesRichTextBox.Text = "";
+            NotesRichTextBox.TextChanged += NotesRichTextBox_TextChanged;
+            // 
+            // NotesTabPage
+            // 
+            NotesTabPage.Controls.Add(NotesDeleteButton);
+            NotesTabPage.Controls.Add(NotesRichTextBox);
+            NotesTabPage.Location = new Point(4, 24);
+            NotesTabPage.Name = "NotesTabPage";
+            NotesTabPage.Padding = new Padding(3);
+            NotesTabPage.Size = new Size(433, 533);
+            NotesTabPage.TabIndex = 4;
+            NotesTabPage.Text = "Σημειώσεις";
+            NotesTabPage.UseVisualStyleBackColor = true;
             // 
             // OrdersTabPage
             // 
@@ -1666,14 +1643,10 @@
             OrdersTabPage.Controls.Add(BatteryorLabel);
             OrdersTabPage.Controls.Add(BatteryResetButton);
             OrdersTabPage.Controls.Add(BatteryRichTextBox);
-            OrdersTabPage.Controls.Add(Cleaners0ClearButton);
             OrdersTabPage.Controls.Add(Cleaners0CopyButton);
             OrdersTabPage.Controls.Add(Cleaners0Label);
-            OrdersTabPage.Controls.Add(Cleaners0PasteButton);
             OrdersTabPage.Controls.Add(Cleaners0TextBox);
-            OrdersTabPage.Controls.Add(Cleaners14ClearButton);
             OrdersTabPage.Controls.Add(Cleaners14Label);
-            OrdersTabPage.Controls.Add(Cleaners14PasteButton);
             OrdersTabPage.Controls.Add(Cleaners14TextBox);
             OrdersTabPage.Controls.Add(CleanersAutoButton);
             OrdersTabPage.Controls.Add(CleanersCopyButton);
@@ -1683,12 +1656,6 @@
             OrdersTabPage.Controls.Add(CleanersorLabel);
             OrdersTabPage.Controls.Add(CleanersResetButton);
             OrdersTabPage.Controls.Add(CleanersRichTextBox);
-            OrdersTabPage.Controls.Add(ClearBattery0Button);
-            OrdersTabPage.Controls.Add(ClearBattery14Button);
-            OrdersTabPage.Controls.Add(ClearCPU0Button);
-            OrdersTabPage.Controls.Add(ClearCPU14Button);
-            OrdersTabPage.Controls.Add(ClearShip0Button);
-            OrdersTabPage.Controls.Add(ClearShip14Button);
             OrdersTabPage.Controls.Add(CourrierLabel);
             OrdersTabPage.Controls.Add(CPU0CopyButton);
             OrdersTabPage.Controls.Add(CPU0Label);
@@ -1702,12 +1669,6 @@
             OrdersTabPage.Controls.Add(CPUorLabel);
             OrdersTabPage.Controls.Add(CPUResetButton);
             OrdersTabPage.Controls.Add(CPURichTextBox);
-            OrdersTabPage.Controls.Add(PasteBattery0Button);
-            OrdersTabPage.Controls.Add(PasteBattery14Button);
-            OrdersTabPage.Controls.Add(PasteCPU0Button);
-            OrdersTabPage.Controls.Add(PasteCPU14Button);
-            OrdersTabPage.Controls.Add(PasteShip0Button);
-            OrdersTabPage.Controls.Add(PasteShip14Button);
             OrdersTabPage.Controls.Add(Ship0CopyButton);
             OrdersTabPage.Controls.Add(Ship0Label);
             OrdersTabPage.Controls.Add(Ship0TextBox);
@@ -1728,80 +1689,14 @@
             OrdersTabPage.TabIndex = 2;
             OrdersTabPage.Text = "Παραγγελίες";
             // 
-            // PasteBattery0Button
-            // 
-            PasteBattery0Button.BackColor = Color.DeepSkyBlue;
-            PasteBattery0Button.Location = new Point(231, 181);
-            PasteBattery0Button.Name = "PasteBattery0Button";
-            PasteBattery0Button.Size = new Size(23, 23);
-            PasteBattery0Button.TabIndex = 100;
-            PasteBattery0Button.Text = "P";
-            PasteBattery0Button.UseVisualStyleBackColor = false;
-            PasteBattery0Button.Click += PasteBattery0Button_Click;
-            // 
-            // PasteBattery14Button
-            // 
-            PasteBattery14Button.BackColor = Color.DeepSkyBlue;
-            PasteBattery14Button.Location = new Point(231, 154);
-            PasteBattery14Button.Name = "PasteBattery14Button";
-            PasteBattery14Button.Size = new Size(23, 23);
-            PasteBattery14Button.TabIndex = 100;
-            PasteBattery14Button.Text = "P";
-            PasteBattery14Button.UseVisualStyleBackColor = false;
-            PasteBattery14Button.Click += PasteBattery14Button_Click;
-            // 
-            // PasteCPU0Button
-            // 
-            PasteCPU0Button.BackColor = Color.DeepSkyBlue;
-            PasteCPU0Button.Location = new Point(230, 53);
-            PasteCPU0Button.Name = "PasteCPU0Button";
-            PasteCPU0Button.Size = new Size(23, 23);
-            PasteCPU0Button.TabIndex = 100;
-            PasteCPU0Button.Text = "P";
-            PasteCPU0Button.UseVisualStyleBackColor = false;
-            PasteCPU0Button.Click += PasteCPU0Button_Click;
-            // 
-            // PasteCPU14Button
-            // 
-            PasteCPU14Button.BackColor = Color.DeepSkyBlue;
-            PasteCPU14Button.Location = new Point(230, 25);
-            PasteCPU14Button.Name = "PasteCPU14Button";
-            PasteCPU14Button.Size = new Size(23, 23);
-            PasteCPU14Button.TabIndex = 100;
-            PasteCPU14Button.Text = "P";
-            PasteCPU14Button.UseVisualStyleBackColor = false;
-            PasteCPU14Button.Click += PasteCPU14Button_Click;
-            // 
-            // PasteShip0Button
-            // 
-            PasteShip0Button.BackColor = Color.DeepSkyBlue;
-            PasteShip0Button.Location = new Point(230, 306);
-            PasteShip0Button.Name = "PasteShip0Button";
-            PasteShip0Button.Size = new Size(23, 23);
-            PasteShip0Button.TabIndex = 100;
-            PasteShip0Button.Text = "P";
-            PasteShip0Button.UseVisualStyleBackColor = false;
-            PasteShip0Button.Click += PasteShip0Button_Click;
-            // 
-            // PasteShip14Button
-            // 
-            PasteShip14Button.BackColor = Color.DeepSkyBlue;
-            PasteShip14Button.Location = new Point(230, 279);
-            PasteShip14Button.Name = "PasteShip14Button";
-            PasteShip14Button.Size = new Size(23, 23);
-            PasteShip14Button.TabIndex = 100;
-            PasteShip14Button.Text = "P";
-            PasteShip14Button.UseVisualStyleBackColor = false;
-            PasteShip14Button.Click += PasteShip14Button_Click;
-            // 
             // Ship0CopyButton
             // 
             Ship0CopyButton.BackColor = Color.Chartreuse;
-            Ship0CopyButton.Location = new Point(253, 306);
+            Ship0CopyButton.Location = new Point(235, 302);
             Ship0CopyButton.Name = "Ship0CopyButton";
-            Ship0CopyButton.Size = new Size(23, 23);
+            Ship0CopyButton.Size = new Size(51, 29);
             Ship0CopyButton.TabIndex = 100;
-            Ship0CopyButton.Text = "C";
+            Ship0CopyButton.Text = "Copy";
             Ship0CopyButton.UseVisualStyleBackColor = false;
             Ship0CopyButton.Click += Ship0CopyButton_Click;
             // 
@@ -1918,6 +1813,7 @@
             // 
             // ShipRichTextBox
             // 
+            ShipRichTextBox.BackColor = SystemColors.Info;
             ShipRichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             ShipRichTextBox.Location = new Point(23, 334);
             ShipRichTextBox.Name = "ShipRichTextBox";
@@ -1925,6 +1821,49 @@
             ShipRichTextBox.TabIndex = 19;
             ShipRichTextBox.Text = "";
             ShipRichTextBox.TextChanged += ShipRichTextBox_TextChanged;
+            // 
+            // PampersButton
+            // 
+            PampersButton.BackColor = Color.MistyRose;
+            PampersButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            PampersButton.Location = new Point(231, 102);
+            PampersButton.Name = "PampersButton";
+            PampersButton.Size = new Size(199, 33);
+            PampersButton.TabIndex = 22;
+            PampersButton.Text = "Πάνες + Υγιεινή ΦΠΑ 13%";
+            PampersButton.UseVisualStyleBackColor = false;
+            PampersButton.Click += PampersButton_Click;
+            // 
+            // PricesNotButton
+            // 
+            PricesNotButton.Location = new Point(231, 219);
+            PricesNotButton.Name = "PricesNotButton";
+            PricesNotButton.Size = new Size(199, 33);
+            PricesNotButton.TabIndex = 25;
+            PricesNotButton.Text = "Τιμές ΟΚ, εκτός";
+            PricesNotButton.UseVisualStyleBackColor = true;
+            PricesNotButton.Click += PricesNotButton_Click;
+            // 
+            // PricesOKButton
+            // 
+            PricesOKButton.BackColor = Color.FromArgb(0, 192, 0);
+            PricesOKButton.Location = new Point(299, 563);
+            PricesOKButton.Name = "PricesOKButton";
+            PricesOKButton.Size = new Size(138, 24);
+            PricesOKButton.TabIndex = 900;
+            PricesOKButton.Text = "Τιμές ΟΚ";
+            PricesOKButton.UseVisualStyleBackColor = false;
+            PricesOKButton.Click += PricesOKButton_Click;
+            // 
+            // PriceWaitButton
+            // 
+            PriceWaitButton.Location = new Point(231, 258);
+            PriceWaitButton.Name = "PriceWaitButton";
+            PriceWaitButton.Size = new Size(199, 33);
+            PriceWaitButton.TabIndex = 26;
+            PriceWaitButton.Text = "Τιμές ΟΚ, Αναμονή Προκαταβολής";
+            PriceWaitButton.UseVisualStyleBackColor = true;
+            PriceWaitButton.Click += PriceWaitButton_Click;
             // 
             // PricingTabPage
             // 
@@ -1941,7 +1880,7 @@
             PricingTabPage.Controls.Add(CalcTextBox7);
             PricingTabPage.Controls.Add(CalcTextBox8);
             PricingTabPage.Controls.Add(CalcTextBox9);
-            PricingTabPage.Controls.Add(CalculatorTotalTextBox);
+            PricingTabPage.Controls.Add(CalculatorTotalButton);
             PricingTabPage.Controls.Add(CostGRSecTextBox);
             PricingTabPage.Controls.Add(CostGRTextBox);
             PricingTabPage.Controls.Add(CostUKSecTextBox);
@@ -1979,14 +1918,14 @@
             PricingTabPage.Controls.Add(ForthTextBox8);
             PricingTabPage.Controls.Add(ForthTextBox9);
             PricingTabPage.Controls.Add(GreeksLabel);
-            PricingTabPage.Controls.Add(label1);
-            PricingTabPage.Controls.Add(label13);
-            PricingTabPage.Controls.Add(label14);
-            PricingTabPage.Controls.Add(label2);
-            PricingTabPage.Controls.Add(label3);
-            PricingTabPage.Controls.Add(label4);
-            PricingTabPage.Controls.Add(label5);
-            PricingTabPage.Controls.Add(label6);
+            PricingTabPage.Controls.Add(CostLabel);
+            PricingTabPage.Controls.Add(ForeignersLabel);
+            PricingTabPage.Controls.Add(CostLabel14);
+            PricingTabPage.Controls.Add(ShippingLabel);
+            PricingTabPage.Controls.Add(CostLabel0);
+            PricingTabPage.Controls.Add(CostKLabel0);
+            PricingTabPage.Controls.Add(CostKLabel14);
+            PricingTabPage.Controls.Add(CostTotalLabel);
             PricingTabPage.Controls.Add(ResetButton0);
             PricingTabPage.Controls.Add(ResetButton14);
             PricingTabPage.Controls.Add(ResetGRButton);
@@ -2116,9 +2055,9 @@
             // ResetTotalButton
             // 
             ResetTotalButton.BackColor = Color.FromArgb(255, 128, 128);
-            ResetTotalButton.Location = new Point(345, 458);
+            ResetTotalButton.Location = new Point(337, 458);
             ResetTotalButton.Name = "ResetTotalButton";
-            ResetTotalButton.Size = new Size(79, 22);
+            ResetTotalButton.Size = new Size(90, 22);
             ResetTotalButton.TabIndex = 98;
             ResetTotalButton.Text = "Reset";
             ResetTotalButton.UseVisualStyleBackColor = false;
@@ -2512,7 +2451,7 @@
             // 
             TotalCalcLabel.AutoSize = true;
             TotalCalcLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            TotalCalcLabel.Location = new Point(367, 418);
+            TotalCalcLabel.Location = new Point(365, 418);
             TotalCalcLabel.Name = "TotalCalcLabel";
             TotalCalcLabel.Size = new Size(34, 15);
             TotalCalcLabel.TabIndex = 92;
@@ -2564,7 +2503,7 @@
             // 
             // ShipButton
             // 
-            ShipButton.Location = new Point(4, 64);
+            ShipButton.Location = new Point(3, 64);
             ShipButton.Name = "ShipButton";
             ShipButton.Size = new Size(199, 33);
             ShipButton.TabIndex = 1;
@@ -2598,6 +2537,7 @@
             // 
             // SuppliersRichTextBox
             // 
+            SuppliersRichTextBox.BackColor = SystemColors.Info;
             SuppliersRichTextBox.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             SuppliersRichTextBox.Location = new Point(3, 464);
             SuppliersRichTextBox.Name = "SuppliersRichTextBox";
@@ -2608,102 +2548,29 @@
             // SupplierTabPage
             // 
             SupplierTabPage.BackColor = SystemColors.ButtonFace;
-            SupplierTabPage.Controls.Add(PampersButton);
-            SupplierTabPage.Controls.Add(PricesNotButton);
-            SupplierTabPage.Controls.Add(FixPricesButton);
-            SupplierTabPage.Controls.Add(BooksOrderButton);
-            SupplierTabPage.Controls.Add(BooksButton);
-            SupplierTabPage.Controls.Add(MasksButton);
             SupplierTabPage.Controls.Add(ArticleButton39);
-            SupplierTabPage.Controls.Add(SuppliersCopyButton);
-            SupplierTabPage.Controls.Add(SuppliersRichTextBox);
-            SupplierTabPage.Controls.Add(SuppliersDeleteButton);
+            SupplierTabPage.Controls.Add(BooksButton);
+            SupplierTabPage.Controls.Add(BooksOrderButton);
+            SupplierTabPage.Controls.Add(ByShipButton);
             SupplierTabPage.Controls.Add(CancelPreorderButton);
             SupplierTabPage.Controls.Add(CopyOKButton);
-            SupplierTabPage.Controls.Add(ShipButton);
             SupplierTabPage.Controls.Add(CourrierButton);
+            SupplierTabPage.Controls.Add(FixPricesButton);
+            SupplierTabPage.Controls.Add(GoodEveningButton);
+            SupplierTabPage.Controls.Add(MasksButton);
+            SupplierTabPage.Controls.Add(PampersButton);
+            SupplierTabPage.Controls.Add(PricesNotButton);
+            SupplierTabPage.Controls.Add(PriceWaitButton);
+            SupplierTabPage.Controls.Add(ShipButton);
+            SupplierTabPage.Controls.Add(SuppliersCopyButton);
+            SupplierTabPage.Controls.Add(SuppliersDeleteButton);
+            SupplierTabPage.Controls.Add(SuppliersRichTextBox);
             SupplierTabPage.Location = new Point(4, 24);
             SupplierTabPage.Name = "SupplierTabPage";
             SupplierTabPage.Padding = new Padding(3);
             SupplierTabPage.Size = new Size(433, 533);
             SupplierTabPage.TabIndex = 1;
             SupplierTabPage.Text = "Προμηθευτές";
-            // 
-            // PampersButton
-            // 
-            PampersButton.BackColor = Color.MistyRose;
-            PampersButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            PampersButton.Location = new Point(228, 103);
-            PampersButton.Name = "PampersButton";
-            PampersButton.Size = new Size(199, 33);
-            PampersButton.TabIndex = 7;
-            PampersButton.Text = "Πάνες + Υγιεινή ΦΠΑ 13%";
-            PampersButton.UseVisualStyleBackColor = false;
-            PampersButton.Click += PampersButton_Click;
-            // 
-            // PricesNotButton
-            // 
-            PricesNotButton.Location = new Point(228, 220);
-            PricesNotButton.Name = "PricesNotButton";
-            PricesNotButton.Size = new Size(199, 33);
-            PricesNotButton.TabIndex = 10;
-            PricesNotButton.Text = "Τιμές ΟΚ, εκτός";
-            PricesNotButton.UseVisualStyleBackColor = true;
-            PricesNotButton.Click += PricesNotButton_Click;
-            // 
-            // FixPricesButton
-            // 
-            FixPricesButton.Location = new Point(228, 181);
-            FixPricesButton.Name = "FixPricesButton";
-            FixPricesButton.Size = new Size(199, 33);
-            FixPricesButton.TabIndex = 9;
-            FixPricesButton.Text = "Φτιάξε τιμές";
-            FixPricesButton.UseVisualStyleBackColor = true;
-            FixPricesButton.Click += FixPricesButton_Click;
-            // 
-            // BooksOrderButton
-            // 
-            BooksOrderButton.Location = new Point(228, 142);
-            BooksOrderButton.Name = "BooksOrderButton";
-            BooksOrderButton.Size = new Size(199, 33);
-            BooksOrderButton.TabIndex = 8;
-            BooksOrderButton.Text = "Δέσμευση Κύπρου - Βιβλια";
-            BooksOrderButton.UseVisualStyleBackColor = true;
-            BooksOrderButton.Click += BooksOrderButton_Click;
-            // 
-            // BooksButton
-            // 
-            BooksButton.BackColor = Color.MistyRose;
-            BooksButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            BooksButton.Location = new Point(228, 64);
-            BooksButton.Name = "BooksButton";
-            BooksButton.Size = new Size(199, 33);
-            BooksButton.TabIndex = 6;
-            BooksButton.Text = "Βιβλία ΦΠΑ 6,5%";
-            BooksButton.UseVisualStyleBackColor = false;
-            BooksButton.Click += BooksButton_Click;
-            // 
-            // MasksButton
-            // 
-            MasksButton.BackColor = Color.MistyRose;
-            MasksButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            MasksButton.Location = new Point(228, 25);
-            MasksButton.Name = "MasksButton";
-            MasksButton.Size = new Size(199, 33);
-            MasksButton.TabIndex = 5;
-            MasksButton.Text = "Μάσκες ΦΠΑ 6%";
-            MasksButton.UseVisualStyleBackColor = false;
-            MasksButton.Click += MasksButton_Click;
-            // 
-            // ArticleButton39
-            // 
-            ArticleButton39.Location = new Point(4, 180);
-            ArticleButton39.Name = "ArticleButton39";
-            ArticleButton39.Size = new Size(199, 33);
-            ArticleButton39.TabIndex = 4;
-            ArticleButton39.Text = "Άρθρο 39α";
-            ArticleButton39.UseVisualStyleBackColor = true;
-            ArticleButton39.Click += ArticleButton39_Click;
             // 
             // TabControl
             // 
@@ -2717,37 +2584,6 @@
             TabControl.SelectedIndex = 0;
             TabControl.Size = new Size(441, 561);
             TabControl.TabIndex = 17;
-            // 
-            // NotesTabPage
-            // 
-            NotesTabPage.Controls.Add(NotesDeleteButton);
-            NotesTabPage.Controls.Add(NotesRichTextBox);
-            NotesTabPage.Location = new Point(4, 24);
-            NotesTabPage.Name = "NotesTabPage";
-            NotesTabPage.Padding = new Padding(3);
-            NotesTabPage.Size = new Size(433, 533);
-            NotesTabPage.TabIndex = 4;
-            NotesTabPage.Text = "Σημειώσεις";
-            NotesTabPage.UseVisualStyleBackColor = true;
-            // 
-            // NotesDeleteButton
-            // 
-            NotesDeleteButton.Location = new Point(176, 8);
-            NotesDeleteButton.Name = "NotesDeleteButton";
-            NotesDeleteButton.Size = new Size(75, 23);
-            NotesDeleteButton.TabIndex = 1;
-            NotesDeleteButton.Text = "Διαγραφή όλων";
-            NotesDeleteButton.UseVisualStyleBackColor = true;
-            NotesDeleteButton.Click += NotesDeleteButton_Click;
-            // 
-            // NotesRichTextBox
-            // 
-            NotesRichTextBox.Location = new Point(3, 37);
-            NotesRichTextBox.Name = "NotesRichTextBox";
-            NotesRichTextBox.Size = new Size(427, 490);
-            NotesRichTextBox.TabIndex = 0;
-            NotesRichTextBox.Text = "";
-            NotesRichTextBox.TextChanged += NotesRichTextBox_TextChanged;
             // 
             // Form1
             // 
@@ -2768,49 +2604,50 @@
             panel1.PerformLayout();
             NotesPanel.ResumeLayout(false);
             NotesPanel.PerformLayout();
+            NotesTabPage.ResumeLayout(false);
             OrdersTabPage.ResumeLayout(false);
             OrdersTabPage.PerformLayout();
             PricingTabPage.ResumeLayout(false);
             PricingTabPage.PerformLayout();
             SupplierTabPage.ResumeLayout(false);
             TabControl.ResumeLayout(false);
-            NotesTabPage.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
+        private Button ArticleButton39;
         private Button Battery0CopyButton;
         private Button BatteryCopyButton;
         private Button BatteryResetButton;
-        private Button PricesOKButton;
+        private Button BooksButton;
+        private Button BooksOrderButton;
+        private Button ByShipButton;
+        private Button CalculatorTotalButton;
         private Button CancelPreorderButton;
-        private Button Cleaners0ClearButton;
         private Button Cleaners0CopyButton;
-        private Button Cleaners0PasteButton;
-        private Button Cleaners14ClearButton;
-        private Button Cleaners14PasteButton;
         private Button CleanersAutoButton;
         private Button CleanersCopyButton;
         private Button CleanersResetButton;
-        private Button ClearBattery0Button;
-        private Button ClearBattery14Button;
-        private Button ClearCPU0Button;
-        private Button ClearCPU14Button;
-        private Button ClearShip0Button;
-        private Button ClearShip14Button;
+        private Button ContactWaitButton;
         private Button CopyHomeButton;
         private Button CopyOKButton;
         private Button CourrierButton;
         private Button CPU0CopyButton;
         private Button CPUCopyButton;
         private Button CPUResetButton;
+        private Button CyprusPreButton;
         private Button DeleteHomeButton;
-        private Button PasteBattery0Button;
-        private Button PasteBattery14Button;
-        private Button PasteCPU0Button;
-        private Button PasteCPU14Button;
-        private Button PasteShip0Button;
-        private Button PasteShip14Button;
+        private Button FixPricesButton;
+        private Button FromLarnacaButton;
+        private Button FromNicosiaButton;
+        private Button GoodEveningButton;
+        private Button MasksButton;
+        private Button NotesDeleteButton;
+        private Button PampersButton;
+        private Button PriceChangeButton;
+        private Button PricesNotButton;
+        private Button PricesOKButton;
+        private Button PriceWaitButton;
         private Button ResetButton0;
         private Button ResetButton14;
         private Button ResetGRButton;
@@ -2827,6 +2664,9 @@
         private Button ShipResetButton;
         private Button SuppliersCopyButton;
         private Button SuppliersDeleteButton;
+        private Button TempButton;
+        private Button TempOrderButton;
+        private Button ToLimassolButton;
         private Button TotalGRButton;
         private Button TotalGRSecButton;
         private Button TotalUKButton;
@@ -2857,14 +2697,14 @@
         private Label CPULabel;
         private Label CPUorLabel;
         private Label GreeksLabel;
-        private Label label1;
-        private Label label13;
-        private Label label14;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
+        private Label CostLabel;
+        private Label ForeignersLabel;
+        private Label CostLabel14;
+        private Label ShippingLabel;
+        private Label CostLabel0;
+        private Label CostKLabel0;
+        private Label CostKLabel14;
+        private Label CostTotalLabel;
         private Label NotesLabel;
         private Label OnHoldLabel;
         private Label SendMsgLabel;
@@ -2881,10 +2721,12 @@
         private RichTextBox CleanersRichTextBox;
         private RichTextBox CPURichTextBox;
         private RichTextBox HomeRichTextBox;
+        private RichTextBox NotesRichTextBox;
         private RichTextBox ShipRichTextBox;
         private RichTextBox SuppliersRichTextBox;
         private TabControl TabControl;
         private TabPage HomeTabPage;
+        private TabPage NotesTabPage;
         private TabPage OrdersTabPage;
         private TabPage PricingTabPage;
         private TabPage SupplierTabPage;
@@ -2902,7 +2744,6 @@
         private TextBox CalcTextBox7;
         private TextBox CalcTextBox8;
         private TextBox CalcTextBox9;
-        private TextBox CalculatorTotalTextBox;
         private TextBox Cleaners0TextBox;
         private TextBox Cleaners14TextBox;
         private TextBox CostGRSecTextBox;
@@ -2981,23 +2822,5 @@
         private TextBox ThirdTextBox7;
         private TextBox ThirdTextBox8;
         private TextBox ThirdTextBox9;
-        private Button FromLarnacaButton;
-        private Button FromNicosiaButton;
-        private Button ToLimassolButton;
-        private Button TempOrderButton;
-        private Button TempButton;
-        private Button ContactWaitButton;
-        private Button ArticleButton39;
-        private Button BooksButton;
-        private Button MasksButton;
-        private Button FixPricesButton;
-        private Button BooksOrderButton;
-        private Button PricesNotButton;
-        private Button PriceChangeButton;
-        private Button CyprusPreButton;
-        private Button PampersButton;
-        private TabPage NotesTabPage;
-        private RichTextBox NotesRichTextBox;
-        private Button NotesDeleteButton;
     }
 }

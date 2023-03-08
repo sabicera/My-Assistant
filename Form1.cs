@@ -298,96 +298,6 @@ namespace My_Assistant
             data.SetData(DataFormats.UnicodeText, CleanersRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
-        // Paste Order Buttons
-        private void PasteCPU14Button_Click(object sender, EventArgs e)
-        {
-            if (Clipboard.ContainsText())
-            {
-                CPU14TextBox.Text = Clipboard.GetText();
-            }
-        }
-        private void PasteCPU0Button_Click(object sender, EventArgs e)
-        {
-            if (Clipboard.ContainsText())
-            {
-                CPU0TextBox.Text = Clipboard.GetText();
-            }
-        }
-        private void PasteBattery14Button_Click(object sender, EventArgs e)
-        {
-            if (Clipboard.ContainsText())
-            {
-                Battery14TextBox.Text = Clipboard.GetText();
-            }
-        }
-        private void PasteBattery0Button_Click(object sender, EventArgs e)
-        {
-            if (Clipboard.ContainsText())
-            {
-                Battery0TextBox.Text = Clipboard.GetText();
-            }
-        }
-        private void PasteShip14Button_Click(object sender, EventArgs e)
-        {
-            if (Clipboard.ContainsText())
-            {
-                Ship14TextBox.Text = Clipboard.GetText();
-            }
-        }
-        private void PasteShip0Button_Click(object sender, EventArgs e)
-        {
-            if (Clipboard.ContainsText())
-            {
-                Ship0TextBox.Text = Clipboard.GetText();
-            }
-        }
-        private void Cleaners14PasteButton_Click(object sender, EventArgs e)
-        {
-            if (Clipboard.ContainsText())
-            {
-                Cleaners14TextBox.Text = Clipboard.GetText();
-            }
-        }
-        private void Cleaners0PasteButton_Click(object sender, EventArgs e)
-        {
-            if (Clipboard.ContainsText())
-            {
-                Cleaners0TextBox.Text = Clipboard.GetText();
-            }
-        }
-        // Clear Order Buttons
-        private void ClearCPU14Button_Click(object sender, EventArgs e)
-        {
-            CPU14TextBox.Text = string.Empty;
-        }
-        private void ClearCPU0Button_Click(object sender, EventArgs e)
-        {
-            CPU0TextBox.Text = string.Empty;
-        }
-        private void ClearBattery14Button_Click(object sender, EventArgs e)
-        {
-            Battery14TextBox.Text = string.Empty;
-        }
-        private void ClearBattery0Button_Click(object sender, EventArgs e)
-        {
-            Battery0TextBox.Text = string.Empty;
-        }
-        private void ClearShip14Button_Click(object sender, EventArgs e)
-        {
-            Ship14TextBox.Text = string.Empty;
-        }
-        private void ClearShip0Button_Click(object sender, EventArgs e)
-        {
-            Ship0TextBox.Text = string.Empty;
-        }
-        private void Cleaners14ClearButton_Click(object sender, EventArgs e)
-        {
-            Cleaners14TextBox.Text = string.Empty;
-        }
-        private void Cleaners0ClearButton_Click(object sender, EventArgs e)
-        {
-            Cleaners0TextBox.Text = string.Empty;
-        }
         // Orders Copy Rich Text Box
         private void CPUCopyButton_Click(object sender, EventArgs e)
         {
@@ -437,19 +347,19 @@ namespace My_Assistant
             DateTime currentDate = DateTime.Now;
             Clipboard.Clear();
             if (Ship14TextBox.Text is not null)
-                if (currentDate.DayOfWeek > DayOfWeek.Wednesday || (currentDate.DayOfWeek == DayOfWeek.Wednesday && currentDate.TimeOfDay > TimeSpan.FromHours(10)))
+                if (currentDate.DayOfWeek > DayOfWeek.Friday || (currentDate.DayOfWeek == DayOfWeek.Friday && currentDate.TimeOfDay > TimeSpan.FromHours(10)))
                 {
                     // Calculate the second next Wednesday
-                    DateTime secondnextWednesday = currentDate.AddDays(14).AddDays((DayOfWeek.Wednesday + 7 - currentDate.AddDays(7).DayOfWeek) % 7);
+                    DateTime secondnextWednesday = currentDate.AddDays(12).AddDays((DayOfWeek.Wednesday + 7 - currentDate.AddDays(7).DayOfWeek) % 7);
                     // Display the next Wednesday in the ShipRichTextBox
                     ShipRichTextBox.Text = Ship14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + secondnextWednesday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy");
                 }
                 else
                 {
-                    // Calculate this Wednesday
-                    DateTime nextWednesday = currentDate.AddDays(7).AddDays((DayOfWeek.Wednesday + 7 - currentDate.DayOfWeek) % 7);
-                    // Display the upcoming Wednesday in the ShipRichTextBox
-                    ShipRichTextBox.Text = Ship14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + nextWednesday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy");
+                    // Calculate this Friday
+                    DateTime nextFriday = currentDate.AddDays(7).AddDays((DayOfWeek.Friday + 7 - currentDate.DayOfWeek) % 7);
+                    // Display the upcoming Friday in the ShipRichTextBox
+                    ShipRichTextBox.Text = Ship14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + nextFriday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy");
                 }
             else
             {
@@ -695,7 +605,7 @@ namespace My_Assistant
             decimal subtotal = Calc1 + Calc2 + Calc3 + Calc4 + Calc5 + Calc6 + Calc7 + Calc8 + Calc9 + Calc10 + Calc11 + Calc12;
 
             // Display the result in the TotalTextBox with 2 decimal places and the euro symbol
-            CalculatorTotalTextBox.Text = subtotal.ToString("N4", format);
+            CalculatorTotalButton.Text = subtotal.ToString("N4", format);
         }
         // Calculations Copy Buttons
         private void TotalGRButton_Click(object sender, EventArgs e)
@@ -947,6 +857,14 @@ namespace My_Assistant
             data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
             Clipboard.SetDataObject(data, true);
         }
+        private void PriceWaitButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            SuppliersRichTextBox.Text = $"ΤΙΜΕΣ OK. ΝΑ ΜΗΝ ΠΡΟΧΩΡΗΣΕΙ, ΑΝΑΜΕΝΟΥΜΕ ΠΡΟΚΑΤΑΒΟΛΗ ΑΠΟ ΠΕΛAΤΗ ";
+            DataObject data = new();
+            data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
         private void ResetTotalButton_Click(object sender, EventArgs e)
         {
             CalcTextBox1.Text = string.Empty;
@@ -970,6 +888,28 @@ namespace My_Assistant
         private void NotesDeleteButton_Click(object sender, EventArgs e)
         {
             NotesRichTextBox.Text = string.Empty;
+        }
+        private void ByShipButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            SuppliersRichTextBox.Text = $"Καράβι";
+            DataObject data = new();
+            data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void GoodEveningButton_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();
+            SuppliersRichTextBox.Text = $"Καλησπέρα, Βρίσκουμε";
+            DataObject data = new();
+            data.SetData(DataFormats.UnicodeText, SuppliersRichTextBox.Text);
+            Clipboard.SetDataObject(data, true);
+        }
+        private void CalculatorTotalButton_Click(object sender, EventArgs e)
+        {
+            DataObject data = new();
+            data.SetData(DataFormats.UnicodeText, CalculatorTotalButton.Text);
+            Clipboard.SetDataObject(data, true);
         }
     }
 }
