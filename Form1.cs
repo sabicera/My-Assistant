@@ -350,16 +350,16 @@ namespace My_Assistant
                 if (currentDate.DayOfWeek > DayOfWeek.Friday || (currentDate.DayOfWeek == DayOfWeek.Friday && currentDate.TimeOfDay > TimeSpan.FromHours(10)))
                 {
                     // Calculate the second next Wednesday
-                    DateTime secondnextWednesday = currentDate.AddDays(12).AddDays((DayOfWeek.Wednesday + 7 - currentDate.AddDays(7).DayOfWeek) % 7);
+                    DateTime secondnextWednesday = currentDate.AddDays(14).AddDays((DayOfWeek.Wednesday + 0 - currentDate.AddDays(7).DayOfWeek) % 7);
                     // Display the next Wednesday in the ShipRichTextBox
                     ShipRichTextBox.Text = Ship14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + secondnextWednesday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy");
                 }
                 else
                 {
                     // Calculate this Friday
-                    DateTime nextFriday = currentDate.AddDays(7).AddDays((DayOfWeek.Friday + 7 - currentDate.DayOfWeek) % 7);
-                    // Display the upcoming Friday in the ShipRichTextBox
-                    ShipRichTextBox.Text = Ship14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + nextFriday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy");
+                    DateTime nextWednesday = currentDate.AddDays(7).AddDays((DayOfWeek.Wednesday + 0 - currentDate.DayOfWeek) % 7);
+                    // Display the upcoming Wednesday in the ShipRichTextBox
+                    ShipRichTextBox.Text = Ship14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + nextWednesday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy");
                 }
             else
             {
@@ -372,17 +372,17 @@ namespace My_Assistant
             DateTime currentDate = DateTime.Now;
             Clipboard.Clear();
             if (Cleaners14TextBox.Text is not null)
-                if (currentDate.DayOfWeek > DayOfWeek.Wednesday || (currentDate.DayOfWeek == DayOfWeek.Wednesday && currentDate.TimeOfDay > TimeSpan.FromHours(10)))
+                if (currentDate.DayOfWeek > DayOfWeek.Friday || (currentDate.DayOfWeek == DayOfWeek.Friday && currentDate.TimeOfDay > TimeSpan.FromHours(10)))
                 {
                     // Calculate the second next Wednesday
-                    DateTime secondnextWednesday = currentDate.AddDays(14).AddDays((DayOfWeek.Wednesday + 7 - currentDate.AddDays(7).DayOfWeek) % 7);
+                    DateTime secondnextWednesday = currentDate.AddDays(14).AddDays((DayOfWeek.Wednesday + 0 - currentDate.AddDays(7).DayOfWeek) % 7);
                     // Display the next Wednesday in the ShipRichTextBox
                     CleanersRichTextBox.Text = Cleaners14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + secondnextWednesday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy");
                 }
                 else
                 {
                     // Calculate this Wednesday
-                    DateTime nextWednesday = currentDate.AddDays(7).AddDays((DayOfWeek.Wednesday + 7 - currentDate.DayOfWeek) % 7);
+                    DateTime nextWednesday = currentDate.AddDays(7).AddDays((DayOfWeek.Wednesday + 0 - currentDate.DayOfWeek) % 7);
                     // Display the upcoming Wednesday in the ShipRichTextBox
                     CleanersRichTextBox.Text = Cleaners14TextBox.Text + " Παραλαμβάνουμε με Καράβι " + nextWednesday.ToString("dd/MM") + " =ΠΚ=" + DateTime.Now.ToString("dd/MM/yy");
                 }
